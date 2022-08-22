@@ -1,14 +1,5 @@
-@media all and (max-width: 768px) {
-    * {
-        padding: 0;
-        margin: 0;
-        font-family: 'Shrikhand', cursive;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    h1 {
-        font-family: 'Shrikhand', cursive;
-        font-size: 25px;
-        font-weight: 400;
-    }
+h1 {
+  color: yellow;
 }
+
+/*# sourceMappingURL=smart-phone.css.map */

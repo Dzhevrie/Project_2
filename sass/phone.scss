@@ -1,9 +1,119 @@
-$primary-color:#9356DC;
+$primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $third-color: #99E2D0;
 $main-font: Shrikhand;
 $text-font: Roboto;
 
-h1{
-    color: $primary-color;
+@media all and (max-width: 768px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.navigation {
+    width: 100%;
+}
+
+h1 {
+    font: {
+        family: $main-font;
+        size: 1.8rem;
+    }
+
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.search-btn-wrap {
+    background-color: $primary-color;
+    padding: 25px 0 25px 50px;
+    text-align: center;
+
+    input {
+        border: none;
+        background-color: $primary-color;
+        padding-left: 15px;
+
+        font: {
+            size: 20px;
+            family: $text-font
+        }
+    }
+
+}
+
+.head {
+    background-color: $third-color;
+    text-align: center;
+    padding: 40px;
+
+    h2 {
+        font: {
+            family: $text-font;
+            size: 1.6rem;
+            weight: 700
+        }
+
+    }
+
+    p {
+        width: 60%;
+        text-align: center;
+        padding: 40px 0 30px 140px;
+
+        font: {
+            family: $text-font;
+            size: 1.3rem;
+        }
+    }
+
+    button {
+        background-color: $secondary-color;
+        padding: 18px;
+        color: white;
+        border-radius: 50px;
+        font-size: 18px;
+        border: none;
+    }
+}
+
+// Section with the buttons for chosing 
+// the place and prepare the menu//
+
+.btns {
+    h3{
+         padding: 50px 0 25px 20px;
+        font:{
+            family: $text-font;
+            size: 1.6rem;
+        }
+    }
+}
+
+.btn-wrap{
+    background-color: $third-color;
+    border-radius: 30px;
+    padding: 40px;
+    margin: 30px;
+    box-shadow: 1px 7px 10px 1px rgb(0 0 0 / 15%);
+}
+
+
+
+
+
+
+
+
+.rsts-section {
+    width: 100%;
+}
+
+.rst-ad {
+
+    img {
+        width: 100%;
+    }
 }

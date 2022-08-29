@@ -1,5 +1,80 @@
+@media all and (max-width: 768px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+}
+.navigation {
+  width: 100%;
+}
+
 h1 {
-  color: red;
+  font-family: Shrikhand;
+  font-size: 1.8rem;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.search-btn-wrap {
+  background-color: #9356DC;
+  padding: 25px 0 25px 50px;
+  text-align: center;
+}
+.search-btn-wrap input {
+  border: none;
+  background-color: #9356DC;
+  padding-left: 15px;
+  font-size: 20px;
+  font-family: Roboto;
+}
+
+.head {
+  background-color: #99E2D0;
+  text-align: center;
+  padding: 40px;
+}
+.head h2 {
+  font-family: Roboto;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.head p {
+  width: 60%;
+  text-align: center;
+  padding: 40px 0 30px 140px;
+  font-family: Roboto;
+  font-size: 1.3rem;
+}
+.head button {
+  background-color: #FF79DA;
+  padding: 18px;
+  color: white;
+  border-radius: 50px;
+  font-size: 18px;
+  border: none;
+}
+
+.btns h3 {
+  padding: 50px 0 25px 20px;
+  font-family: Roboto;
+  font-size: 1.6rem;
+}
+
+.btn-wrap {
+  background-color: #99E2D0;
+  border-radius: 30px;
+  padding: 40px;
+  margin: 30px;
+  box-shadow: 1px 7px 10px 1px rgba(0, 0, 0, 0.15);
+}
+
+.rsts-section {
+  width: 100%;
+}
+
+.rst-ad img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=smart-phone.css.map */

@@ -83,22 +83,63 @@ h1 {
 // the place and prepare the menu//
 
 .btns {
-    h3{
-         padding: 50px 0 25px 20px;
-        font:{
+    h3 {
+        padding: 50px 0 25px 20px;
+
+        font: {
             family: $text-font;
             size: 1.6rem;
         }
     }
 }
 
-.btn-wrap{
+.btn-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
     background-color: $third-color;
     border-radius: 30px;
-    padding: 40px;
+    padding: 20px;
     margin: 30px;
     box-shadow: 1px 7px 10px 1px rgb(0 0 0 / 15%);
+
+    span {
+        border: 1px solid $primary-color;
+        color: white;
+        border-radius: 30px;
+        padding: 3px 7px;
+        background-color: $primary-color;
+        margin: 10px 180px 0px -30px;
+    }
+
+    .fas {
+        margin: 0px 50px 0px -130px;
+        font-size: 25px;
+    }
+
+    .fa-mobile-alt {
+        color: gray;
+    }
+
+    .fa-list {
+        color: gray;
+    }
+
+    .fa-store {
+        color: $primary-color;
+    }
+
+    p{
+        font:{
+            size: 20px;
+            weight: 700;
+            family:$text-font;
+        }
+    }
+
 }
+
 
 
 

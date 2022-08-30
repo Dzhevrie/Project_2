@@ -62,11 +62,41 @@ h1 {
 }
 
 .btn-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
   background-color: #99E2D0;
   border-radius: 30px;
-  padding: 40px;
+  padding: 20px;
   margin: 30px;
   box-shadow: 1px 7px 10px 1px rgba(0, 0, 0, 0.15);
+}
+.btn-wrap span {
+  border: 1px solid #9356DC;
+  color: white;
+  border-radius: 30px;
+  padding: 3px 7px;
+  background-color: #9356DC;
+  margin: 10px 180px 0px -30px;
+}
+.btn-wrap .fas {
+  margin: 0px 50px 0px -130px;
+  font-size: 25px;
+}
+.btn-wrap .fa-mobile-alt {
+  color: gray;
+}
+.btn-wrap .fa-list {
+  color: gray;
+}
+.btn-wrap .fa-store {
+  color: #9356DC;
+}
+.btn-wrap p {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Roboto;
 }
 
 .rsts-section {

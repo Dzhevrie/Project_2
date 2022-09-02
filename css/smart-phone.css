@@ -3,108 +3,149 @@
     padding: 0;
     margin: 0;
   }
-}
-.navigation {
-  width: 100%;
-}
-
-h1 {
-  font-family: Shrikhand;
-  font-size: 1.8rem;
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-}
-
-.search-btn-wrap {
-  background-color: #9356DC;
-  padding: 25px 0 25px 50px;
-  text-align: center;
-}
-.search-btn-wrap input {
-  border: none;
-  background-color: #9356DC;
-  padding-left: 15px;
-  font-size: 20px;
-  font-family: Roboto;
-}
-
-.head {
-  background-color: #99E2D0;
-  text-align: center;
-  padding: 40px;
-}
-.head h2 {
-  font-family: Roboto;
-  font-size: 1.6rem;
-  font-weight: 700;
-}
-.head p {
-  width: 60%;
-  text-align: center;
-  padding: 40px 0 30px 140px;
-  font-family: Roboto;
-  font-size: 1.3rem;
-}
-.head button {
-  background-color: #FF79DA;
-  padding: 18px;
-  color: white;
-  border-radius: 50px;
-  font-size: 18px;
-  border: none;
-}
-
-.btns h3 {
-  padding: 50px 0 25px 20px;
-  font-family: Roboto;
-  font-size: 1.6rem;
-}
-
-.btn-wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: baseline;
-  background-color: #99E2D0;
-  border-radius: 30px;
-  padding: 20px;
-  margin: 30px;
-  box-shadow: 1px 7px 10px 1px rgba(0, 0, 0, 0.15);
-}
-.btn-wrap span {
-  border: 1px solid #9356DC;
-  color: white;
-  border-radius: 30px;
-  padding: 3px 7px;
-  background-color: #9356DC;
-  margin: 10px 180px 0px -30px;
-}
-.btn-wrap .fas {
-  margin: 0px 50px 0px -130px;
-  font-size: 25px;
-}
-.btn-wrap .fa-mobile-alt {
-  color: gray;
-}
-.btn-wrap .fa-list {
-  color: gray;
-}
-.btn-wrap .fa-store {
-  color: #9356DC;
-}
-.btn-wrap p {
-  font-size: 20px;
-  font-weight: 700;
-  font-family: Roboto;
-}
-
-.rsts-section {
-  width: 100%;
-}
-
-.rst-ad img {
-  width: 100%;
+  .navigation {
+    width: 100%;
+  }
+  h1 {
+    font-family: Shrikhand;
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .search-btn-wrap {
+    background-color: #9356DC;
+    padding: 25px 0 25px 50px;
+    text-align: center;
+  }
+  .search-btn-wrap input {
+    border: none;
+    background-color: #9356DC;
+    padding-left: 15px;
+    font-size: 20px;
+    font-family: Roboto;
+  }
+  .head {
+    background-color: #99E2D0;
+    text-align: center;
+    padding: 40px;
+  }
+  .head h2 {
+    font-family: Roboto;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .head p {
+    width: 60%;
+    text-align: center;
+    padding: 40px 0 30px 140px;
+    font-family: Roboto;
+    font-size: 1.3rem;
+  }
+  .head button {
+    background-color: #FF79DA;
+    padding: 18px;
+    color: white;
+    border-radius: 50px;
+    font-size: 18px;
+    border: none;
+  }
+  .btns h3 {
+    padding: 50px 0 25px 20px;
+    font-family: Roboto;
+    font-size: 1.6rem;
+  }
+  .btn-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    background-color: #99E2D0;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 30px;
+    box-shadow: 1px 7px 10px 1px rgba(0, 0, 0, 0.15);
+  }
+  .btn-wrap span {
+    border: 1px solid #9356DC;
+    color: white;
+    border-radius: 30px;
+    padding: 3px 7px;
+    background-color: #9356DC;
+    margin: 10px 180px 0px -30px;
+  }
+  .btn-wrap .fas {
+    margin: 0px 50px 0px -130px;
+    font-size: 25px;
+  }
+  .btn-wrap .fa-mobile-alt {
+    color: gray;
+  }
+  .btn-wrap .fa-list {
+    color: gray;
+  }
+  .btn-wrap .fa-store {
+    color: #9356DC;
+  }
+  .btn-wrap p {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Roboto;
+  }
+  .rsts-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #99E2D0;
+  }
+  .rsts-section h4 {
+    font-size: 35px;
+    font-family: Roboto;
+    font-weight: 700;
+    padding: 30px;
+  }
+  .rst-ad {
+    background-color: #fff;
+    border-radius: 25px;
+    margin: 20px 30px;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .rst-ad span {
+    color: darkcyan;
+    background-color: #99E2D0;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px 40px;
+    font-family: Roboto;
+    font-weight: 700;
+    margin: 20px;
+  }
+  .rst-ad img {
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+  }
+  .ad-info {
+    margin: 20px;
+  }
+  .ad-info h5 {
+    color: #000;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .ad-info p {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 300;
+    font-color: gray;
+  }
+  .fa-heart {
+    color: none;
+  }
 }
 
 /*# sourceMappingURL=smart-phone.css.map */

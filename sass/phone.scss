@@ -9,152 +9,221 @@ $text-font: Roboto;
         padding: 0;
         margin: 0;
     }
-}
 
-.navigation {
-    width: 100%;
-}
+    // HEADER
 
-h1 {
-    font: {
-        family: $main-font;
-        size: 1.8rem;
-    }
-
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-}
-
-.search-btn-wrap {
-    background-color: $primary-color;
-    padding: 25px 0 25px 50px;
-    text-align: center;
-
-    input {
-        border: none;
-        background-color: $primary-color;
-        padding-left: 15px;
-
-        font: {
-            size: 20px;
-            family: $text-font
-        }
-    }
-
-}
-
-.head {
-    background-color: $third-color;
-    text-align: center;
-    padding: 40px;
-
-    h2 {
-        font: {
-            family: $text-font;
-            size: 1.6rem;
-            weight: 700
-        }
-
-    }
-
-    p {
-        width: 60%;
-        text-align: center;
-        padding: 40px 0 30px 140px;
-
-        font: {
-            family: $text-font;
-            size: 1.3rem;
-        }
-    }
-
-    button {
-        background-color: $secondary-color;
-        padding: 18px;
-        color: white;
-        border-radius: 50px;
-        font-size: 18px;
-        border: none;
-    }
-}
-
-// Section with the buttons for chosing 
-// the place and prepare the menu//
-
-.btns {
-    h3 {
-        padding: 50px 0 25px 20px;
-
-        font: {
-            family: $text-font;
-            size: 1.6rem;
-        }
-    }
-}
-
-.btn-wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: baseline;
-    background-color: $third-color;
-    border-radius: 30px;
-    padding: 20px;
-    margin: 30px;
-    box-shadow: 1px 7px 10px 1px rgb(0 0 0 / 15%);
-
-    span {
-        border: 1px solid $primary-color;
-        color: white;
-        border-radius: 30px;
-        padding: 3px 7px;
-        background-color: $primary-color;
-        margin: 10px 180px 0px -30px;
-    }
-
-    .fas {
-        margin: 0px 50px 0px -130px;
-        font-size: 25px;
-    }
-
-    .fa-mobile-alt {
-        color: gray;
-    }
-
-    .fa-list {
-        color: gray;
-    }
-
-    .fa-store {
-        color: $primary-color;
-    }
-
-    p{
-        font:{
-            size: 20px;
-            weight: 700;
-            family:$text-font;
-        }
-    }
-
-}
-
-
-
-
-
-
-
-
-
-.rsts-section {
-    width: 100%;
-}
-
-.rst-ad {
-
-    img {
+    // navigation
+    .navigation {
         width: 100%;
+    }
+
+    h1 {
+        font: {
+            family: $main-font;
+            size: 1.8rem;
+        }
+
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .search-btn-wrap {
+        background-color: $primary-color;
+        padding: 25px 0 25px 50px;
+        text-align: center;
+
+        input {
+            border: none;
+            background-color: $primary-color;
+            padding-left: 15px;
+
+            font: {
+                size: 20px;
+                family: $text-font
+            }
+        }
+
+    }
+
+    .head {
+        background-color: $third-color;
+        text-align: center;
+        padding: 40px;
+
+        h2 {
+            font: {
+                family: $text-font;
+                size: 1.6rem;
+                weight: 700
+            }
+
+        }
+
+        p {
+            width: 60%;
+            text-align: center;
+            padding: 40px 0 30px 140px;
+
+            font: {
+                family: $text-font;
+                size: 1.3rem;
+            }
+        }
+
+        button {
+            background-color: $secondary-color;
+            padding: 18px;
+            color: white;
+            border-radius: 50px;
+            font-size: 18px;
+            border: none;
+        }
+    }
+
+    // MAIN SECTION
+
+    // Section with the buttons for chosing 
+    // the place and prepare the menu//
+
+    .btns {
+        h3 {
+            padding: 50px 0 25px 20px;
+
+            font: {
+                family: $text-font;
+                size: 1.6rem;
+            }
+        }
+    }
+
+    .btn-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+        background-color: $third-color;
+        border-radius: 30px;
+        padding: 20px;
+        margin: 30px;
+        box-shadow: 1px 7px 10px 1px rgb(0 0 0 / 15%);
+
+        span {
+            border: 1px solid $primary-color;
+            color: white;
+            border-radius: 30px;
+            padding: 3px 7px;
+            background-color: $primary-color;
+            margin: 10px 180px 0px -30px;
+        }
+
+        .fas {
+            margin: 0px 50px 0px -130px;
+            font-size: 25px;
+        }
+
+        .fa-mobile-alt {
+            color: gray;
+        }
+
+        .fa-list {
+            color: gray;
+        }
+
+        .fa-store {
+            color: $primary-color;
+        }
+
+        p {
+            font: {
+                size: 20px;
+                weight: 700;
+                family: $text-font;
+            }
+        }
+    }
+
+
+    // Section of the restaurants 
+
+    .rsts-section {
+        display: flex;
+        flex-direction: column;
+        background-color: $third-color;
+
+        h4 {
+            font: {
+                size: 35px;
+                family: $text-font;
+                weight: 700;
+            }
+
+            padding: 30px;
+        }
+
+
+
+    }
+
+    .rst-ad {
+        background-color: #fff;
+        border-radius: 25px;
+        margin: 20px 30px;
+        z-index: -0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        span {
+                color: darkcyan;
+                background-color:$third-color;
+                text-decoration: none;
+                font-size: 22px;
+                padding: 10px 40px;
+                font-family: $text-font;
+                font-weight: 700;
+                margin: 20px;
+
+            }
+
+            img {
+                width: 100%;
+                // height: 310px;
+                border-radius: 25px 25px 0 0;
+            }
+        }
+    
+
+
+    .ad-info {
+        margin: 20px;
+
+        h5 {
+            color: #000;
+            text-decoration: none;
+
+            font: {
+                family: $text-font;
+                size: 20px;
+                weight: 800;
+
+            }
+        }
+
+        p {
+            font: {
+                family: $text-font;
+                size: 20px;
+                weight: 300;
+                color: gray;
+
+            }
+        }
+
+    }
+
+    .fa-heart {
+        color: none;
+
     }
 }

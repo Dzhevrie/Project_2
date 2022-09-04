@@ -15,9 +15,16 @@ $text-font: Roboto;
     // navigation
     .navigation {
         width: 100%;
+
+        img {
+            width: 200px;
+            padding: 20px 0 20px 250px;
+        }
     }
 
-    h1 {
+
+
+    /*h1 {
         font: {
             family: $main-font;
             size: 1.8rem;
@@ -26,7 +33,7 @@ $text-font: Roboto;
         width: 100%;
         text-align: center;
         padding: 10px;
-    }
+    }*/
 
     .search-btn-wrap {
         background-color: $primary-color;
@@ -174,37 +181,46 @@ $text-font: Roboto;
         flex-direction: row;
         align-items: flex-start;
         flex-wrap: wrap;
+
         span {
-                color: darkcyan;
-                background-color:$third-color;
-                text-decoration: none;
-                font-size: 22px;
-                padding: 10px 40px;
-                font-family: $text-font;
-                font-weight: 700;
-                margin: 20px;
+            color: darkcyan;
+            background-color: $third-color;
+            text-decoration: none;
+            font-size: 22px;
+            padding: 10px 40px;
+            font-family: $text-font;
+            font-weight: 700;
+            margin: 20px 0 0 550px;
+            position: absolute;
 
-            }
-
-            img {
-                width: 100%;
-                // height: 310px;
-                border-radius: 25px 25px 0 0;
-            }
         }
-    
+
+        img {
+            width: 100%;
+            // height: 310px;
+            border-radius: 25px 25px 0 0;
+        }
+    }
+
 
 
     .ad-info {
         margin: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .info {
 
         h5 {
             color: #000;
             text-decoration: none;
+            padding: 10px 0;
 
             font: {
                 family: $text-font;
-                size: 20px;
+                size: 28px;
                 weight: 800;
 
             }
@@ -213,21 +229,64 @@ $text-font: Roboto;
         p {
             font: {
                 family: $text-font;
-                size: 20px;
-                weight: 300;
-                color: gray;
-
+                size: 25px;
+                weight: 400;
             }
+
+            color:grey;
         }
 
     }
 
     .fa-heart {
-        color: none;
-
+        font-size: 50px;
+        color: gray;
+        margin-left: auto;
+        &:hover{
+            color: #9356DC;
+        }
     }
 
-    footer{
+    // FOOTER
+
+    footer {
         background-color: #000;
+        padding: 0 0 45px 0;
+
+        h1 {
+            color: #fff;
+            font-family: $main-font;
+            font-size: 30px;
+            font-weight: 400;
+            display: flex;
+            padding: 40px 0 25px 35px;
+        }
+    }
+
+    .contacts {
+        text-decoration: none;
+        font-family: $text-font;
+
+
+        a {
+            text-decoration: none;
+            display: flex;
+            justify-content: flex-start;
+            color: #fff;
+            font-size: 25px;
+            padding: 10px;
+            margin: 0 30px;
+
+            .fa-handshake {
+                transform: rotate(-50deg);
+                font-size: 20px;
+                padding-right: 15px;
+            }
+
+            .fa-utensils {
+                padding-right: 20px;
+                font-size: 22px;
+            }
+        }
     }
 }

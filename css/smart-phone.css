@@ -6,13 +6,20 @@
   .navigation {
     width: 100%;
   }
-  h1 {
-    font-family: Shrikhand;
-    font-size: 1.8rem;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
+  .navigation img {
+    width: 200px;
+    padding: 20px 0 20px 250px;
   }
+  /*h1 {
+      font: {
+          family: $main-font;
+          size: 1.8rem;
+      }
+
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+  }*/
   .search-btn-wrap {
     background-color: #9356DC;
     padding: 25px 0 25px 50px;
@@ -121,7 +128,8 @@
     padding: 10px 40px;
     font-family: Roboto;
     font-weight: 700;
-    margin: 20px;
+    margin: 20px 0 0 550px;
+    position: absolute;
   }
   .rst-ad img {
     width: 100%;
@@ -129,22 +137,65 @@
   }
   .ad-info {
     margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
-  .ad-info h5 {
+  .info h5 {
     color: #000;
     text-decoration: none;
+    padding: 10px 0;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 800;
   }
-  .ad-info p {
+  .info p {
     font-family: Roboto;
-    font-size: 20px;
-    font-weight: 300;
-    font-color: gray;
+    font-size: 25px;
+    font-weight: 400;
+    color: grey;
   }
   .fa-heart {
-    color: none;
+    font-size: 50px;
+    color: gray;
+    margin-left: auto;
+  }
+  .fa-heart:hover {
+    color: #9356DC;
+  }
+  footer {
+    background-color: #000;
+    padding: 0 0 45px 0;
+  }
+  footer h1 {
+    color: #fff;
+    font-family: Shrikhand;
+    font-size: 30px;
+    font-weight: 400;
+    display: flex;
+    padding: 40px 0 25px 35px;
+  }
+  .contacts {
+    text-decoration: none;
+    font-family: Roboto;
+  }
+  .contacts a {
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px;
+    margin: 0 30px;
+  }
+  .contacts a .fa-handshake {
+    transform: rotate(-50deg);
+    font-size: 20px;
+    padding-right: 15px;
+  }
+  .contacts a .fa-utensils {
+    padding-right: 20px;
+    font-size: 22px;
   }
 }
 

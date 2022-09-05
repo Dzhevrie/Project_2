@@ -22,19 +22,6 @@ $text-font: Roboto;
         }
     }
 
-
-
-    /*h1 {
-        font: {
-            family: $main-font;
-            size: 1.8rem;
-        }
-
-        width: 100%;
-        text-align: center;
-        padding: 10px;
-    }*/
-
     .search-btn-wrap {
         background-color: $primary-color;
         padding: 25px 0 25px 50px;
@@ -58,7 +45,7 @@ $text-font: Roboto;
         text-align: center;
         padding: 40px;
 
-        h2 {
+        h1 {
             font: {
                 family: $text-font;
                 size: 1.6rem;
@@ -94,7 +81,7 @@ $text-font: Roboto;
     // the place and prepare the menu//
 
     .btns {
-        h3 {
+        h2 {
             padding: 50px 0 25px 20px;
 
             font: {
@@ -158,7 +145,7 @@ $text-font: Roboto;
         flex-direction: column;
         background-color: $third-color;
 
-        h4 {
+        h3 {
             font: {
                 size: 35px;
                 family: $text-font;
@@ -213,7 +200,7 @@ $text-font: Roboto;
 
     .info {
 
-        h5 {
+        h4 {
             color: #000;
             text-decoration: none;
             padding: 10px 0;
@@ -242,7 +229,8 @@ $text-font: Roboto;
         font-size: 50px;
         color: gray;
         margin-left: auto;
-        &:hover{
+
+        &:hover {
             color: #9356DC;
         }
     }
@@ -253,7 +241,7 @@ $text-font: Roboto;
         background-color: #000;
         padding: 0 0 45px 0;
 
-        h1 {
+        h5 {
             color: #fff;
             font-family: $main-font;
             font-size: 30px;
@@ -287,6 +275,34 @@ $text-font: Roboto;
                 padding-right: 20px;
                 font-size: 22px;
             }
+        }
+    }
+
+    // THE FULL PALETTE RESTAURAN'S SITE
+
+    // NAVIGATION
+
+    .rstnt-navigation {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+        }
+
+        .fa-arrow-left {
+            font-size: 30px;
+            color: #000;
+            margin-left: 40px;
+        }
+
+        img {
+            width: 200px;
+            padding: 20px 0 20px 180px;
+            width: 250px;
         }
     }
 }

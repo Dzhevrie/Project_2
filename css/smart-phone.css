@@ -10,16 +10,6 @@
     width: 200px;
     padding: 20px 0 20px 250px;
   }
-  /*h1 {
-      font: {
-          family: $main-font;
-          size: 1.8rem;
-      }
-
-      width: 100%;
-      text-align: center;
-      padding: 10px;
-  }*/
   .search-btn-wrap {
     background-color: #9356DC;
     padding: 25px 0 25px 50px;
@@ -37,7 +27,7 @@
     text-align: center;
     padding: 40px;
   }
-  .head h2 {
+  .head h1 {
     font-family: Roboto;
     font-size: 1.6rem;
     font-weight: 700;
@@ -57,7 +47,7 @@
     font-size: 18px;
     border: none;
   }
-  .btns h3 {
+  .btns h2 {
     padding: 50px 0 25px 20px;
     font-family: Roboto;
     font-size: 1.6rem;
@@ -104,7 +94,7 @@
     flex-direction: column;
     background-color: #99E2D0;
   }
-  .rsts-section h4 {
+  .rsts-section h3 {
     font-size: 35px;
     font-family: Roboto;
     font-weight: 700;
@@ -141,7 +131,7 @@
     justify-content: space-evenly;
     align-items: center;
   }
-  .info h5 {
+  .info h4 {
     color: #000;
     text-decoration: none;
     padding: 10px 0;
@@ -167,7 +157,7 @@
     background-color: #000;
     padding: 0 0 45px 0;
   }
-  footer h1 {
+  footer h5 {
     color: #fff;
     font-family: Shrikhand;
     font-size: 30px;
@@ -196,6 +186,26 @@
   .contacts a .fa-utensils {
     padding-right: 20px;
     font-size: 22px;
+  }
+  .rstnt-navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .rstnt-navigation a {
+    text-decoration: none;
+  }
+  .rstnt-navigation .fa-arrow-left {
+    font-size: 30px;
+    color: #000;
+    margin-left: 40px;
+  }
+  .rstnt-navigation img {
+    width: 200px;
+    padding: 20px 0 20px 180px;
+    width: 250px;
   }
 }
 

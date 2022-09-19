@@ -4,6 +4,78 @@ $third-color: #99E2D0;
 $main-font: Shrikhand;
 $text-font: Roboto;
 
+@mixin menu-about-pages {
+    background-color: $third-color;
+    border-radius: 50px 50px 0 0;
+
+    h2 {
+        padding: 30px 0 20px 30px;
+        color: gray;
+        border-bottom: 5px solid $primary-color;
+        line-height: 0;
+
+        font: {
+            family: $text-font;
+            size: 30px;
+            weight: 400;
+        }
+    }
+}
+
+@mixin menu-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+
+    h1 {
+        font: {
+            size: 40px;
+            weight: 500;
+            family: $main-font;
+        }
+    }
+}
+
+@mixin dish {
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 15px;
+    padding: 15px 35px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+@mixin dish-title {
+    h3 {
+        padding-bottom: 10px;
+
+        font: {
+            family: $text-font;
+            size: 30px;
+
+        }
+    }
+
+    p {
+        color: gray;
+
+        font: {
+            family: $text-font;
+            size: 25px;
+        }
+    }
+
+}
+
+
+
+
+
+
 @media all and (max-width: 768px) {
     * {
         padding: 0;
@@ -154,9 +226,6 @@ $text-font: Roboto;
 
             padding: 30px;
         }
-
-
-
     }
 
     .rst-ad {
@@ -184,18 +253,24 @@ $text-font: Roboto;
 
         img {
             width: 100%;
-            // height: 310px;
             border-radius: 25px 25px 0 0;
         }
     }
 
+    .fa-heart {
+        font-size: 50px;
+        background-color: #fff;
+        color: gray;
 
+    }
 
     .ad-info {
+        width: 100%;
         margin: 20px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
+
     }
 
     .info {
@@ -225,15 +300,9 @@ $text-font: Roboto;
 
     }
 
-    .fa-heart {
-        font-size: 50px;
-        color: gray;
-        margin-left: auto;
 
-        &:hover {
-            color: #9356DC;
-        }
-    }
+
+
 
     // FOOTER
 
@@ -305,4 +374,160 @@ $text-font: Roboto;
             width: 250px;
         }
     }
+
+    nav {
+        img {
+            width: 100%;
+        }
+    }
+
+    // THE FULL PALETTE MAIN SECTION 
+
+    .menu-palette {
+
+        @include menu-about-pages();
+    }
+
+    .menu-title-palette {
+        @include menu-title;
+    }
+
+    .heart {
+        color: #000;
+        background-color: $third-color;
+    }
+
+    .dish-palette {
+        @include dish;
+
+        span {
+            font: {
+                family: $text-font;
+                size: 25px;
+                weight: 800;
+            }
+        }
+    }
+
+    .dish-info-palette {
+        @include dish-title;
+
+    }
+
+    .order {
+        background-color: #FF79DA;
+        color: #fff;
+        margin: 80px 0 120px 180px;
+        padding: 35px 170px;
+        border: none;
+        border-radius: 55px;
+        font-size: 30px;
+        box-shadow: 1px 2px 14px 6px rgb(0 0 0 / 15%);
+    }
+
+    // THE ENCHANTED PLATE RESTAURAN'S SITE
+
+    // NAVIGATION
+
+    .rstnt-navigation {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+        }
+
+        .fa-arrow-left {
+            font-size: 30px;
+            color: #000;
+            margin-left: 40px;
+        }
+
+        img {
+            width: 200px;
+            padding: 20px 0 20px 180px;
+            width: 250px;
+        }
+    }
+
+    nav {
+        img {
+            width: 100%;
+        }
+    }
+
+    // THE ENCHANTED PLATE MAIN SECTION 
+
+    .menu {
+
+        background-color: $third-color;
+        border-radius: 50px 50px 0 0;
+
+        h2 {
+            padding: 30px 0 20px 30px;
+            color: gray;
+            border-bottom: 5px solid $primary-color;
+            line-height: 0;
+
+            font: {
+                family: $text-font;
+                size: 30px;
+                weight: 400;
+            }
+        }
+    }
+
+    .menu-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+
+        h1 {
+            font: {
+                size: 40px;
+                weight: 500;
+                family: $main-font;
+            }
+        }
+
+    }
+
+    .heart {
+        color: #000;
+        background-color: $third-color;
+    }
+
+    .dish-palette {
+        @include dish;
+
+        span {
+            font: {
+                family: $text-font;
+                size: 25px;
+                weight: 800;
+            }
+        }
+    }
+
+    .dish-info-palette {
+        @include dish-title;
+
+    }
+
+    .order {
+        background-color: #FF79DA;
+        color: #fff;
+        margin: 80px 0 120px 180px;
+        padding: 35px 170px;
+        border: none;
+        border-radius: 55px;
+        font-size: 30px;
+        box-shadow: 1px 2px 14px 6px rgb(0 0 0 / 15%);
+    }
+
 }

@@ -4,6 +4,30 @@ $third-color: #99E2D0;
 $main-font: Shrikhand;
 $text-font: Roboto;
 
+@mixin restorant-navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+    }
+
+    .fa-arrow-left {
+        font-size: 30px;
+        color: #000;
+        margin-left: 40px;
+    }
+
+    img {
+        width: 200px;
+        padding: 20px 0 20px 180px;
+        width: 250px;
+    }
+}
+
 @mixin menu-about-pages {
     background-color: $third-color;
     border-radius: 50px 50px 0 0;
@@ -11,8 +35,6 @@ $text-font: Roboto;
     h2 {
         padding: 30px 0 20px 30px;
         color: gray;
-        border-bottom: 5px solid $primary-color;
-        line-height: 0;
 
         font: {
             family: $text-font;
@@ -20,6 +42,10 @@ $text-font: Roboto;
             weight: 400;
         }
     }
+}
+
+.line{
+    
 }
 
 @mixin menu-title {
@@ -352,40 +378,14 @@ $text-font: Roboto;
     // NAVIGATION
 
     .rstnt-navigation {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-
-        a {
-            text-decoration: none;
-        }
-
-        .fa-arrow-left {
-            font-size: 30px;
-            color: #000;
-            margin-left: 40px;
-        }
-
-        img {
-            width: 200px;
-            padding: 20px 0 20px 180px;
-            width: 250px;
-        }
-    }
-
-    nav {
-        img {
-            width: 100%;
-        }
+        @include restorant-navigation;
     }
 
     // THE FULL PALETTE MAIN SECTION 
 
     .menu-palette {
 
-        @include menu-about-pages();
+        @include menu-about-pages;
     }
 
     .menu-title-palette {

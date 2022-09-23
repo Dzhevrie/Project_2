@@ -5,28 +5,30 @@ $main-font: Shrikhand;
 $text-font: Roboto;
 
 @mixin restorant-navigation {
-    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    margin: 40px 200px 25px 10px;
+
 
     a {
         text-decoration: none;
     }
 
-    .fa-arrow-left {
-        font-size: 30px;
+    i {
+        font-size: 40px;
         color: #000;
         margin-left: 40px;
+
     }
 
     img {
-        width: 200px;
-        padding: 20px 0 20px 180px;
-        width: 250px;
+        width: 320px;
     }
 }
+
+
 
 @mixin menu-about-pages {
     background-color: $third-color;
@@ -44,8 +46,19 @@ $text-font: Roboto;
     }
 }
 
-.line{
-    
+@mixin heart {
+    color: #000;
+    background-color: $third-color;
+
+    &:hover {
+        color: #9356DC;
+    }
+}
+
+@mixin line {
+    border-bottom: 5px solid $primary-color;
+    width: 10%;
+    margin-left: 30px;
 }
 
 @mixin menu-title {
@@ -73,6 +86,14 @@ $text-font: Roboto;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+
+    span {
+        font: {
+            family: $text-font;
+            size: 25px;
+            weight: 800;
+        }
+    }
 }
 
 @mixin dish-title {
@@ -97,10 +118,62 @@ $text-font: Roboto;
 
 }
 
+@mixin btn-order {
+    background-color: #FF79DA;
+    color: #fff;
+    margin: 80px 0 120px 180px;
+    padding: 35px 170px;
+    border: none;
+    border-radius: 55px;
+    font-size: 30px;
+    box-shadow: 1px 2px 14px 6px rgb(0 0 0 / 15%);
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@mixin footer {
+    background-color: #000;
+    padding: 0 0 45px 0;
+
+    h5 {
+        color: #fff;
+        font-family: $main-font;
+        font-size: 30px;
+        font-weight: 400;
+        display: flex;
+        padding: 40px 0 25px 35px;
+    }
 
 
+    .contacts {
+        text-decoration: none;
+        font-family: $text-font;
 
 
+        a {
+            text-decoration: none;
+            display: flex;
+            justify-content: flex-start;
+            color: #fff;
+            font-size: 25px;
+            padding: 10px;
+            margin: 0 30px;
+
+            .fa-handshake {
+                transform: rotate(-50deg);
+                font-size: 20px;
+                padding-right: 15px;
+            }
+
+            .fa-utensils {
+                padding-right: 20px;
+                font-size: 22px;
+            }
+        }
+    }
+}
 
 @media all and (max-width: 768px) {
     * {
@@ -326,66 +399,33 @@ $text-font: Roboto;
 
     }
 
-
-
-
-
     // FOOTER
 
     footer {
-        background-color: #000;
-        padding: 0 0 45px 0;
-
-        h5 {
-            color: #fff;
-            font-family: $main-font;
-            font-size: 30px;
-            font-weight: 400;
-            display: flex;
-            padding: 40px 0 25px 35px;
-        }
+        @include footer;
     }
 
-    .contacts {
-        text-decoration: none;
-        font-family: $text-font;
-
-
-        a {
-            text-decoration: none;
-            display: flex;
-            justify-content: flex-start;
-            color: #fff;
-            font-size: 25px;
-            padding: 10px;
-            margin: 0 30px;
-
-            .fa-handshake {
-                transform: rotate(-50deg);
-                font-size: 20px;
-                padding-right: 15px;
-            }
-
-            .fa-utensils {
-                padding-right: 20px;
-                font-size: 22px;
-            }
-        }
-    }
-
-    // THE FULL PALETTE RESTAURAN'S SITE
+    // THE FULL PALETTE RESTAURANT'S SITE
 
     // NAVIGATION
 
-    .rstnt-navigation {
+    .rstnt-navigation-palette {
         @include restorant-navigation;
     }
 
-    // THE FULL PALETTE MAIN SECTION 
+    .nav-img {
+        width: 100%;
+    }
+
+    // THE FULL PALETTE RESTAURANT'S MAIN SECTION 
 
     .menu-palette {
 
         @include menu-about-pages;
+    }
+
+    .line {
+        @include line;
     }
 
     .menu-title-palette {
@@ -393,20 +433,11 @@ $text-font: Roboto;
     }
 
     .heart {
-        color: #000;
-        background-color: $third-color;
+        @include heart;
     }
 
     .dish-palette {
         @include dish;
-
-        span {
-            font: {
-                family: $text-font;
-                size: 25px;
-                weight: 800;
-            }
-        }
     }
 
     .dish-info-palette {
@@ -415,119 +446,138 @@ $text-font: Roboto;
     }
 
     .order {
-        background-color: #FF79DA;
-        color: #fff;
-        margin: 80px 0 120px 180px;
-        padding: 35px 170px;
-        border: none;
-        border-radius: 55px;
-        font-size: 30px;
-        box-shadow: 1px 2px 14px 6px rgb(0 0 0 / 15%);
+        @include btn-order;
     }
 
-    // THE ENCHANTED PLATE RESTAURAN'S SITE
+    // THE ENCHANTED PLATE RESTAURANT'S SITE
 
     // NAVIGATION
 
-    .rstnt-navigation {
+    .rstnt-navigation-plate {
+        @include restorant-navigation;
+    }
+
+    .nav-img {
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-
-        a {
-            text-decoration: none;
-        }
-
-        .fa-arrow-left {
-            font-size: 30px;
-            color: #000;
-            margin-left: 40px;
-        }
-
-        img {
-            width: 200px;
-            padding: 20px 0 20px 180px;
-            width: 250px;
-        }
     }
 
-    nav {
-        img {
-            width: 100%;
-        }
+    // THE FULL PLATE RESTAURANT'S MAIN SECTION 
+
+    .menu-plate {
+        @include menu-about-pages;
     }
 
-    // THE ENCHANTED PLATE MAIN SECTION 
-
-    .menu {
-
-        background-color: $third-color;
-        border-radius: 50px 50px 0 0;
-
-        h2 {
-            padding: 30px 0 20px 30px;
-            color: gray;
-            border-bottom: 5px solid $primary-color;
-            line-height: 0;
-
-            font: {
-                family: $text-font;
-                size: 30px;
-                weight: 400;
-            }
-        }
+    .line-plate {
+        @include line;
     }
 
-    .menu-title {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 40px;
-
-        h1 {
-            font: {
-                size: 40px;
-                weight: 500;
-                family: $main-font;
-            }
-        }
-
+    .menu-title-plate {
+        @include menu-title;
     }
 
     .heart {
-        color: #000;
-        background-color: $third-color;
+        @include heart;
     }
 
-    .dish-palette {
+    .dish-plate {
         @include dish;
-
-        span {
-            font: {
-                family: $text-font;
-                size: 25px;
-                weight: 800;
-            }
-        }
     }
 
-    .dish-info-palette {
+    .dish-info-plate {
         @include dish-title;
 
     }
 
     .order {
-        background-color: #FF79DA;
-        color: #fff;
-        margin: 80px 0 120px 180px;
-        padding: 35px 170px;
-        border: none;
-        border-radius: 55px;
-        font-size: 30px;
-        box-shadow: 1px 2px 14px 6px rgb(0 0 0 / 15%);
+        @include btn-order;
     }
+
+    // BASTILLE RESTAURANT'S SITE
+
+    // NAVIGATION
+
+    .rstnt-navigation-bastille {
+        @include restorant-navigation;
+    }
+
+    .nav-img {
+        width: 100%;
+    }
+
+    // BASTILLE MAIN SECTION 
+
+    .menu-bastille {
+        @include menu-about-pages;
+    }
+
+    .line-bastille {
+        @include line;
+    }
+
+    .menu-title-bastille {
+        @include menu-title;
+    }
+
+    .heart {
+        @include heart;
+    }
+
+    .dish-bastille {
+        @include dish;
+    }
+
+    .dish-info-bastille {
+        @include dish-title;
+
+    }
+
+    .order {
+        @include btn-order;
+    }
+
+
+    // LE GOURMAND RESTAURANT'S SITE
+
+    // NAVIGATION
+
+    .rstnt-navigation-gourmand {
+        @include restorant-navigation;
+    }
+
+    .nav-img {
+        width: 100%;
+    }
+
+    // LE GOURMAND RESTAURANT'S MAIN SECTION 
+
+    .menu-gourmand {
+        @include menu-about-pages;
+    }
+
+    .line-gourmand {
+        @include line;
+    }
+
+    .menu-title-gourmand {
+        @include menu-title;
+    }
+
+    .heart {
+        @include heart;
+    }
+
+    .dish-gourmand {
+        @include dish;
+    }
+
+    .dish-info-gourmand {
+        @include dish-title;
+
+    }
+
+    .order {
+        @include btn-order;
+    }
+
 
 }

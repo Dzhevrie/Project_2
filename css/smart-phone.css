@@ -163,11 +163,11 @@
     display: flex;
     padding: 40px 0 25px 35px;
   }
-  .contacts {
+  footer .contacts {
     text-decoration: none;
     font-family: Roboto;
   }
-  .contacts a {
+  footer .contacts a {
     text-decoration: none;
     display: flex;
     justify-content: flex-start;
@@ -176,36 +176,34 @@
     padding: 10px;
     margin: 0 30px;
   }
-  .contacts a .fa-handshake {
+  footer .contacts a .fa-handshake {
     transform: rotate(-50deg);
     font-size: 20px;
     padding-right: 15px;
   }
-  .contacts a .fa-utensils {
+  footer .contacts a .fa-utensils {
     padding-right: 20px;
     font-size: 22px;
   }
-  .rstnt-navigation {
-    width: 100%;
+  .rstnt-navigation-palette {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    margin: 40px 200px 25px 10px;
   }
-  .rstnt-navigation a {
+  .rstnt-navigation-palette a {
     text-decoration: none;
   }
-  .rstnt-navigation .fa-arrow-left {
-    font-size: 30px;
+  .rstnt-navigation-palette i {
+    font-size: 40px;
     color: #000;
     margin-left: 40px;
   }
-  .rstnt-navigation img {
-    width: 200px;
-    padding: 20px 0 20px 180px;
-    width: 250px;
+  .rstnt-navigation-palette img {
+    width: 320px;
   }
-  nav img {
+  .nav-img {
     width: 100%;
   }
   .menu-palette {
@@ -215,11 +213,14 @@
   .menu-palette h2 {
     padding: 30px 0 20px 30px;
     color: gray;
-    border-bottom: 5px solid #9356DC;
-    line-height: 0;
     font-family: Roboto;
     font-size: 30px;
     font-weight: 400;
+  }
+  .line {
+    border-bottom: 5px solid #9356DC;
+    width: 10%;
+    margin-left: 30px;
   }
   .menu-title-palette {
     display: flex;
@@ -237,6 +238,9 @@
     color: #000;
     background-color: #99E2D0;
   }
+  .heart:hover {
+    color: #9356DC;
+  }
   .dish-palette {
     background-color: #fff;
     border-radius: 30px;
@@ -272,50 +276,54 @@
     font-size: 30px;
     box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
   }
-  .rstnt-navigation {
-    width: 100%;
+  .order:hover {
+    cursor: pointer;
+  }
+  .rstnt-navigation-plate {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    margin: 40px 200px 25px 10px;
   }
-  .rstnt-navigation a {
+  .rstnt-navigation-plate a {
     text-decoration: none;
   }
-  .rstnt-navigation .fa-arrow-left {
-    font-size: 30px;
+  .rstnt-navigation-plate i {
+    font-size: 40px;
     color: #000;
     margin-left: 40px;
   }
-  .rstnt-navigation img {
-    width: 200px;
-    padding: 20px 0 20px 180px;
-    width: 250px;
+  .rstnt-navigation-plate img {
+    width: 320px;
   }
-  nav img {
+  .nav-img {
     width: 100%;
   }
-  .menu {
+  .menu-plate {
     background-color: #99E2D0;
     border-radius: 50px 50px 0 0;
   }
-  .menu h2 {
+  .menu-plate h2 {
     padding: 30px 0 20px 30px;
     color: gray;
-    border-bottom: 5px solid #9356DC;
-    line-height: 0;
     font-family: Roboto;
     font-size: 30px;
     font-weight: 400;
   }
-  .menu-title {
+  .line-plate {
+    border-bottom: 5px solid #9356DC;
+    width: 10%;
+    margin-left: 30px;
+  }
+  .menu-title-plate {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 40px;
   }
-  .menu-title h1 {
+  .menu-title-plate h1 {
     font-size: 40px;
     font-weight: 500;
     font-family: Shrikhand;
@@ -324,7 +332,10 @@
     color: #000;
     background-color: #99E2D0;
   }
-  .dish-palette {
+  .heart:hover {
+    color: #9356DC;
+  }
+  .dish-plate {
     background-color: #fff;
     border-radius: 30px;
     margin: 15px;
@@ -334,17 +345,17 @@
     justify-content: space-between;
     align-items: flex-end;
   }
-  .dish-palette span {
+  .dish-plate span {
     font-family: Roboto;
     font-size: 25px;
     font-weight: 800;
   }
-  .dish-info-palette h3 {
+  .dish-info-plate h3 {
     padding-bottom: 10px;
     font-family: Roboto;
     font-size: 30px;
   }
-  .dish-info-palette p {
+  .dish-info-plate p {
     color: gray;
     font-family: Roboto;
     font-size: 25px;
@@ -358,6 +369,197 @@
     border-radius: 55px;
     font-size: 30px;
     box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
+  }
+  .order:hover {
+    cursor: pointer;
+  }
+  .rstnt-navigation-bastille {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 200px 25px 10px;
+  }
+  .rstnt-navigation-bastille a {
+    text-decoration: none;
+  }
+  .rstnt-navigation-bastille i {
+    font-size: 40px;
+    color: #000;
+    margin-left: 40px;
+  }
+  .rstnt-navigation-bastille img {
+    width: 320px;
+  }
+  .nav-img {
+    width: 100%;
+  }
+  .menu-bastille {
+    background-color: #99E2D0;
+    border-radius: 50px 50px 0 0;
+  }
+  .menu-bastille h2 {
+    padding: 30px 0 20px 30px;
+    color: gray;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .line-bastille {
+    border-bottom: 5px solid #9356DC;
+    width: 10%;
+    margin-left: 30px;
+  }
+  .menu-title-bastille {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+  }
+  .menu-title-bastille h1 {
+    font-size: 40px;
+    font-weight: 500;
+    font-family: Shrikhand;
+  }
+  .heart {
+    color: #000;
+    background-color: #99E2D0;
+  }
+  .heart:hover {
+    color: #9356DC;
+  }
+  .dish-bastille {
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 15px;
+    padding: 15px 35px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .dish-bastille span {
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 800;
+  }
+  .dish-info-bastille h3 {
+    padding-bottom: 10px;
+    font-family: Roboto;
+    font-size: 30px;
+  }
+  .dish-info-bastille p {
+    color: gray;
+    font-family: Roboto;
+    font-size: 25px;
+  }
+  .order {
+    background-color: #FF79DA;
+    color: #fff;
+    margin: 80px 0 120px 180px;
+    padding: 35px 170px;
+    border: none;
+    border-radius: 55px;
+    font-size: 30px;
+    box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
+  }
+  .order:hover {
+    cursor: pointer;
+  }
+  .rstnt-navigation-gourmand {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 200px 25px 10px;
+  }
+  .rstnt-navigation-gourmand a {
+    text-decoration: none;
+  }
+  .rstnt-navigation-gourmand i {
+    font-size: 40px;
+    color: #000;
+    margin-left: 40px;
+  }
+  .rstnt-navigation-gourmand img {
+    width: 320px;
+  }
+  .nav-img {
+    width: 100%;
+  }
+  .menu-gourmand {
+    background-color: #99E2D0;
+    border-radius: 50px 50px 0 0;
+  }
+  .menu-gourmand h2 {
+    padding: 30px 0 20px 30px;
+    color: gray;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .line-gourmand {
+    border-bottom: 5px solid #9356DC;
+    width: 10%;
+    margin-left: 30px;
+  }
+  .menu-title-gourmand {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+  }
+  .menu-title-gourmand h1 {
+    font-size: 40px;
+    font-weight: 500;
+    font-family: Shrikhand;
+  }
+  .heart {
+    color: #000;
+    background-color: #99E2D0;
+  }
+  .heart:hover {
+    color: #9356DC;
+  }
+  .dish-gourmand {
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 15px;
+    padding: 15px 35px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .dish-gourmand span {
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 800;
+  }
+  .dish-info-gourmand h3 {
+    padding-bottom: 10px;
+    font-family: Roboto;
+    font-size: 30px;
+  }
+  .dish-info-gourmand p {
+    color: gray;
+    font-family: Roboto;
+    font-size: 25px;
+  }
+  .order {
+    background-color: #FF79DA;
+    color: #fff;
+    margin: 80px 0 120px 180px;
+    padding: 35px 170px;
+    border: none;
+    border-radius: 55px;
+    font-size: 30px;
+    box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
+  }
+  .order:hover {
+    cursor: pointer;
   }
 }
 

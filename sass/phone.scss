@@ -127,10 +127,26 @@ $text-font: Roboto;
     border-radius: 55px;
     font-size: 30px;
     box-shadow: 1px 2px 14px 6px rgb(0 0 0 / 15%);
+    z-index: 1;
 
     &:hover {
         cursor: pointer;
+        box-shadow: -10px 14px 10px 1px rgb(255 173 237 / 90%);
+        transition-duration: 1s;
+
+        & .order__light {
+            opacity: 1;
+
+        }
     }
+
+    &__light {
+        background-color: lighten($secondary-color, 3);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+    }
+
 }
 
 @mixin footer {
@@ -181,6 +197,8 @@ $text-font: Roboto;
         margin: 0;
     }
 
+
+
     // HEADER
 
     // navigation
@@ -188,8 +206,12 @@ $text-font: Roboto;
         width: 100%;
 
         img {
-            width: 200px;
-            padding: 20px 0 20px 250px;
+            width: 260px;
+            padding: 20px 0 20px 200px;
+        }
+
+        i {
+            font-size: 26px;
         }
     }
 
@@ -197,19 +219,28 @@ $text-font: Roboto;
         background-color: $primary-color;
         padding: 25px 0 25px 50px;
         text-align: center;
+        box-shadow: rgb(11 10 10 / 18%) 0px 13px 12px 0px inset;
+
 
         input {
             border: none;
             background-color: $primary-color;
             padding-left: 15px;
 
+            &::placeholder {
+                color: #000;
+            }
+
             font: {
-                size: 20px;
+                size: 25px;
                 family: $text-font
             }
+
+
         }
 
     }
+
 
     .head {
         background-color: $third-color;
@@ -219,45 +250,58 @@ $text-font: Roboto;
         h1 {
             font: {
                 family: $text-font;
-                size: 1.6rem;
+                size: 38px;
                 weight: 700
             }
 
         }
 
         p {
-            width: 60%;
+            width: 90%;
+            padding: 40px;
             text-align: center;
-            padding: 40px 0 30px 140px;
+            color: gray;
 
             font: {
                 family: $text-font;
-                size: 1.3rem;
+                size: 30px;
             }
         }
 
         button {
             background-color: $secondary-color;
-            padding: 18px;
+            padding: 25px 35px;
             color: white;
             border-radius: 50px;
-            font-size: 18px;
+            font-size: 22px;
+            font-weight: 500;
             border: none;
+            align-items: center;
+            box-shadow: 1px 7px 10px 1px rgb(0 0 0 / 15%);
+
+            &:hover {
+                opacity: 0.6;
+                box-shadow: -6px 20px 10px 1px rgb(0 0 0 / 15%);
+                transition-duration: 1s;
+            }
         }
     }
 
     // MAIN SECTION
 
-    // Section with the buttons for chosing 
-    // the place and prepare the menu//
+    /* Section with the buttons for chosing the place 
+    and prepare the menu*/
 
     .btns {
+        padding: 70px 10px 80px 25px;
+
         h2 {
-            padding: 50px 0 25px 20px;
+            padding: 10px 0 20px 10px;
 
             font: {
                 family: $text-font;
-                size: 1.6rem;
+                size: 35px;
+                weight: 800;
             }
         }
     }
@@ -268,23 +312,30 @@ $text-font: Roboto;
         justify-content: flex-start;
         align-items: baseline;
         background-color: $third-color;
-        border-radius: 30px;
-        padding: 20px;
+        border-radius: 35px;
+        padding: 35px;
         margin: 30px;
-        box-shadow: 1px 7px 10px 1px rgb(0 0 0 / 15%);
+        box-shadow: -2px 6px 11px 2px rgb(0 0 0 / 15%);
+        font-size: 25px;
+
+        &:hover {
+            opacity: 0.6;
+            box-shadow: -6px 20px 10px 1px rgb(0 0 0 / 15%);
+            transition-duration: 1s;
+        }
 
         span {
             border: 1px solid $primary-color;
             color: white;
-            border-radius: 30px;
-            padding: 3px 7px;
+            border-radius: 40px;
+            padding: 4px 12px;
             background-color: $primary-color;
-            margin: 10px 180px 0px -30px;
+            margin: 10px 180px 0px -50px;
         }
 
         .fas {
             margin: 0px 50px 0px -130px;
-            font-size: 25px;
+            font-size: 30px;
         }
 
         .fa-mobile-alt {
@@ -301,7 +352,7 @@ $text-font: Roboto;
 
         p {
             font: {
-                size: 20px;
+                size: 27px;
                 weight: 700;
                 family: $text-font;
             }
@@ -315,6 +366,7 @@ $text-font: Roboto;
         display: flex;
         flex-direction: column;
         background-color: $third-color;
+        padding: 50px 0 80px 0;
 
         h3 {
             font: {
@@ -323,7 +375,7 @@ $text-font: Roboto;
                 weight: 700;
             }
 
-            padding: 30px;
+            padding: 40px 0 10px 30px;
         }
     }
 
@@ -345,7 +397,7 @@ $text-font: Roboto;
             padding: 10px 40px;
             font-family: $text-font;
             font-weight: 700;
-            margin: 20px 0 0 550px;
+            margin: 20px 0 0 470px;
             position: absolute;
 
         }
@@ -360,6 +412,18 @@ $text-font: Roboto;
         font-size: 50px;
         background-color: #fff;
         color: gray;
+
+        &:hover {
+            display: none;
+        }
+
+        .fas fa-heart {
+            color: #9356DC;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
 
     }
 
@@ -407,6 +471,7 @@ $text-font: Roboto;
 
     // THE FULL PALETTE RESTAURANT'S SITE
 
+
     // NAVIGATION
 
     .rstnt-navigation-palette {
@@ -420,7 +485,6 @@ $text-font: Roboto;
     // THE FULL PALETTE RESTAURANT'S MAIN SECTION 
 
     .menu-palette {
-
         @include menu-about-pages;
     }
 
@@ -434,6 +498,22 @@ $text-font: Roboto;
 
     .heart {
         @include heart;
+    }
+
+    .menu-section {
+
+        opacity: 0.9;
+        transition-duration: 3s(50%) 2s(70%);
+
+        /* &::before {
+            opacity: 1;
+            transition-duration: 10s;
+        // }
+
+        &::after {
+            opacity: 0;
+            transition-duration: 10s;
+        // }*/
     }
 
     .dish-palette {
@@ -578,6 +658,9 @@ $text-font: Roboto;
     .order {
         @include btn-order;
     }
+
+    // CONTACT'S SITE
+
 
 
 }

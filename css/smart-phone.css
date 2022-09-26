@@ -7,20 +7,27 @@
     width: 100%;
   }
   .navigation img {
-    width: 200px;
-    padding: 20px 0 20px 250px;
+    width: 260px;
+    padding: 20px 0 20px 200px;
+  }
+  .navigation i {
+    font-size: 26px;
   }
   .search-btn-wrap {
     background-color: #9356DC;
     padding: 25px 0 25px 50px;
     text-align: center;
+    box-shadow: rgba(11, 10, 10, 0.18) 0px 13px 12px 0px inset;
   }
   .search-btn-wrap input {
     border: none;
     background-color: #9356DC;
     padding-left: 15px;
-    font-size: 20px;
+    font-size: 25px;
     font-family: Roboto;
+  }
+  .search-btn-wrap input::placeholder {
+    color: #000;
   }
   .head {
     background-color: #99E2D0;
@@ -29,28 +36,43 @@
   }
   .head h1 {
     font-family: Roboto;
-    font-size: 1.6rem;
+    font-size: 38px;
     font-weight: 700;
   }
   .head p {
-    width: 60%;
+    width: 90%;
+    padding: 40px;
     text-align: center;
-    padding: 40px 0 30px 140px;
+    color: gray;
     font-family: Roboto;
-    font-size: 1.3rem;
+    font-size: 30px;
   }
   .head button {
     background-color: #FF79DA;
-    padding: 18px;
+    padding: 25px 35px;
     color: white;
     border-radius: 50px;
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 500;
     border: none;
+    align-items: center;
+    box-shadow: 1px 7px 10px 1px rgba(0, 0, 0, 0.15);
+  }
+  .head button:hover {
+    opacity: 0.6;
+    box-shadow: -6px 20px 10px 1px rgba(0, 0, 0, 0.15);
+    transition-duration: 1s;
+  }
+  /* Section with the buttons for chosing the place 
+  and prepare the menu*/
+  .btns {
+    padding: 70px 10px 80px 25px;
   }
   .btns h2 {
-    padding: 50px 0 25px 20px;
+    padding: 10px 0 20px 10px;
     font-family: Roboto;
-    font-size: 1.6rem;
+    font-size: 35px;
+    font-weight: 800;
   }
   .btn-wrap {
     display: flex;
@@ -58,22 +80,28 @@
     justify-content: flex-start;
     align-items: baseline;
     background-color: #99E2D0;
-    border-radius: 30px;
-    padding: 20px;
+    border-radius: 35px;
+    padding: 35px;
     margin: 30px;
-    box-shadow: 1px 7px 10px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: -2px 6px 11px 2px rgba(0, 0, 0, 0.15);
+    font-size: 25px;
+  }
+  .btn-wrap:hover {
+    opacity: 0.6;
+    box-shadow: -6px 20px 10px 1px rgba(0, 0, 0, 0.15);
+    transition-duration: 1s;
   }
   .btn-wrap span {
     border: 1px solid #9356DC;
     color: white;
-    border-radius: 30px;
-    padding: 3px 7px;
+    border-radius: 40px;
+    padding: 4px 12px;
     background-color: #9356DC;
-    margin: 10px 180px 0px -30px;
+    margin: 10px 180px 0px -50px;
   }
   .btn-wrap .fas {
     margin: 0px 50px 0px -130px;
-    font-size: 25px;
+    font-size: 30px;
   }
   .btn-wrap .fa-mobile-alt {
     color: gray;
@@ -85,7 +113,7 @@
     color: #9356DC;
   }
   .btn-wrap p {
-    font-size: 20px;
+    font-size: 27px;
     font-weight: 700;
     font-family: Roboto;
   }
@@ -93,12 +121,13 @@
     display: flex;
     flex-direction: column;
     background-color: #99E2D0;
+    padding: 50px 0 80px 0;
   }
   .rsts-section h3 {
     font-size: 35px;
     font-family: Roboto;
     font-weight: 700;
-    padding: 30px;
+    padding: 40px 0 10px 30px;
   }
   .rst-ad {
     background-color: #fff;
@@ -118,7 +147,7 @@
     padding: 10px 40px;
     font-family: Roboto;
     font-weight: 700;
-    margin: 20px 0 0 550px;
+    margin: 20px 0 0 470px;
     position: absolute;
   }
   .rst-ad img {
@@ -129,6 +158,15 @@
     font-size: 50px;
     background-color: #fff;
     color: gray;
+  }
+  .fa-heart:hover {
+    display: none;
+  }
+  .fa-heart .fas fa-heart {
+    color: #9356DC;
+  }
+  .fa-heart .fas fa-heart:hover {
+    color: #9356DC;
   }
   .ad-info {
     width: 100%;
@@ -241,6 +279,19 @@
   .heart:hover {
     color: #9356DC;
   }
+  .menu-section {
+    opacity: 0.9;
+    transition-duration: 3s 50% 2s 70%;
+    /* &::before {
+        opacity: 1;
+        transition-duration: 10s;
+    // }
+
+    &::after {
+        opacity: 0;
+        transition-duration: 10s;
+    // }*/
+  }
   .dish-palette {
     background-color: #fff;
     border-radius: 30px;
@@ -275,9 +326,21 @@
     border-radius: 55px;
     font-size: 30px;
     box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
+    z-index: 1;
   }
   .order:hover {
     cursor: pointer;
+    box-shadow: -10px 14px 10px 1px rgba(255, 173, 237, 0.9);
+    transition-duration: 1s;
+  }
+  .order:hover .order__light {
+    opacity: 1;
+  }
+  .order__light {
+    background-color: #ff88de;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
   }
   .rstnt-navigation-plate {
     display: flex;
@@ -369,9 +432,21 @@
     border-radius: 55px;
     font-size: 30px;
     box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
+    z-index: 1;
   }
   .order:hover {
     cursor: pointer;
+    box-shadow: -10px 14px 10px 1px rgba(255, 173, 237, 0.9);
+    transition-duration: 1s;
+  }
+  .order:hover .order__light {
+    opacity: 1;
+  }
+  .order__light {
+    background-color: #ff88de;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
   }
   .rstnt-navigation-bastille {
     display: flex;
@@ -463,9 +538,21 @@
     border-radius: 55px;
     font-size: 30px;
     box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
+    z-index: 1;
   }
   .order:hover {
     cursor: pointer;
+    box-shadow: -10px 14px 10px 1px rgba(255, 173, 237, 0.9);
+    transition-duration: 1s;
+  }
+  .order:hover .order__light {
+    opacity: 1;
+  }
+  .order__light {
+    background-color: #ff88de;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
   }
   .rstnt-navigation-gourmand {
     display: flex;
@@ -557,9 +644,21 @@
     border-radius: 55px;
     font-size: 30px;
     box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
+    z-index: 1;
   }
   .order:hover {
     cursor: pointer;
+    box-shadow: -10px 14px 10px 1px rgba(255, 173, 237, 0.9);
+    transition-duration: 1s;
+  }
+  .order:hover .order__light {
+    opacity: 1;
+  }
+  .order__light {
+    background-color: #ff88de;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
   }
 }
 

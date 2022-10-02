@@ -1,7 +1,25 @@
+@keyframes menu-animation {
+  from {
+    bottom: -20px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
 @media all and (max-width: 768px) {
   * {
     padding: 0;
     margin: 0;
+  }
+  .dish-palette {
+    background-color: #fff;
+    transition: background-color 250ms;
+    position: relative;
+    animation-name: menu-animation;
+    animation-duration: 2s;
+    animation-fill-mode: both;
   }
   .navigation {
     width: 100%;
@@ -9,9 +27,6 @@
   .navigation img {
     width: 260px;
     padding: 20px 0 20px 200px;
-  }
-  .navigation i {
-    font-size: 26px;
   }
   .search-btn-wrap {
     background-color: #9356DC;
@@ -59,9 +74,9 @@
     box-shadow: 1px 7px 10px 1px rgba(0, 0, 0, 0.15);
   }
   .head button:hover {
-    opacity: 0.6;
     box-shadow: -6px 20px 10px 1px rgba(0, 0, 0, 0.15);
     transition-duration: 1s;
+    background-color: #fface8;
   }
   /* Section with the buttons for chosing the place 
   and prepare the menu*/
@@ -87,9 +102,9 @@
     font-size: 25px;
   }
   .btn-wrap:hover {
-    opacity: 0.6;
     box-shadow: -6px 20px 10px 1px rgba(0, 0, 0, 0.15);
     transition-duration: 1s;
+    background-color: #c1ede2;
   }
   .btn-wrap span {
     border: 1px solid #9356DC;
@@ -133,16 +148,15 @@
     background-color: #fff;
     border-radius: 25px;
     margin: 20px 30px;
-    z-index: 0;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
+    text-decoration: none;
   }
   .rst-ad span {
     color: darkcyan;
     background-color: #99E2D0;
-    text-decoration: none;
     font-size: 22px;
     padding: 10px 40px;
     font-family: Roboto;
@@ -245,11 +259,13 @@
     width: 100%;
   }
   .menu-palette {
+    position: relative;
+    margin-top: -60px;
     background-color: #99E2D0;
-    border-radius: 50px 50px 0 0;
+    border-radius: 65px 65px 0 0;
   }
   .menu-palette h2 {
-    padding: 30px 0 20px 30px;
+    padding: 30px 0 7px 25px;
     color: gray;
     font-family: Roboto;
     font-size: 30px;
@@ -257,8 +273,8 @@
   }
   .line {
     border-bottom: 5px solid #9356DC;
-    width: 10%;
-    margin-left: 30px;
+    width: 11%;
+    margin: 0 0 25px 27px;
   }
   .menu-title-palette {
     display: flex;
@@ -279,23 +295,10 @@
   .heart:hover {
     color: #9356DC;
   }
-  .menu-section {
-    opacity: 0.9;
-    transition-duration: 3s 50% 2s 70%;
-    /* &::before {
-        opacity: 1;
-        transition-duration: 10s;
-    // }
-
-    &::after {
-        opacity: 0;
-        transition-duration: 10s;
-    // }*/
-  }
   .dish-palette {
     background-color: #fff;
-    border-radius: 30px;
-    margin: 15px;
+    border-radius: 25px;
+    margin: 20px;
     padding: 15px 35px 20px 20px;
     display: flex;
     flex-direction: row;
@@ -330,17 +333,9 @@
   }
   .order:hover {
     cursor: pointer;
-    box-shadow: -10px 14px 10px 1px rgba(255, 173, 237, 0.9);
+    box-shadow: -6px 20px 10px 1px rgba(0, 0, 0, 0.15);
     transition-duration: 1s;
-  }
-  .order:hover .order__light {
-    opacity: 1;
-  }
-  .order__light {
-    background-color: #ff88de;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 250ms;
+    background-color: #fface8;
   }
   .rstnt-navigation-plate {
     display: flex;
@@ -364,11 +359,13 @@
     width: 100%;
   }
   .menu-plate {
+    position: relative;
+    margin-top: -60px;
     background-color: #99E2D0;
-    border-radius: 50px 50px 0 0;
+    border-radius: 65px 65px 0 0;
   }
   .menu-plate h2 {
-    padding: 30px 0 20px 30px;
+    padding: 30px 0 7px 25px;
     color: gray;
     font-family: Roboto;
     font-size: 30px;
@@ -376,8 +373,8 @@
   }
   .line-plate {
     border-bottom: 5px solid #9356DC;
-    width: 10%;
-    margin-left: 30px;
+    width: 11%;
+    margin: 0 0 25px 27px;
   }
   .menu-title-plate {
     display: flex;
@@ -400,8 +397,8 @@
   }
   .dish-plate {
     background-color: #fff;
-    border-radius: 30px;
-    margin: 15px;
+    border-radius: 25px;
+    margin: 20px;
     padding: 15px 35px 20px 20px;
     display: flex;
     flex-direction: row;
@@ -436,17 +433,9 @@
   }
   .order:hover {
     cursor: pointer;
-    box-shadow: -10px 14px 10px 1px rgba(255, 173, 237, 0.9);
+    box-shadow: -6px 20px 10px 1px rgba(0, 0, 0, 0.15);
     transition-duration: 1s;
-  }
-  .order:hover .order__light {
-    opacity: 1;
-  }
-  .order__light {
-    background-color: #ff88de;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 250ms;
+    background-color: #fface8;
   }
   .rstnt-navigation-bastille {
     display: flex;
@@ -470,11 +459,13 @@
     width: 100%;
   }
   .menu-bastille {
+    position: relative;
+    margin-top: -60px;
     background-color: #99E2D0;
-    border-radius: 50px 50px 0 0;
+    border-radius: 65px 65px 0 0;
   }
   .menu-bastille h2 {
-    padding: 30px 0 20px 30px;
+    padding: 30px 0 7px 25px;
     color: gray;
     font-family: Roboto;
     font-size: 30px;
@@ -482,8 +473,8 @@
   }
   .line-bastille {
     border-bottom: 5px solid #9356DC;
-    width: 10%;
-    margin-left: 30px;
+    width: 11%;
+    margin: 0 0 25px 27px;
   }
   .menu-title-bastille {
     display: flex;
@@ -506,8 +497,8 @@
   }
   .dish-bastille {
     background-color: #fff;
-    border-radius: 30px;
-    margin: 15px;
+    border-radius: 25px;
+    margin: 20px;
     padding: 15px 35px 20px 20px;
     display: flex;
     flex-direction: row;
@@ -542,17 +533,9 @@
   }
   .order:hover {
     cursor: pointer;
-    box-shadow: -10px 14px 10px 1px rgba(255, 173, 237, 0.9);
+    box-shadow: -6px 20px 10px 1px rgba(0, 0, 0, 0.15);
     transition-duration: 1s;
-  }
-  .order:hover .order__light {
-    opacity: 1;
-  }
-  .order__light {
-    background-color: #ff88de;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 250ms;
+    background-color: #fface8;
   }
   .rstnt-navigation-gourmand {
     display: flex;
@@ -576,11 +559,13 @@
     width: 100%;
   }
   .menu-gourmand {
+    position: relative;
+    margin-top: -60px;
     background-color: #99E2D0;
-    border-radius: 50px 50px 0 0;
+    border-radius: 65px 65px 0 0;
   }
   .menu-gourmand h2 {
-    padding: 30px 0 20px 30px;
+    padding: 30px 0 7px 25px;
     color: gray;
     font-family: Roboto;
     font-size: 30px;
@@ -588,8 +573,8 @@
   }
   .line-gourmand {
     border-bottom: 5px solid #9356DC;
-    width: 10%;
-    margin-left: 30px;
+    width: 11%;
+    margin: 0 0 25px 27px;
   }
   .menu-title-gourmand {
     display: flex;
@@ -612,8 +597,8 @@
   }
   .dish-gourmand {
     background-color: #fff;
-    border-radius: 30px;
-    margin: 15px;
+    border-radius: 25px;
+    margin: 20px;
     padding: 15px 35px 20px 20px;
     display: flex;
     flex-direction: row;
@@ -648,17 +633,9 @@
   }
   .order:hover {
     cursor: pointer;
-    box-shadow: -10px 14px 10px 1px rgba(255, 173, 237, 0.9);
+    box-shadow: -6px 20px 10px 1px rgba(0, 0, 0, 0.15);
     transition-duration: 1s;
-  }
-  .order:hover .order__light {
-    opacity: 1;
-  }
-  .order__light {
-    background-color: #ff88de;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 250ms;
+    background-color: #fface8;
   }
 }
 

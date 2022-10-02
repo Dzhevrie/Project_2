@@ -4,13 +4,13 @@ $third-color: #99E2D0;
 $main-font: Shrikhand;
 $text-font: Roboto;
 
+
 @mixin restorant-navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 40px 200px 25px 10px;
-
 
     a {
         text-decoration: none;
@@ -20,7 +20,6 @@ $text-font: Roboto;
         font-size: 40px;
         color: #000;
         margin-left: 40px;
-
     }
 
     img {
@@ -28,14 +27,14 @@ $text-font: Roboto;
     }
 }
 
-
-
 @mixin menu-about-pages {
+    position: relative;
+    margin-top: -60px;
     background-color: $third-color;
-    border-radius: 50px 50px 0 0;
+    border-radius: 65px 65px 0 0;
 
     h2 {
-        padding: 30px 0 20px 30px;
+        padding: 30px 0 7px 25px;
         color: gray;
 
         font: {
@@ -57,8 +56,8 @@ $text-font: Roboto;
 
 @mixin line {
     border-bottom: 5px solid $primary-color;
-    width: 10%;
-    margin-left: 30px;
+    width: 11%;
+    margin: 0 0 25px 27px;
 }
 
 @mixin menu-title {
@@ -79,8 +78,8 @@ $text-font: Roboto;
 
 @mixin dish {
     background-color: #fff;
-    border-radius: 30px;
-    margin: 15px;
+    border-radius: 25px;
+    margin: 20px;
     padding: 15px 35px 20px 20px;
     display: flex;
     flex-direction: row;
@@ -119,7 +118,7 @@ $text-font: Roboto;
 }
 
 @mixin btn-order {
-    background-color: #FF79DA;
+    background-color: $secondary-color;
     color: #fff;
     margin: 80px 0 120px 180px;
     padding: 35px 170px;
@@ -131,23 +130,12 @@ $text-font: Roboto;
 
     &:hover {
         cursor: pointer;
-        box-shadow: -10px 14px 10px 1px rgb(255 173 237 / 90%);
+        box-shadow: -6px 20px 10px 1px rgb(0 0 0 / 15%);
         transition-duration: 1s;
-
-        & .order__light {
-            opacity: 1;
-
-        }
+        background-color: lighten($secondary-color, 10);
     }
-
-    &__light {
-        background-color: lighten($secondary-color, 3);
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 250ms;
-    }
-
 }
+
 
 @mixin footer {
     background-color: #000;
@@ -191,12 +179,34 @@ $text-font: Roboto;
     }
 }
 
+@keyframes menu-animation {
+    from {
+        bottom: -20px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
 @media all and (max-width: 768px) {
     * {
         padding: 0;
         margin: 0;
     }
 
+
+    .dish-palette {
+        background-color: #fff;
+        transition: background-color 250ms;
+        position: relative;
+        animation-name: menu-animation;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+
+    }
 
 
     // HEADER
@@ -210,9 +220,6 @@ $text-font: Roboto;
             padding: 20px 0 20px 200px;
         }
 
-        i {
-            font-size: 26px;
-        }
     }
 
     .search-btn-wrap {
@@ -280,9 +287,9 @@ $text-font: Roboto;
             box-shadow: 1px 7px 10px 1px rgb(0 0 0 / 15%);
 
             &:hover {
-                opacity: 0.6;
                 box-shadow: -6px 20px 10px 1px rgb(0 0 0 / 15%);
                 transition-duration: 1s;
+                background-color: lighten($secondary-color, 10);
             }
         }
     }
@@ -319,9 +326,9 @@ $text-font: Roboto;
         font-size: 25px;
 
         &:hover {
-            opacity: 0.6;
             box-shadow: -6px 20px 10px 1px rgb(0 0 0 / 15%);
             transition-duration: 1s;
+            background-color: lighten($third-color, 10);
         }
 
         span {
@@ -383,16 +390,15 @@ $text-font: Roboto;
         background-color: #fff;
         border-radius: 25px;
         margin: 20px 30px;
-        z-index: -0;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         flex-wrap: wrap;
+        text-decoration: none;
 
         span {
             color: darkcyan;
             background-color: $third-color;
-            text-decoration: none;
             font-size: 22px;
             padding: 10px 40px;
             font-family: $text-font;
@@ -500,21 +506,7 @@ $text-font: Roboto;
         @include heart;
     }
 
-    .menu-section {
-
-        opacity: 0.9;
-        transition-duration: 3s(50%) 2s(70%);
-
-        /* &::before {
-            opacity: 1;
-            transition-duration: 10s;
-        // }
-
-        &::after {
-            opacity: 0;
-            transition-duration: 10s;
-        // }*/
-    }
+    .menu-section {}
 
     .dish-palette {
         @include dish;

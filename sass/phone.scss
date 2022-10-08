@@ -195,8 +195,19 @@ $text-font: Roboto;
     * {
         padding: 0;
         margin: 0;
+
     }
 
+    .fa-spinner {
+        font-size: 80px;
+        color: green;
+        position: absolute;
+        left: 320px;
+        bottom: 5px;
+        transition-duration: 3s;
+         opacity: 0;
+        //  z-index: 0;
+    }
 
     .dish-palette {
         background-color: #fff;
@@ -217,19 +228,20 @@ $text-font: Roboto;
 
         img {
             width: 260px;
-            padding: 20px 0 20px 200px;
+            padding: 20px 0 20px 245px;
         }
 
     }
 
     .search-btn-wrap {
+        display: flex;
         background-color: $primary-color;
-        padding: 25px 0 25px 50px;
-        text-align: center;
+        padding: 35px 0 25px 250px;
         box-shadow: rgb(11 10 10 / 18%) 0px 13px 12px 0px inset;
 
 
         input {
+            width: 100%;
             border: none;
             background-color: $primary-color;
             padding-left: 15px;
@@ -246,6 +258,10 @@ $text-font: Roboto;
 
         }
 
+    }
+
+    .fa-map-marker-alt {
+        font-size: 25px;
     }
 
 
@@ -394,7 +410,11 @@ $text-font: Roboto;
         flex-direction: row;
         align-items: flex-start;
         flex-wrap: wrap;
-        text-decoration: none;
+
+        a {
+            text-decoration: none;
+
+        }
 
         span {
             color: darkcyan;
@@ -403,7 +423,7 @@ $text-font: Roboto;
             padding: 10px 40px;
             font-family: $text-font;
             font-weight: 700;
-            margin: 20px 0 0 470px;
+            margin: 20px 0 0 -150px;
             position: absolute;
 
         }
@@ -414,24 +434,7 @@ $text-font: Roboto;
         }
     }
 
-    .fa-heart {
-        font-size: 50px;
-        background-color: #fff;
-        color: gray;
 
-        &:hover {
-            display: none;
-        }
-
-        .fas fa-heart {
-            color: #9356DC;
-
-            &:hover {
-                color: $primary-color;
-            }
-        }
-
-    }
 
     .ad-info {
         width: 100%;
@@ -465,6 +468,42 @@ $text-font: Roboto;
             }
 
             color:grey;
+        }
+
+    }
+
+    .main-heart {
+        width: auto;
+        position: absolute;
+        right: px;
+        bottom: -980px;
+        left: 640px;
+    }
+
+    .main-heart1 {
+        font-size: 40px;
+        position: absolute;
+        right: -42px;
+        top: 2px;
+        opacity: 1;
+
+        &:hover {
+            opacity: 0;
+            color: lighten($primary-color, 5);
+        }
+
+    }
+
+    .main-heart2 {
+        font-size: 45px;
+        position: absolute;
+        color: #FF79DA;
+        opacity: 0;
+
+        &:hover {
+            opacity: 1;
+            transition-duration: 500ms;
+            color: lighten($primary-color, 10);
         }
 
     }
@@ -506,7 +545,7 @@ $text-font: Roboto;
         @include heart;
     }
 
-    .menu-section {}
+    // .menu-section {}
 
     .dish-palette {
         @include dish;
@@ -546,6 +585,37 @@ $text-font: Roboto;
     .menu-title-plate {
         @include menu-title;
     }
+
+    .fa-check-circle {
+        // visibility: hidden;
+        border: 1px solid #9356DC;
+        border-radius: 0 25px 25px 0;
+        width: 100px;
+        margin: -200px -35px -20px -200px;
+        padding: 40px 0 40px 0;
+        background-color: #9356DC;
+        color: #fff;
+        text-align: center;
+        font-size: 30px;
+
+        &:hover {
+            // width: 300px;
+            // height: 300px;
+            transform: rotate(360deg);
+        }
+
+        // &--rotDegrees {
+        //     transform: rotate(-360deg);
+        //     transition: transform 500ms ease-in-out;
+        // }
+        // &--rotTurns {
+        //     background: pink;
+        //     transform: rotate(-1turn);
+        //     transition: transform 500ms ease-in-out;
+        // }
+    }
+
+
 
     .heart {
         @include heart;

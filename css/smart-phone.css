@@ -12,15 +12,34 @@
   * {
     padding: 0;
     margin: 0;
+    animation-name: body;
+    animation-duration: 3s;
+  }
+  @keyframes body {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
   .fa-spinner {
     font-size: 80px;
-    color: green;
+    color: #99E2D0;
     position: absolute;
     left: 320px;
     bottom: 5px;
-    transition-duration: 3s;
-    opacity: 0;
+    animation-name: body;
+    animation-duration: 3s;
+    z-index: -1;
+  }
+  @keyframes body {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
   .dish-palette {
     background-color: #fff;
@@ -418,16 +437,24 @@
     font-weight: 500;
     font-family: Shrikhand;
   }
-  .fa-check-circle {
-    border: 1px solid #9356DC;
+  .check {
+    background-color: #99E2D0;
     border-radius: 0 25px 25px 0;
-    width: 100px;
-    margin: -200px -35px -20px -200px;
-    padding: 40px 0 40px 0;
-    background-color: #9356DC;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+  }
+  .fa-check-circle {
+    font-size: 40px;
     color: #fff;
-    text-align: center;
-    font-size: 30px;
+    background-color: #99E2D0;
+    border-radius: 50%;
+    transition: transform 1s;
+    margin: 30px;
+    position: absolute;
   }
   .fa-check-circle:hover {
     transform: rotate(360deg);

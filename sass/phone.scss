@@ -195,18 +195,58 @@ $text-font: Roboto;
     * {
         padding: 0;
         margin: 0;
+        animation-name: body;
+        animation-duration: 3s;
+
+        @keyframes body {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
 
     }
 
+    // .btn {
+    //     &:active {
+    //         & + .progress {
+    //             & > .progress__bar {
+    //                 transform: scaleX(1);
+    //             }
+    //         }
+    //     }
+    // }
+    
+    // .progress {
+    //     &__bar {
+    //         transform-origin: 0% 50%;
+    //         transform: scaleX(0);
+    //         transition: transform 1000ms cubic-bezier(.32,0,.07,1);
+    //     }
+    // }
+
     .fa-spinner {
         font-size: 80px;
-        color: green;
+        color: $third-color;
         position: absolute;
         left: 320px;
         bottom: 5px;
-        transition-duration: 3s;
-         opacity: 0;
-        //  z-index: 0;
+        animation-name: body;
+        animation-duration: 3s;
+        z-index: -1;
+
+        @keyframes body {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
     }
 
     .dish-palette {
@@ -586,36 +626,33 @@ $text-font: Roboto;
         @include menu-title;
     }
 
-    .fa-check-circle {
-        // visibility: hidden;
-        border: 1px solid #9356DC;
+    .check {
+        background-color: $third-color;
         border-radius: 0 25px 25px 0;
-        width: 100px;
-        margin: -200px -35px -20px -200px;
-        padding: 40px 0 40px 0;
-        background-color: #9356DC;
-        color: #fff;
-        text-align: center;
-        font-size: 30px;
+        width: 110px;
+        height: 110px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        z-index: -1;
+        // visibility: hidden;
 
-        &:hover {
-            // width: 300px;
-            // height: 300px;
-            transform: rotate(360deg);
-        }
-
-        // &--rotDegrees {
-        //     transform: rotate(-360deg);
-        //     transition: transform 500ms ease-in-out;
-        // }
-        // &--rotTurns {
-        //     background: pink;
-        //     transform: rotate(-1turn);
-        //     transition: transform 500ms ease-in-out;
-        // }
     }
 
+    .fa-check-circle {
+        font-size: 40px;
+        color: #fff;
+        background-color: $third-color;
+        border-radius: 50%;
+        // border: 1px solid $third-color;
+        transition: transform 1s;
+        margin: 30px;
+        position: absolute;
 
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
 
     .heart {
         @include heart;

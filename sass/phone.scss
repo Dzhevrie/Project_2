@@ -107,11 +107,21 @@ $text-font: Roboto;
     }
 
     p {
+        width: 80%;
         color: gray;
+        font-family: Roboto;
+        font-size: 25px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
 
         font: {
             family: $text-font;
             size: 25px;
+        }
+
+        &:hover {
+            overflow: -moz-hidden-unscrollable;
         }
     }
 
@@ -120,7 +130,7 @@ $text-font: Roboto;
 @mixin btn-order {
     background-color: $secondary-color;
     color: #fff;
-    margin: 80px 0 120px 180px;
+    margin: 80px 0 120px 150px;
     padding: 35px 170px;
     border: none;
     border-radius: 55px;
@@ -181,7 +191,7 @@ $text-font: Roboto;
 
 @keyframes menu-animation {
     from {
-        bottom: -20px;
+        bottom: -50px;
         opacity: 0;
     }
 
@@ -191,61 +201,47 @@ $text-font: Roboto;
     }
 }
 
+
 @media all and (max-width: 768px) {
     * {
         padding: 0;
         margin: 0;
-        animation-name: body;
-        animation-duration: 3s;
-
-        @keyframes body {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
 
     }
 
-    // .btn {
-    //     &:active {
-    //         & + .progress {
-    //             & > .progress__bar {
-    //                 transform: scaleX(1);
-    //             }
-    //         }
-    //     }
-    // }
-    
-    // .progress {
-    //     &__bar {
-    //         transform-origin: 0% 50%;
-    //         transform: scaleX(0);
-    //         transition: transform 1000ms cubic-bezier(.32,0,.07,1);
-    //     }
-    // }
 
-    .fa-spinner {
-        font-size: 80px;
-        color: $third-color;
-        position: absolute;
-        left: 320px;
-        bottom: 5px;
-        animation-name: body;
+    .container {
+        animation-name: container;
         animation-duration: 3s;
-        z-index: -1;
+    }
 
-        @keyframes body {
-            from {
-                opacity: 0;
-            }
+    @keyframes container {
+        0% {
+            opacity: 0;
+        }
 
-            to {
-                opacity: 1;
-            }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: hideLoading 3s forwards;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+    }
+
+    @keyframes hideLoading {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
         }
     }
 
@@ -266,11 +262,24 @@ $text-font: Roboto;
     .navigation {
         width: 100%;
 
-        img {
-            width: 260px;
-            padding: 20px 0 20px 245px;
+        &-link {
+            padding: 20px 0;
+            width: 100%;
+            display: block;
+            text-align: center;
         }
 
+        img {
+            width: 260px;
+        }
+
+    }
+
+    .nav-logo {
+        padding: 20px 0;
+        width: 100%;
+        display: block;
+        text-align: center;
     }
 
     .search-btn-wrap {
@@ -321,7 +330,7 @@ $text-font: Roboto;
 
         p {
             width: 90%;
-            padding: 40px;
+            padding: 35px;
             text-align: center;
             color: gray;
 
@@ -336,7 +345,7 @@ $text-font: Roboto;
             padding: 25px 35px;
             color: white;
             border-radius: 50px;
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 500;
             border: none;
             align-items: center;
@@ -376,7 +385,7 @@ $text-font: Roboto;
         align-items: baseline;
         background-color: $third-color;
         border-radius: 35px;
-        padding: 35px;
+        padding: 35px 0 35px 35px;
         margin: 30px;
         box-shadow: -2px 6px 11px 2px rgb(0 0 0 / 15%);
         font-size: 25px;
@@ -415,7 +424,7 @@ $text-font: Roboto;
 
         p {
             font: {
-                size: 27px;
+                size: 25px;
                 weight: 700;
                 family: $text-font;
             }
@@ -512,13 +521,14 @@ $text-font: Roboto;
 
     }
 
-    .main-heart {
-        width: auto;
-        position: absolute;
-        right: px;
-        bottom: -980px;
-        left: 640px;
-    }
+    // .main-heart {
+    //     outline: 1px solid red;
+    //     width: auto;
+    //     position: absolute;
+    //     right: px;
+    //     // bottom: -980px;
+    //     // left: 640px;
+    // }
 
     .main-heart1 {
         font-size: 40px;
@@ -528,7 +538,7 @@ $text-font: Roboto;
         opacity: 1;
 
         &:hover {
-            opacity: 0;
+            // opacity: 0;
             color: lighten($primary-color, 5);
         }
 
@@ -538,7 +548,7 @@ $text-font: Roboto;
         font-size: 45px;
         position: absolute;
         color: #FF79DA;
-        opacity: 0;
+        // opacity: 0;
 
         &:hover {
             opacity: 1;
@@ -759,7 +769,5 @@ $text-font: Roboto;
     }
 
     // CONTACT'S SITE
-
-
 
 }

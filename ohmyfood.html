@@ -8,7 +8,7 @@
     <title>Ohmyfood</title>
 
     <!-- Style sheets -->
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/smart-phone.css" type="text/css">
 
     <!-- Libs -->
@@ -23,150 +23,148 @@
 </head>
 
 <body>
-    <!-- <div class="container">
-        <div class="btn">Loading</div>
-        <div class="progress">
-            <div class="progress__bar"></div>
-        </div>
-    </div> -->
-<i class="fas fa-spinner"></i>
+    <div class="loading">
+        <img src="./images/loading.gif" alt="spinner" width="250">
+    </div>
     <!-- HEADER  -->
-    <header>
+    <div class="container">
+        <header>
 
-        <!-- Section Navigation -->
-        <nav>
-            <div class="navigation">
-                <a href="ohmyfood.html">
-                    <img src="/images/logo/ohmyfood.png" alt="logo picture">
-                </a>
-                <div class="search-btn-wrap">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <input type="search" name="search-box" id="search" placeholder="Paris, Belleville" />
-                </div>
-        </nav>
-        <!-- End of Navigation -->
-        <article class="head">
-            <h1>Book the menu you like</h1>
-            <p>Discover top-of-the-art restaurants we picked for you</p>
-            <button>Explore our restaurants</button>
-        </article>
-    </header>
+            <!-- Section Navigation -->
+            <nav>
+                <div class="navigation">
+                    <a href="ohmyfood.html" class="navigation-link">
+                        <img src="/images/logo/ohmyfood.png" alt="logo picture">
+                    </a>
+                    <div class="search-btn-wrap">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="search" name="search-box" id="search" placeholder="Paris, Belleville" />
+                    </div>
+            </nav>
+            <!-- End of Navigation -->
+            <article class="head">
+                <h1>Book the menu you like</h1>
+                <p>Discover top-of-the-art restaurants we picked for you</p>
+                <button>Explore our restaurants</button>
+            </article>
+        </header>
 
-    <!-- MAIN SECTION -->
-    <main>
+        <!-- MAIN SECTION -->
+        <main>
 
-        <!-- Section with the buttons for chosing 
+            <!-- Section with the buttons for chosing 
             the place and prepare the menu -->
-        <article class="btns">
-            <h2>How it works</h2>
-            <div class="btn-wrap">
-                <span>1</span>
-                <i class="fas fa-mobile-alt"></i>
-                <p>Chose a restaurant</p>
-            </div>
-            <div class="btn-wrap">
-                <span>2</span>
-                <i class="fas fa-list"></i>
-                <p>Create your menu</p>
-            </div>
-            <div class="btn-wrap">
-                <span>3</span>
-                <i class="fas fa-store"></i>
-                <p>Go enjoy it at the restaurant</p>
-            </div>
-        </article>
-        <!-- Section of the restaurants -->
-        <article class="rsts-section">
-            <h3>Restaurants</h3>
-            <div class="rst-ad">
-                <a target="_self" href="the_full_palette.html">
-                    <img src="images/restaurants - main-page/jay-wennington-N_Y88TWmGwA-unsplash.webp"
-                        alt="restaurant picture">
-                    <span>New</span>
-                    <div class="ad-info">
-                        <article class="info">
-                            <h4>The Full Palette</h4>
-                            <p>Paris</p>
-                        </article>
-                    </div>
-                </a>
-                <!-- <div class="main-heart"> -->
-                    <i class="far fa-heart main-heart1"></i>
-                    <i class="fas fa-heart main-heart2"></i>
-                <!-- </div> -->
-            </div>
-            <div class="rst-ad">
-                <a target="_self" href="the_enchanted_plate.html">
-                    <img src="images/restaurants - main-page/stil-u2Lp8tXIcjw-unsplash.webp" alt="restaurant picture">
-                    <span>New</span>
-                    <div class="ad-info">
-                        <article class="info">
-                            <h4>The Enchanted Plate</h4>
-                            <p>Paris</p>
-                        </article>
-                    </div>
-                </a>
-                <div class="main-heart">
-                    <i class="far fa-heart main-heart1"></i>
-                    <i class="fas fa-heart main-heart2"></i>
+            <article class="btns">
+                <h2>How it works</h2>
+                <div class="btn-wrap">
+                    <span>1</span>
+                    <i class="fas fa-mobile-alt"></i>
+                    <p>Chose a restaurant</p>
                 </div>
-            </div>
-            </div>
-            <div class="rst-ad">
-                <a target="_self" href="le_gourmand.html">
-                    <img src="images/restaurants - main-page/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.webp"
-                        alt="restaurant picture">
-                    <div class="ad-info">
-                        <article class="info">
-                            <h4>Le Gourmand</h4>
-                            <p>Paris</p>
-                        </article>
-                    </div>
-                </a>
-                <div class="main-heart">
-                    <i class="far fa-heart main-heart1"></i>
-                    <i class="fas fa-heart main-heart2"></i>
+                <div class="btn-wrap">
+                    <span>2</span>
+                    <i class="fas fa-list"></i>
+                    <p>Create your menu</p>
                 </div>
-            </div>
-            <div class="rst-ad">
-                <a target="_self" href="bastille.html">
-                    <img src="images/restaurants - main-page/toa-heftiba-DQKerTsQwi0-unsplash.webp"
-                        alt="restaurant picture">
-                    <div class="ad-info">
-                        <article class="info">
-                            <h4>Bastille</h4>
-                            <p>Paris</p>
-                        </article>
-                    </div>
-                </a>
-                <div class="main-heart">
-                    <i class="far fa-heart main-heart1"></i>
-                    <i class="fas fa-heart main-heart2"></i>
+                <div class="btn-wrap">
+                    <span>3</span>
+                    <i class="fas fa-store"></i>
+                    <p>Go enjoy it at the restaurant</p>
                 </div>
-            </div>
-        </article>
-    </main>
-    <footer>
-        <h5>ohmyfood</h5>
-        <div class="contacts">
-            <a href="#">
-                <i class="fas fa-utensils"></i>
-                <p>Suggest a restaurant</p>
-            </a>
-            <a href="#">
-                <i class="fas fa-handshake"></i>
-                <p>Become a partner</p>
-            </a>
-            <a href="#">
-                <p>Legal</p>
-            </a>
-            <a href="mailto:info@ohmyfood.com">
-                <p>Contact</p>
-            </a>
-        </div>
-    </footer>
+            </article>
+            <!-- Section of the restaurants -->
+            <article class="rsts-section">
+                <h3>Restaurants</h3>
+                <div class="rst-ad">
+                    <a target="_self" href="the_full_palette.html">
+                        <img src="/images/restaurants - main-page/jay-wennington-N_Y88TWmGwA-unsplash.webp"
+                            alt="restaurant picture">
+                        <span>New</span>
+                        <div class="ad-info">
+                            <article class="info">
+                                <h4>The Full Palette</h4>
+                                <p>Paris</p>
+                            </article>
+                        </div>
+                    </a>
+                    <div class="main-heart">
+                        <i class="far fa-heart main-heart1"></i>
+                        <i class="fas fa-heart main-heart2"></i>
+                    </div>
+                </div>
+                <div class="rst-ad">
+                    <a target="_self" href="the_enchanted_plate.html">
+                        <img src="./images/restaurants - main-page/stil-u2Lp8tXIcjw-unsplash.webp"
+                            alt="restaurant picture">
+                        <span>New</span>
+                        <div class="ad-info">
+                            <article class="info">
+                                <h4>The Enchanted Plate</h4>
+                                <p>Paris</p>
+                            </article>
+                        </div>
+                    </a>
+                    <div class="main-heart">
+                        <i class="far fa-heart main-heart1"></i>
+                        <i class="fas fa-heart main-heart2"></i>
+                    </div>
+                </div>
+                <div class="rst-ad">
+                    <a target="_self" href="le_gourmand.html">
+                        <img src="images/restaurants - main-page/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.webp"
+                            alt="restaurant picture">
+                        <div class="ad-info">
+                            <article class="info">
+                                <h4>Le Gourmand</h4>
+                                <p>Paris</p>
+                            </article>
+                        </div>
+                    </a>
+                    <div class="main-heart">
+                        <i class="far fa-heart main-heart1"></i>
+                        <i class="fas fa-heart main-heart2"></i>
+                    </div>
+                </div>
+                <div class="rst-ad">
+                    <a target="_self" href="bastille.html">
+                        <img src="images/restaurants - main-page/toa-heftiba-DQKerTsQwi0-unsplash.webp"
+                            alt="restaurant picture">
+                        <div class="ad-info">
+                            <article class="info">
+                                <h4>Bastille</h4>
+                                <p>Paris</p>
+                            </article>
+                        </div>
+                    </a>
+                    <div class="main-heart">
+                        <i class="far fa-heart main-heart1"></i>
+                        <i class="fas fa-heart main-heart2"></i>
+                    </div>
+                </div>
 
+            </article>
+        </main>
+        <footer>
+            <h5>ohmyfood</h5>
+            <div class="contacts">
+                <a href="#">
+                    <i class="fas fa-utensils"></i>
+                    <p>Suggest a restaurant</p>
+                </a>
+                <a href="#">
+                    <i class="fas fa-handshake"></i>
+                    <p>Become a partner</p>
+                </a>
+                <a href="#">
+                    <p>Legal</p>
+                </a>
+                <a href="mailto:info@ohmyfood.com">
+                    <p>Contact</p>
+                </a>
+            </div>
+        </footer>
 
+    </div>
 </body>
 
 </html>

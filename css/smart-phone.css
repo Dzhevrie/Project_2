@@ -1,6 +1,6 @@
 @keyframes menu-animation {
   from {
-    bottom: -20px;
+    bottom: -50px;
     opacity: 0;
   }
   to {
@@ -12,33 +12,34 @@
   * {
     padding: 0;
     margin: 0;
-    animation-name: body;
+  }
+  .container {
+    animation-name: container;
     animation-duration: 3s;
   }
-  @keyframes body {
-    from {
+  @keyframes container {
+    0% {
       opacity: 0;
     }
-    to {
+    100% {
       opacity: 1;
     }
   }
-  .fa-spinner {
-    font-size: 80px;
-    color: #99E2D0;
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: hideLoading 3s forwards;
     position: absolute;
-    left: 320px;
-    bottom: 5px;
-    animation-name: body;
-    animation-duration: 3s;
-    z-index: -1;
+    bottom: 20px;
+    right: 10px;
   }
-  @keyframes body {
-    from {
-      opacity: 0;
-    }
-    to {
+  @keyframes hideLoading {
+    0% {
       opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
   .dish-palette {
@@ -52,9 +53,20 @@
   .navigation {
     width: 100%;
   }
+  .navigation-link {
+    padding: 20px 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
   .navigation img {
     width: 260px;
-    padding: 20px 0 20px 245px;
+  }
+  .nav-logo {
+    padding: 20px 0;
+    width: 100%;
+    display: block;
+    text-align: center;
   }
   .search-btn-wrap {
     display: flex;
@@ -88,7 +100,7 @@
   }
   .head p {
     width: 90%;
-    padding: 40px;
+    padding: 35px;
     text-align: center;
     color: gray;
     font-family: Roboto;
@@ -99,7 +111,7 @@
     padding: 25px 35px;
     color: white;
     border-radius: 50px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     border: none;
     align-items: center;
@@ -128,7 +140,7 @@
     align-items: baseline;
     background-color: #99E2D0;
     border-radius: 35px;
-    padding: 35px;
+    padding: 35px 0 35px 35px;
     margin: 30px;
     box-shadow: -2px 6px 11px 2px rgba(0, 0, 0, 0.15);
     font-size: 25px;
@@ -160,7 +172,7 @@
     color: #9356DC;
   }
   .btn-wrap p {
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 700;
     font-family: Roboto;
   }
@@ -223,13 +235,6 @@
     font-weight: 400;
     color: grey;
   }
-  .main-heart {
-    width: auto;
-    position: absolute;
-    right: px;
-    bottom: -980px;
-    left: 640px;
-  }
   .main-heart1 {
     font-size: 40px;
     position: absolute;
@@ -238,14 +243,12 @@
     opacity: 1;
   }
   .main-heart1:hover {
-    opacity: 0;
     color: #a16be0;
   }
   .main-heart2 {
     font-size: 45px;
     position: absolute;
     color: #FF79DA;
-    opacity: 0;
   }
   .main-heart2:hover {
     opacity: 1;
@@ -365,14 +368,23 @@
     font-size: 30px;
   }
   .dish-info-palette p {
+    width: 80%;
     color: gray;
     font-family: Roboto;
     font-size: 25px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: Roboto;
+    font-size: 25px;
+  }
+  .dish-info-palette p:hover {
+    overflow: -moz-hidden-unscrollable;
   }
   .order {
     background-color: #FF79DA;
     color: #fff;
-    margin: 80px 0 120px 180px;
+    margin: 80px 0 120px 150px;
     padding: 35px 170px;
     border: none;
     border-radius: 55px;
@@ -487,14 +499,23 @@
     font-size: 30px;
   }
   .dish-info-plate p {
+    width: 80%;
     color: gray;
     font-family: Roboto;
     font-size: 25px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: Roboto;
+    font-size: 25px;
+  }
+  .dish-info-plate p:hover {
+    overflow: -moz-hidden-unscrollable;
   }
   .order {
     background-color: #FF79DA;
     color: #fff;
-    margin: 80px 0 120px 180px;
+    margin: 80px 0 120px 150px;
     padding: 35px 170px;
     border: none;
     border-radius: 55px;
@@ -587,14 +608,23 @@
     font-size: 30px;
   }
   .dish-info-bastille p {
+    width: 80%;
     color: gray;
     font-family: Roboto;
     font-size: 25px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: Roboto;
+    font-size: 25px;
+  }
+  .dish-info-bastille p:hover {
+    overflow: -moz-hidden-unscrollable;
   }
   .order {
     background-color: #FF79DA;
     color: #fff;
-    margin: 80px 0 120px 180px;
+    margin: 80px 0 120px 150px;
     padding: 35px 170px;
     border: none;
     border-radius: 55px;
@@ -687,14 +717,23 @@
     font-size: 30px;
   }
   .dish-info-gourmand p {
+    width: 80%;
     color: gray;
     font-family: Roboto;
     font-size: 25px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: Roboto;
+    font-size: 25px;
+  }
+  .dish-info-gourmand p:hover {
+    overflow: -moz-hidden-unscrollable;
   }
   .order {
     background-color: #FF79DA;
     color: #fff;
-    margin: 80px 0 120px 180px;
+    margin: 80px 0 120px 150px;
     padding: 35px 170px;
     border: none;
     border-radius: 55px;

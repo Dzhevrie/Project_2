@@ -14,19 +14,19 @@
     margin: 0;
   }
   .visible-dish-wrap {
-    outline: 1px solid blue;
-    width: 94%;
+    width: 92%;
     background-color: #fff;
     border-radius: 30px;
-    margin: 20px;
+    margin: 15px;
     overflow: hidden;
+    box-shadow: 0px 7px 10px 1px rgba(0, 0, 0, 0.15);
   }
   .visible-dish-wrap:hover {
     cursor: pointer;
     transform: rotate(360deg);
   }
   .dish-wrap-palette {
-    width: 125%;
+    width: 130%;
     display: flex;
     align-items: center;
     transition: width 1s ease-out 100ms;
@@ -48,11 +48,12 @@
   }
   .dish-wrap-palette .dish-info-palette {
     display: inline-block;
-    width: 75%;
+    width: 70%;
     padding-left: 30px;
     margin-right: 10px;
   }
   .dish-wrap-palette .dish-info-palette > p {
+    width: 70%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -75,6 +76,7 @@
     align-items: center;
     animation: hideLoading 2s forwards;
     position: absolute;
+    right: 0;
     bottom: 20px;
     left: 35px;
   }
@@ -323,20 +325,22 @@
   .rstnt-navigation-palette {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    padding: 30px 0 15px 0;
+    /* margin: 20px 0 0 0; */
     align-items: center;
-    margin: 40px 200px 25px 10px;
+    justify-content: flex-start;
   }
   .rstnt-navigation-palette a {
     text-decoration: none;
   }
   .rstnt-navigation-palette i {
-    font-size: 40px;
-    color: #000;
-    margin-left: 40px;
+    font-size: 20px;
+    color: gray;
+    margin: 0 25px;
   }
   .rstnt-navigation-palette img {
-    width: 320px;
+    width: 170px;
+    margin: 0 45px;
   }
   .nav-img {
     width: 100%;
@@ -351,12 +355,12 @@
     padding: 30px 0 7px 25px;
     color: gray;
     font-family: Roboto;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 300;
   }
   .line {
-    border-bottom: 5px solid #99E2D0;
-    width: 11%;
+    border-bottom: 3px solid #99E2D0;
+    width: 13%;
     margin: 0 0 25px 27px;
   }
   .menu-title-palette {
@@ -364,19 +368,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 40px 40px 10px 25px;
   }
   .menu-title-palette h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     font-family: Shrikhand;
   }
   .heart {
-    color: #000;
-    background-color: #99E2D0;
-  }
-  .heart:hover {
-    color: #9356DC;
+    color: gray;
+    font-size: 25px;
+    font-weight: 100;
   }
   .dish-palette {
     width: 100%;
@@ -399,29 +401,29 @@
   }
   .dish-palette span {
     font-family: Roboto;
-    font-size: 25px;
-    font-weight: 800;
+    font-size: 19px;
+    font-weight: 600;
   }
   .dish-info-palette h3 {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-family: Roboto;
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: 500;
   }
   .dish-info-palette p {
     color: gray;
     font-family: Roboto;
-    font-size: 25px;
+    font-size: 19px;
   }
   .order {
     background-color: #FF79DA;
     color: #fff;
-    margin: 80px 0 120px 150px;
-    padding: 35px 170px;
     border: none;
     border-radius: 55px;
-    font-size: 30px;
+    font-size: 19px;
     box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
-    z-index: 1;
+    padding: 18px 85px;
+    margin: 45px 0 75px 135px;
   }
   .order:hover {
     cursor: pointer;
@@ -432,20 +434,22 @@
   .rstnt-navigation-plate {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    padding: 30px 0 15px 0;
+    /* margin: 20px 0 0 0; */
     align-items: center;
-    margin: 40px 200px 25px 10px;
+    justify-content: flex-start;
   }
   .rstnt-navigation-plate a {
     text-decoration: none;
   }
   .rstnt-navigation-plate i {
-    font-size: 40px;
-    color: #000;
-    margin-left: 40px;
+    font-size: 20px;
+    color: gray;
+    margin: 0 25px;
   }
   .rstnt-navigation-plate img {
-    width: 320px;
+    width: 170px;
+    margin: 0 45px;
   }
   .nav-img {
     width: 100%;
@@ -460,12 +464,12 @@
     padding: 30px 0 7px 25px;
     color: gray;
     font-family: Roboto;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 300;
   }
   .line-plate {
-    border-bottom: 5px solid #99E2D0;
-    width: 11%;
+    border-bottom: 3px solid #99E2D0;
+    width: 13%;
     margin: 0 0 25px 27px;
   }
   .menu-title-plate {
@@ -473,10 +477,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 40px 40px 10px 25px;
   }
   .menu-title-plate h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     font-family: Shrikhand;
   }
@@ -495,11 +499,9 @@
     margin: 35px;
   }
   .heart {
-    color: #000;
-    background-color: #99E2D0;
-  }
-  .heart:hover {
-    color: #9356DC;
+    color: gray;
+    font-size: 25px;
+    font-weight: 100;
   }
   .dish-plate {
     width: 100%;
@@ -522,29 +524,29 @@
   }
   .dish-plate span {
     font-family: Roboto;
-    font-size: 25px;
-    font-weight: 800;
+    font-size: 19px;
+    font-weight: 600;
   }
   .dish-info-plate h3 {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-family: Roboto;
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: 500;
   }
   .dish-info-plate p {
     color: gray;
     font-family: Roboto;
-    font-size: 25px;
+    font-size: 19px;
   }
   .order {
     background-color: #FF79DA;
     color: #fff;
-    margin: 80px 0 120px 150px;
-    padding: 35px 170px;
     border: none;
     border-radius: 55px;
-    font-size: 30px;
+    font-size: 19px;
     box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
-    z-index: 1;
+    padding: 18px 85px;
+    margin: 45px 0 75px 135px;
   }
   .order:hover {
     cursor: pointer;
@@ -555,20 +557,22 @@
   .rstnt-navigation-bastille {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    padding: 30px 0 15px 0;
+    /* margin: 20px 0 0 0; */
     align-items: center;
-    margin: 40px 200px 25px 10px;
+    justify-content: flex-start;
   }
   .rstnt-navigation-bastille a {
     text-decoration: none;
   }
   .rstnt-navigation-bastille i {
-    font-size: 40px;
-    color: #000;
-    margin-left: 40px;
+    font-size: 20px;
+    color: gray;
+    margin: 0 25px;
   }
   .rstnt-navigation-bastille img {
-    width: 320px;
+    width: 170px;
+    margin: 0 45px;
   }
   .nav-img {
     width: 100%;
@@ -583,12 +587,12 @@
     padding: 30px 0 7px 25px;
     color: gray;
     font-family: Roboto;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 300;
   }
   .line-bastille {
-    border-bottom: 5px solid #99E2D0;
-    width: 11%;
+    border-bottom: 3px solid #99E2D0;
+    width: 13%;
     margin: 0 0 25px 27px;
   }
   .menu-title-bastille {
@@ -596,19 +600,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 40px 40px 10px 25px;
   }
   .menu-title-bastille h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     font-family: Shrikhand;
   }
   .heart {
-    color: #000;
-    background-color: #99E2D0;
-  }
-  .heart:hover {
-    color: #9356DC;
+    color: gray;
+    font-size: 25px;
+    font-weight: 100;
   }
   .dish-bastille {
     width: 100%;
@@ -631,29 +633,29 @@
   }
   .dish-bastille span {
     font-family: Roboto;
-    font-size: 25px;
-    font-weight: 800;
+    font-size: 19px;
+    font-weight: 600;
   }
   .dish-info-bastille h3 {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-family: Roboto;
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: 500;
   }
   .dish-info-bastille p {
     color: gray;
     font-family: Roboto;
-    font-size: 25px;
+    font-size: 19px;
   }
   .order {
     background-color: #FF79DA;
     color: #fff;
-    margin: 80px 0 120px 150px;
-    padding: 35px 170px;
     border: none;
     border-radius: 55px;
-    font-size: 30px;
+    font-size: 19px;
     box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
-    z-index: 1;
+    padding: 18px 85px;
+    margin: 45px 0 75px 135px;
   }
   .order:hover {
     cursor: pointer;
@@ -664,20 +666,22 @@
   .rstnt-navigation-gourmand {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    padding: 30px 0 15px 0;
+    /* margin: 20px 0 0 0; */
     align-items: center;
-    margin: 40px 200px 25px 10px;
+    justify-content: flex-start;
   }
   .rstnt-navigation-gourmand a {
     text-decoration: none;
   }
   .rstnt-navigation-gourmand i {
-    font-size: 40px;
-    color: #000;
-    margin-left: 40px;
+    font-size: 20px;
+    color: gray;
+    margin: 0 25px;
   }
   .rstnt-navigation-gourmand img {
-    width: 320px;
+    width: 170px;
+    margin: 0 45px;
   }
   .nav-img {
     width: 100%;
@@ -692,12 +696,12 @@
     padding: 30px 0 7px 25px;
     color: gray;
     font-family: Roboto;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 300;
   }
   .line-gourmand {
-    border-bottom: 5px solid #99E2D0;
-    width: 11%;
+    border-bottom: 3px solid #99E2D0;
+    width: 13%;
     margin: 0 0 25px 27px;
   }
   .menu-title-gourmand {
@@ -705,19 +709,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 40px 40px 10px 25px;
   }
   .menu-title-gourmand h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     font-family: Shrikhand;
   }
   .heart {
-    color: #000;
-    background-color: #99E2D0;
-  }
-  .heart:hover {
-    color: #9356DC;
+    color: gray;
+    font-size: 25px;
+    font-weight: 100;
   }
   .dish-gourmand {
     width: 100%;
@@ -740,29 +742,29 @@
   }
   .dish-gourmand span {
     font-family: Roboto;
-    font-size: 25px;
-    font-weight: 800;
+    font-size: 19px;
+    font-weight: 600;
   }
   .dish-info-gourmand h3 {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-family: Roboto;
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: 500;
   }
   .dish-info-gourmand p {
     color: gray;
     font-family: Roboto;
-    font-size: 25px;
+    font-size: 19px;
   }
   .order {
     background-color: #FF79DA;
     color: #fff;
-    margin: 80px 0 120px 150px;
-    padding: 35px 170px;
     border: none;
     border-radius: 55px;
-    font-size: 30px;
+    font-size: 19px;
     box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
-    z-index: 1;
+    padding: 18px 85px;
+    margin: 45px 0 75px 135px;
   }
   .order:hover {
     cursor: pointer;

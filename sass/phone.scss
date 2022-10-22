@@ -8,22 +8,25 @@ $text-font: Roboto;
 @mixin restorant-navigation {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    padding: 30px 0 15px 0;
+    /* margin: 20px 0 0 0; */
     align-items: center;
-    margin: 40px 200px 25px 10px;
+    justify-content: flex-start;
+
 
     a {
         text-decoration: none;
     }
 
     i {
-        font-size: 40px;
-        color: #000;
-        margin-left: 40px;
+        font-size: 20px;
+        color: gray;
+        margin: 0 25px;
     }
 
     img {
-        width: 320px;
+        width: 170px;
+        margin: 0 45px;
     }
 }
 
@@ -39,24 +42,21 @@ $text-font: Roboto;
 
         font: {
             family: $text-font;
-            size: 30px;
-            weight: 400;
+            size: 20px;
+            weight: 300;
         }
     }
 }
 
 @mixin heart {
-    color: #000;
-    background-color: $third-color;
-
-    &:hover {
-        color: #9356DC;
-    }
+    color: gray;
+    font-size: 25px;
+    font-weight: 100;
 }
 
 @mixin line {
-    border-bottom: 5px solid $third-color;
-    width: 11%;
+    border-bottom: 3px solid $third-color;
+    width: 13%;
     margin: 0 0 25px 27px;
 }
 
@@ -65,11 +65,26 @@ $text-font: Roboto;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 40px 40px 10px 25px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     h1 {
         font: {
-            size: 40px;
+            size: 30px;
             weight: 500;
             family: $main-font;
         }
@@ -77,26 +92,7 @@ $text-font: Roboto;
 }
 
 @mixin dish {
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: end;
     width: 100%;
-    // width: 650px;
-    // background-color: #fff;
-    // border-radius: 30px;
-    // margin: 20px;
-    // padding: 15px 35px 20px 20px;
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
-    // align-items: flex-end;
-    // outline: 1px solid red;
-    // overflow: hidden;
-    // transition: background-color 250ms;
-    // position: relative;
-    // animation-name: menu-animation;
-    // animation-duration: 3s;
-    // animation-fill-mode: both;
 
     &-price {
         vertical-align: super;
@@ -118,14 +114,12 @@ $text-font: Roboto;
         }
     }
 
-    // }
-
     span {
 
         font: {
-            family: $text-font;
-            size: 25px;
-            weight: 800;
+            family: Roboto;
+            size: 19px;
+            weight: 600;
         }
     }
 
@@ -134,11 +128,12 @@ $text-font: Roboto;
 
 @mixin dish-title {
     h3 {
-        padding-bottom: 10px;
+        padding-bottom: 5px;
 
         font: {
             family: $text-font;
-            size: 30px;
+            size: 25px;
+            weight: 500;
 
         }
     }
@@ -148,7 +143,7 @@ $text-font: Roboto;
 
         font: {
             family: $text-font;
-            size: 25px;
+            size: 19px;
         }
 
     }
@@ -156,15 +151,14 @@ $text-font: Roboto;
 }
 
 @mixin btn-order {
-    background-color: $secondary-color;
+    background-color: #FF79DA;
     color: #fff;
-    margin: 80px 0 120px 150px;
-    padding: 35px 170px;
     border: none;
     border-radius: 55px;
-    font-size: 30px;
+    font-size: 19px;
     box-shadow: 1px 2px 14px 6px rgb(0 0 0 / 15%);
-    z-index: 1;
+    padding: 18px 85px;
+    margin: 45px 0 75px 135px;
 
     &:hover {
         cursor: pointer;
@@ -238,25 +232,23 @@ $text-font: Roboto;
     }
 
     .visible-dish-wrap {
-        outline: 1px solid blue;
-        width: 94%;
+        width: 92%;
         background-color: #fff;
         border-radius: 30px;
-        margin: 20px;
+        margin: 15px;
         overflow: hidden;
+        box-shadow: 0px 7px 10px 1px rgb(0 0 0 / 15%);
 
-        // padding: 15px 35px 20px 20px;
         &:hover {
             cursor: pointer;
             transform: rotate(360deg);
-            // }
         }
 
     }
 
 
     .dish-wrap-palette {
-        width: 125%;
+        width: 130%;
         // // overflow: hidden;
         display: flex;
         // flex-direction: row;
@@ -290,17 +282,14 @@ $text-font: Roboto;
             }
         }
 
-        // // .dish-palette {
-        // //     width: 85%;
-        // // }
-
         .dish-info-palette {
             display: inline-block;
-            width: 75%;
+            width: 70%;
             padding-left: 30px;
             margin-right: 10px;
 
             >p {
+                width: 70%;
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
@@ -331,9 +320,11 @@ $text-font: Roboto;
         align-items: center;
         animation: hideLoading 2s forwards;
         position: absolute;
+        right: 0;
         bottom: 20px;
         left: 35px;
-    }
+
+           }
 
 
     @keyframes hideLoading {

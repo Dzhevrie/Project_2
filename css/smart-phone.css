@@ -271,15 +271,14 @@
     font-size: 30px;
     color: gray;
     position: absolute;
-    right: 32px;
-    /* margin: 255px 410px; */
+    right: 35px;
     opacity: 1;
   }
   .main-heart2 {
     width: auto;
     font-size: 30px;
     position: absolute;
-    right: 32px;
+    right: 35px;
     opacity: 0;
   }
   .main-heart2:hover {

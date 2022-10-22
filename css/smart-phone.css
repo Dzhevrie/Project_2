@@ -13,6 +13,50 @@
     padding: 0;
     margin: 0;
   }
+  .visible-dish-wrap {
+    outline: 1px solid blue;
+    width: 94%;
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 20px;
+    overflow: hidden;
+  }
+  .visible-dish-wrap:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+  }
+  .dish-wrap-palette {
+    width: 125%;
+    display: flex;
+    align-items: center;
+    transition: width 1s ease-out 100ms;
+  }
+  .dish-wrap-palette > .check .fa-check-circle {
+    font-size: 40px;
+    color: #fff;
+    background-color: #99E2D0;
+    border-radius: 50%;
+    border: 1px solid #99E2D0;
+    transition: transform 1s ease-out 10ms;
+    margin: 30px;
+  }
+  .dish-wrap-palette:hover {
+    width: 100%;
+  }
+  .dish-wrap-palette:hover > .check .fa-check-circle {
+    transform: rotate(360deg);
+  }
+  .dish-wrap-palette .dish-info-palette {
+    display: inline-block;
+    width: 75%;
+    padding-left: 30px;
+    margin-right: 10px;
+  }
+  .dish-wrap-palette .dish-info-palette > p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
   .container {
     animation-name: container;
     animation-duration: 3s;
@@ -29,10 +73,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: hideLoading 3s forwards;
+    animation: hideLoading 2s forwards;
     position: absolute;
     bottom: 20px;
-    right: 10px;
+    left: 35px;
   }
   @keyframes hideLoading {
     0% {
@@ -41,14 +85,6 @@
     100% {
       opacity: 0;
     }
-  }
-  .dish-palette {
-    background-color: #fff;
-    transition: background-color 250ms;
-    position: relative;
-    animation-name: menu-animation;
-    animation-duration: 2s;
-    animation-fill-mode: both;
   }
   .navigation {
     width: 100%;
@@ -60,58 +96,53 @@
     text-align: center;
   }
   .navigation img {
-    width: 260px;
-  }
-  .nav-logo {
-    padding: 20px 0;
-    width: 100%;
-    display: block;
-    text-align: center;
+    width: 200px;
+    align-items: center;
   }
   .search-btn-wrap {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #9356DC;
-    padding: 35px 0 25px 250px;
+    padding: 10px;
     box-shadow: rgba(11, 10, 10, 0.18) 0px 13px 12px 0px inset;
   }
   .search-btn-wrap input {
-    width: 100%;
     border: none;
     background-color: #9356DC;
-    padding-left: 15px;
-    font-size: 25px;
+    font-size: 20px;
     font-family: Roboto;
   }
   .search-btn-wrap input::placeholder {
     color: #000;
   }
   .fa-map-marker-alt {
-    font-size: 25px;
+    font-size: 22px;
+    margin: 15px;
   }
   .head {
     background-color: #99E2D0;
     text-align: center;
-    padding: 40px;
+    padding: 40px 0;
   }
   .head h1 {
     font-family: Roboto;
-    font-size: 38px;
+    font-size: 27px;
     font-weight: 700;
   }
   .head p {
-    width: 90%;
-    padding: 35px;
+    padding: 35px 10px;
     text-align: center;
     color: gray;
     font-family: Roboto;
-    font-size: 30px;
+    font-size: 20px;
   }
   .head button {
     background-color: #FF79DA;
-    padding: 25px 35px;
+    padding: 17px 30px;
     color: white;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     border: none;
     align-items: center;
@@ -125,23 +156,22 @@
   /* Section with the buttons for chosing the place 
   and prepare the menu*/
   .btns {
-    padding: 70px 10px 80px 25px;
+    padding: 40px 10px 50px 15px;
   }
   .btns h2 {
-    padding: 10px 0 20px 10px;
     font-family: Roboto;
-    font-size: 35px;
-    font-weight: 800;
+    font-size: 25px;
+    font-weight: 700;
   }
   .btn-wrap {
+    width: 95%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: baseline;
     background-color: #99E2D0;
-    border-radius: 35px;
-    padding: 35px 0 35px 35px;
-    margin: 30px;
+    border-radius: 23px;
+    margin: 25px 0 10px 10px;
     box-shadow: -2px 6px 11px 2px rgba(0, 0, 0, 0.15);
     font-size: 25px;
   }
@@ -151,16 +181,17 @@
     background-color: #c1ede2;
   }
   .btn-wrap span {
-    border: 1px solid #9356DC;
+    font-size: 15px;
+    border: 5px solid #9356DC;
     color: white;
-    border-radius: 40px;
-    padding: 4px 12px;
+    border-radius: 35px;
+    padding: 0 5px;
     background-color: #9356DC;
-    margin: 10px 180px 0px -50px;
+    margin: 0 10px 0 -10px;
   }
   .btn-wrap .fas {
-    margin: 0px 50px 0px -130px;
-    font-size: 30px;
+    font-size: 20px;
+    padding: 20px 0 20px 10px;
   }
   .btn-wrap .fa-mobile-alt {
     color: gray;
@@ -172,7 +203,8 @@
     color: #9356DC;
   }
   .btn-wrap p {
-    font-size: 25px;
+    padding: 25px 0 25px 10px;
+    font-size: 15px;
     font-weight: 700;
     font-family: Roboto;
   }
@@ -180,18 +212,18 @@
     display: flex;
     flex-direction: column;
     background-color: #99E2D0;
-    padding: 50px 0 80px 0;
+    padding: 15px 0 50px 0;
   }
   .rsts-section h3 {
-    font-size: 35px;
+    font-size: 25px;
     font-family: Roboto;
     font-weight: 700;
-    padding: 40px 0 10px 30px;
+    padding: 40px 0 0px 30px;
   }
   .rst-ad {
     background-color: #fff;
-    border-radius: 25px;
-    margin: 20px 30px;
+    border-radius: 18px;
+    margin: 20px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -203,20 +235,20 @@
   .rst-ad span {
     color: darkcyan;
     background-color: #99E2D0;
-    font-size: 22px;
-    padding: 10px 40px;
+    font-size: 17px;
+    padding: 6px 30px;
     font-family: Roboto;
     font-weight: 700;
-    margin: 20px 0 0 -150px;
+    margin: 15px 0 0 -106px;
     position: absolute;
   }
   .rst-ad img {
     width: 100%;
-    border-radius: 25px 25px 0 0;
+    border-radius: 18px 18px 0 0;
   }
   .ad-info {
     width: 100%;
-    margin: 20px;
+    margin: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -224,36 +256,36 @@
   .info h4 {
     color: #000;
     text-decoration: none;
-    padding: 10px 0;
+    padding: 2px 0;
     font-family: Roboto;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 800;
   }
   .info p {
     font-family: Roboto;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     color: grey;
   }
   .main-heart1 {
-    font-size: 40px;
+    font-size: 30px;
+    color: gray;
     position: absolute;
-    right: -42px;
-    top: 2px;
+    right: 32px;
+    /* margin: 255px 410px; */
     opacity: 1;
   }
-  .main-heart1:hover {
-    color: #a16be0;
-  }
   .main-heart2 {
-    font-size: 45px;
+    width: auto;
+    font-size: 30px;
     position: absolute;
-    color: #FF79DA;
+    right: 32px;
+    opacity: 0;
   }
   .main-heart2:hover {
     opacity: 1;
-    transition-duration: 500ms;
-    color: #ae80e5;
+    transition-duration: 1s;
+    color: #a16be0;
   }
   footer {
     background-color: #000;
@@ -262,7 +294,7 @@
   footer h5 {
     color: #fff;
     font-family: Shrikhand;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
     display: flex;
     padding: 40px 0 25px 35px;
@@ -276,18 +308,18 @@
     display: flex;
     justify-content: flex-start;
     color: #fff;
-    font-size: 25px;
+    font-size: 15px;
     padding: 10px;
     margin: 0 30px;
   }
   footer .contacts a .fa-handshake {
     transform: rotate(-50deg);
-    font-size: 20px;
+    font-size: 15px;
     padding-right: 15px;
   }
   footer .contacts a .fa-utensils {
     padding-right: 20px;
-    font-size: 22px;
+    font-size: 15px;
   }
   .rstnt-navigation-palette {
     display: flex;
@@ -313,7 +345,7 @@
   .menu-palette {
     position: relative;
     margin-top: -60px;
-    background-color: #99E2D0;
+    background-color: #fafafa;
     border-radius: 65px 65px 0 0;
   }
   .menu-palette h2 {
@@ -324,7 +356,7 @@
     font-weight: 400;
   }
   .line {
-    border-bottom: 5px solid #9356DC;
+    border-bottom: 5px solid #99E2D0;
     width: 11%;
     margin: 0 0 25px 27px;
   }
@@ -348,14 +380,23 @@
     color: #9356DC;
   }
   .dish-palette {
-    background-color: #fff;
-    border-radius: 25px;
-    margin: 20px;
-    padding: 15px 35px 20px 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+    width: 100%;
+  }
+  .dish-palette-price {
+    vertical-align: super;
+  }
+  .dish-palette .fa-check-circle {
+    font-size: 40px;
+    color: #fff;
+    background-color: #99E2D0;
+    border-radius: 50%;
+    border: 1px solid #99E2D0;
+    transition: transform 1s;
+    margin: 30px;
+    position: absolute;
+  }
+  .dish-palette .fa-check-circle:hover {
+    transform: rotate(360deg);
   }
   .dish-palette span {
     font-family: Roboto;
@@ -368,18 +409,9 @@
     font-size: 30px;
   }
   .dish-info-palette p {
-    width: 80%;
     color: gray;
     font-family: Roboto;
     font-size: 25px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    font-family: Roboto;
-    font-size: 25px;
-  }
-  .dish-info-palette p:hover {
-    overflow: -moz-hidden-unscrollable;
   }
   .order {
     background-color: #FF79DA;
@@ -422,7 +454,7 @@
   .menu-plate {
     position: relative;
     margin-top: -60px;
-    background-color: #99E2D0;
+    background-color: #fafafa;
     border-radius: 65px 65px 0 0;
   }
   .menu-plate h2 {
@@ -433,7 +465,7 @@
     font-weight: 400;
   }
   .line-plate {
-    border-bottom: 5px solid #9356DC;
+    border-bottom: 5px solid #99E2D0;
     width: 11%;
     margin: 0 0 25px 27px;
   }
@@ -452,12 +484,8 @@
   .check {
     background-color: #99E2D0;
     border-radius: 0 25px 25px 0;
-    width: 110px;
+    width: 140px;
     height: 110px;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    z-index: -1;
   }
   .fa-check-circle {
     font-size: 40px;
@@ -465,11 +493,7 @@
     background-color: #99E2D0;
     border-radius: 50%;
     transition: transform 1s;
-    margin: 30px;
-    position: absolute;
-  }
-  .fa-check-circle:hover {
-    transform: rotate(360deg);
+    margin: 35px;
   }
   .heart {
     color: #000;
@@ -479,14 +503,23 @@
     color: #9356DC;
   }
   .dish-plate {
-    background-color: #fff;
-    border-radius: 25px;
-    margin: 20px;
-    padding: 15px 35px 20px 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+    width: 100%;
+  }
+  .dish-plate-price {
+    vertical-align: super;
+  }
+  .dish-plate .fa-check-circle {
+    font-size: 40px;
+    color: #fff;
+    background-color: #99E2D0;
+    border-radius: 50%;
+    border: 1px solid #99E2D0;
+    transition: transform 1s;
+    margin: 30px;
+    position: absolute;
+  }
+  .dish-plate .fa-check-circle:hover {
+    transform: rotate(360deg);
   }
   .dish-plate span {
     font-family: Roboto;
@@ -499,18 +532,9 @@
     font-size: 30px;
   }
   .dish-info-plate p {
-    width: 80%;
     color: gray;
     font-family: Roboto;
     font-size: 25px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    font-family: Roboto;
-    font-size: 25px;
-  }
-  .dish-info-plate p:hover {
-    overflow: -moz-hidden-unscrollable;
   }
   .order {
     background-color: #FF79DA;
@@ -553,7 +577,7 @@
   .menu-bastille {
     position: relative;
     margin-top: -60px;
-    background-color: #99E2D0;
+    background-color: #fafafa;
     border-radius: 65px 65px 0 0;
   }
   .menu-bastille h2 {
@@ -564,7 +588,7 @@
     font-weight: 400;
   }
   .line-bastille {
-    border-bottom: 5px solid #9356DC;
+    border-bottom: 5px solid #99E2D0;
     width: 11%;
     margin: 0 0 25px 27px;
   }
@@ -588,14 +612,23 @@
     color: #9356DC;
   }
   .dish-bastille {
-    background-color: #fff;
-    border-radius: 25px;
-    margin: 20px;
-    padding: 15px 35px 20px 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+    width: 100%;
+  }
+  .dish-bastille-price {
+    vertical-align: super;
+  }
+  .dish-bastille .fa-check-circle {
+    font-size: 40px;
+    color: #fff;
+    background-color: #99E2D0;
+    border-radius: 50%;
+    border: 1px solid #99E2D0;
+    transition: transform 1s;
+    margin: 30px;
+    position: absolute;
+  }
+  .dish-bastille .fa-check-circle:hover {
+    transform: rotate(360deg);
   }
   .dish-bastille span {
     font-family: Roboto;
@@ -608,18 +641,9 @@
     font-size: 30px;
   }
   .dish-info-bastille p {
-    width: 80%;
     color: gray;
     font-family: Roboto;
     font-size: 25px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    font-family: Roboto;
-    font-size: 25px;
-  }
-  .dish-info-bastille p:hover {
-    overflow: -moz-hidden-unscrollable;
   }
   .order {
     background-color: #FF79DA;
@@ -662,7 +686,7 @@
   .menu-gourmand {
     position: relative;
     margin-top: -60px;
-    background-color: #99E2D0;
+    background-color: #fafafa;
     border-radius: 65px 65px 0 0;
   }
   .menu-gourmand h2 {
@@ -673,7 +697,7 @@
     font-weight: 400;
   }
   .line-gourmand {
-    border-bottom: 5px solid #9356DC;
+    border-bottom: 5px solid #99E2D0;
     width: 11%;
     margin: 0 0 25px 27px;
   }
@@ -697,14 +721,23 @@
     color: #9356DC;
   }
   .dish-gourmand {
-    background-color: #fff;
-    border-radius: 25px;
-    margin: 20px;
-    padding: 15px 35px 20px 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+    width: 100%;
+  }
+  .dish-gourmand-price {
+    vertical-align: super;
+  }
+  .dish-gourmand .fa-check-circle {
+    font-size: 40px;
+    color: #fff;
+    background-color: #99E2D0;
+    border-radius: 50%;
+    border: 1px solid #99E2D0;
+    transition: transform 1s;
+    margin: 30px;
+    position: absolute;
+  }
+  .dish-gourmand .fa-check-circle:hover {
+    transform: rotate(360deg);
   }
   .dish-gourmand span {
     font-family: Roboto;
@@ -717,18 +750,9 @@
     font-size: 30px;
   }
   .dish-info-gourmand p {
-    width: 80%;
     color: gray;
     font-family: Roboto;
     font-size: 25px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    font-family: Roboto;
-    font-size: 25px;
-  }
-  .dish-info-gourmand p:hover {
-    overflow: -moz-hidden-unscrollable;
   }
   .order {
     background-color: #FF79DA;

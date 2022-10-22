@@ -30,7 +30,7 @@ $text-font: Roboto;
 @mixin menu-about-pages {
     position: relative;
     margin-top: -60px;
-    background-color: $third-color;
+    background-color: #fafafa;
     border-radius: 65px 65px 0 0;
 
     h2 {
@@ -55,7 +55,7 @@ $text-font: Roboto;
 }
 
 @mixin line {
-    border-bottom: 5px solid $primary-color;
+    border-bottom: 5px solid $third-color;
     width: 11%;
     margin: 0 0 25px 27px;
 }
@@ -77,23 +77,60 @@ $text-font: Roboto;
 }
 
 @mixin dish {
-    background-color: #fff;
-    border-radius: 25px;
-    margin: 20px;
-    padding: 15px 35px 20px 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: end;
+    width: 100%;
+    // width: 650px;
+    // background-color: #fff;
+    // border-radius: 30px;
+    // margin: 20px;
+    // padding: 15px 35px 20px 20px;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    // align-items: flex-end;
+    // outline: 1px solid red;
+    // overflow: hidden;
+    // transition: background-color 250ms;
+    // position: relative;
+    // animation-name: menu-animation;
+    // animation-duration: 3s;
+    // animation-fill-mode: both;
+
+    &-price {
+        vertical-align: super;
+    }
+
+
+    .fa-check-circle {
+        font-size: 40px;
+        color: #fff;
+        background-color: $third-color;
+        border-radius: 50%;
+        border: 1px solid $third-color;
+        transition: transform 1s;
+        margin: 30px;
+        position: absolute;
+
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+
+    // }
 
     span {
+
         font: {
             family: $text-font;
             size: 25px;
             weight: 800;
         }
     }
+
 }
+
 
 @mixin dish-title {
     h3 {
@@ -107,22 +144,13 @@ $text-font: Roboto;
     }
 
     p {
-        width: 80%;
         color: gray;
-        font-family: Roboto;
-        font-size: 25px;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
 
         font: {
             family: $text-font;
             size: 25px;
         }
 
-        &:hover {
-            overflow: -moz-hidden-unscrollable;
-        }
     }
 
 }
@@ -154,7 +182,7 @@ $text-font: Roboto;
     h5 {
         color: #fff;
         font-family: $main-font;
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 400;
         display: flex;
         padding: 40px 0 25px 35px;
@@ -171,19 +199,19 @@ $text-font: Roboto;
             display: flex;
             justify-content: flex-start;
             color: #fff;
-            font-size: 25px;
+            font-size: 15px;
             padding: 10px;
             margin: 0 30px;
 
             .fa-handshake {
                 transform: rotate(-50deg);
-                font-size: 20px;
+                font-size: 15px;
                 padding-right: 15px;
             }
 
             .fa-utensils {
                 padding-right: 20px;
-                font-size: 22px;
+                font-size: 15px;
             }
         }
     }
@@ -209,6 +237,78 @@ $text-font: Roboto;
 
     }
 
+    .visible-dish-wrap {
+        outline: 1px solid blue;
+        width: 94%;
+        background-color: #fff;
+        border-radius: 30px;
+        margin: 20px;
+        overflow: hidden;
+
+        // padding: 15px 35px 20px 20px;
+        &:hover {
+            cursor: pointer;
+            transform: rotate(360deg);
+            // }
+        }
+
+    }
+
+
+    .dish-wrap-palette {
+        width: 125%;
+        // // overflow: hidden;
+        display: flex;
+        // flex-direction: row;
+        align-items: center;
+        // border-radius: 35px;
+        // // background-color: #fafafa;
+        transition: width 1s ease-out 100ms;
+
+        >.check {
+            .fa-check-circle {
+                font-size: 40px;
+                color: #fff;
+                background-color: $third-color;
+                border-radius: 50%;
+                border: 1px solid $third-color;
+                transition: transform 1s ease-out 10ms;
+                margin: 30px;
+                // position: absolute;
+            }
+        }
+
+
+
+        &:hover {
+            width: 100%;
+
+            >.check {
+                .fa-check-circle {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+
+        // // .dish-palette {
+        // //     width: 85%;
+        // // }
+
+        .dish-info-palette {
+            display: inline-block;
+            width: 75%;
+            padding-left: 30px;
+            margin-right: 10px;
+
+            >p {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+
+
 
     .container {
         animation-name: container;
@@ -229,11 +329,12 @@ $text-font: Roboto;
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: hideLoading 3s forwards;
+        animation: hideLoading 2s forwards;
         position: absolute;
         bottom: 20px;
-        right: 10px;
+        left: 35px;
     }
+
 
     @keyframes hideLoading {
         0% {
@@ -243,16 +344,6 @@ $text-font: Roboto;
         100% {
             opacity: 0;
         }
-    }
-
-    .dish-palette {
-        background-color: #fff;
-        transition: background-color 250ms;
-        position: relative;
-        animation-name: menu-animation;
-        animation-duration: 2s;
-        animation-fill-mode: both;
-
     }
 
 
@@ -270,82 +361,74 @@ $text-font: Roboto;
         }
 
         img {
-            width: 260px;
+            width: 200px;
+            align-items: center;
         }
 
     }
 
-    .nav-logo {
-        padding: 20px 0;
-        width: 100%;
-        display: block;
-        text-align: center;
-    }
-
     .search-btn-wrap {
         display: flex;
-        background-color: $primary-color;
-        padding: 35px 0 25px 250px;
+        justify-content: center;
+        align-items: center;
+        background-color: #9356DC;
+        padding: 10px;
         box-shadow: rgb(11 10 10 / 18%) 0px 13px 12px 0px inset;
 
-
         input {
-            width: 100%;
             border: none;
             background-color: $primary-color;
-            padding-left: 15px;
 
             &::placeholder {
                 color: #000;
             }
 
             font: {
-                size: 25px;
+                size: 20px;
                 family: $text-font
             }
-
 
         }
 
     }
 
     .fa-map-marker-alt {
-        font-size: 25px;
+        font-size: 22px;
+        margin: 15px;
     }
 
 
     .head {
         background-color: $third-color;
         text-align: center;
-        padding: 40px;
+        padding: 40px 0;
 
         h1 {
             font: {
                 family: $text-font;
-                size: 38px;
+                size: 27px;
                 weight: 700
             }
 
         }
 
         p {
-            width: 90%;
-            padding: 35px;
+            padding: 35px 10px;
             text-align: center;
             color: gray;
 
             font: {
                 family: $text-font;
-                size: 30px;
+                size: 20px;
             }
         }
 
         button {
             background-color: $secondary-color;
-            padding: 25px 35px;
+            padding: 17px 30px;
             color: white;
             border-radius: 50px;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 500;
             border: none;
             align-items: center;
@@ -365,28 +448,26 @@ $text-font: Roboto;
     and prepare the menu*/
 
     .btns {
-        padding: 70px 10px 80px 25px;
+        padding: 40px 10px 50px 15px;
 
         h2 {
-            padding: 10px 0 20px 10px;
-
             font: {
                 family: $text-font;
-                size: 35px;
-                weight: 800;
+                size: 25px;
+                weight: 700;
             }
         }
     }
 
     .btn-wrap {
+        width: 95%;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: baseline;
         background-color: $third-color;
-        border-radius: 35px;
-        padding: 35px 0 35px 35px;
-        margin: 30px;
+        border-radius: 23px;
+        margin: 25px 0 10px 10px;
         box-shadow: -2px 6px 11px 2px rgb(0 0 0 / 15%);
         font-size: 25px;
 
@@ -397,17 +478,18 @@ $text-font: Roboto;
         }
 
         span {
-            border: 1px solid $primary-color;
+            font-size: 15px;
+            border: 5px solid #9356DC;
             color: white;
-            border-radius: 40px;
-            padding: 4px 12px;
-            background-color: $primary-color;
-            margin: 10px 180px 0px -50px;
+            border-radius: 35px;
+            padding: 0 5px;
+            background-color: #9356DC;
+            margin: 0 10px 0 -10px;
         }
 
         .fas {
-            margin: 0px 50px 0px -130px;
-            font-size: 30px;
+            font-size: 20px;
+            padding: 20px 0 20px 10px;
         }
 
         .fa-mobile-alt {
@@ -423,8 +505,10 @@ $text-font: Roboto;
         }
 
         p {
+            padding: 25px 0 25px 10px;
+
             font: {
-                size: 25px;
+                size: 15px;
                 weight: 700;
                 family: $text-font;
             }
@@ -434,27 +518,31 @@ $text-font: Roboto;
 
     // Section of the restaurants 
 
+    // .dish-palette {}
+
+
+
     .rsts-section {
         display: flex;
         flex-direction: column;
         background-color: $third-color;
-        padding: 50px 0 80px 0;
+        padding: 15px 0 50px 0;
 
         h3 {
             font: {
-                size: 35px;
+                size: 25px;
                 family: $text-font;
                 weight: 700;
             }
 
-            padding: 40px 0 10px 30px;
+            padding: 40px 0 0px 30px;
         }
     }
 
     .rst-ad {
         background-color: #fff;
-        border-radius: 25px;
-        margin: 20px 30px;
+        border-radius: 18px;
+        margin: 20px;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -467,19 +555,18 @@ $text-font: Roboto;
 
         span {
             color: darkcyan;
-            background-color: $third-color;
-            font-size: 22px;
-            padding: 10px 40px;
-            font-family: $text-font;
+            background-color: #99E2D0;
+            font-size: 17px;
+            padding: 6px 30px;
+            font-family: Roboto;
             font-weight: 700;
-            margin: 20px 0 0 -150px;
+            margin: 15px 0 0 -106px;
             position: absolute;
-
         }
 
         img {
             width: 100%;
-            border-radius: 25px 25px 0 0;
+            border-radius: 18px 18px 0 0;
         }
     }
 
@@ -487,7 +574,7 @@ $text-font: Roboto;
 
     .ad-info {
         width: 100%;
-        margin: 20px;
+        margin: 10px 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -499,11 +586,11 @@ $text-font: Roboto;
         h4 {
             color: #000;
             text-decoration: none;
-            padding: 10px 0;
+            padding: 2px 0;
 
             font: {
                 family: $text-font;
-                size: 28px;
+                size: 20px;
                 weight: 800;
 
             }
@@ -512,7 +599,7 @@ $text-font: Roboto;
         p {
             font: {
                 family: $text-font;
-                size: 25px;
+                size: 20px;
                 weight: 400;
             }
 
@@ -521,39 +608,27 @@ $text-font: Roboto;
 
     }
 
-    // .main-heart {
-    //     outline: 1px solid red;
-    //     width: auto;
-    //     position: absolute;
-    //     right: px;
-    //     // bottom: -980px;
-    //     // left: 640px;
-    // }
-
     .main-heart1 {
-        font-size: 40px;
+        font-size: 30px;
+        color: gray;
         position: absolute;
-        right: -42px;
-        top: 2px;
+        right: 32px;
+        /* margin: 255px 410px; */
         opacity: 1;
-
-        &:hover {
-            // opacity: 0;
-            color: lighten($primary-color, 5);
-        }
-
     }
 
     .main-heart2 {
-        font-size: 45px;
+        width: auto;
+        font-size: 30px;
         position: absolute;
-        color: #FF79DA;
-        // opacity: 0;
+        right: 32px;
+        opacity: 0;
+        // margin: 255px 410px;
 
         &:hover {
             opacity: 1;
-            transition-duration: 500ms;
-            color: lighten($primary-color, 10);
+            transition-duration: 1s;
+            color: lighten($primary-color, 5);
         }
 
     }
@@ -637,16 +712,15 @@ $text-font: Roboto;
     }
 
     .check {
-        background-color: $third-color;
+        background-color: #99E2D0;
         border-radius: 0 25px 25px 0;
-        width: 110px;
+        width: 140px;
         height: 110px;
-        position: absolute;
-        right: 0px;
-        bottom: 0px;
-        z-index: -1;
-        // visibility: hidden;
-
+        // margin: 0 0 0 -30px;
+        // position: absolute;
+        // right: 0px;
+        // bottom: 0px;
+        // z-index: -1;
     }
 
     .fa-check-circle {
@@ -654,14 +728,9 @@ $text-font: Roboto;
         color: #fff;
         background-color: $third-color;
         border-radius: 50%;
-        // border: 1px solid $third-color;
         transition: transform 1s;
-        margin: 30px;
-        position: absolute;
-
-        &:hover {
-            transform: rotate(360deg);
-        }
+        margin: 35px;
+        // position: absolute;
     }
 
     .heart {

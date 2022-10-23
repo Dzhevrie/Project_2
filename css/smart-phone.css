@@ -51,11 +51,12 @@
     width: 70%;
     padding-left: 30px;
     margin-right: 10px;
-  }
-  .dish-wrap-palette .dish-info-palette > p {
-    width: 70%;
     overflow: hidden;
     white-space: nowrap;
+  }
+  .dish-wrap-palette .dish-info-palette > p {
+    width: 250px;
+    overflow: hidden;
     text-overflow: ellipsis;
   }
   .container {
@@ -404,13 +405,23 @@
     font-size: 19px;
     font-weight: 600;
   }
+  .dish-info-palette {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .dish-info-palette h3 {
+    width: 250px;
     padding-bottom: 5px;
     font-family: Roboto;
     font-size: 25px;
     font-weight: 500;
   }
   .dish-info-palette p {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     color: gray;
     font-family: Roboto;
     font-size: 19px;
@@ -527,13 +538,23 @@
     font-size: 19px;
     font-weight: 600;
   }
+  .dish-info-plate {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .dish-info-plate h3 {
+    width: 250px;
     padding-bottom: 5px;
     font-family: Roboto;
     font-size: 25px;
     font-weight: 500;
   }
   .dish-info-plate p {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     color: gray;
     font-family: Roboto;
     font-size: 19px;
@@ -636,13 +657,23 @@
     font-size: 19px;
     font-weight: 600;
   }
+  .dish-info-bastille {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .dish-info-bastille h3 {
+    width: 250px;
     padding-bottom: 5px;
     font-family: Roboto;
     font-size: 25px;
     font-weight: 500;
   }
   .dish-info-bastille p {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     color: gray;
     font-family: Roboto;
     font-size: 19px;
@@ -745,13 +776,23 @@
     font-size: 19px;
     font-weight: 600;
   }
+  .dish-info-gourmand {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .dish-info-gourmand h3 {
+    width: 250px;
     padding-bottom: 5px;
     font-family: Roboto;
     font-size: 25px;
     font-weight: 500;
   }
   .dish-info-gourmand p {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     color: gray;
     font-family: Roboto;
     font-size: 19px;

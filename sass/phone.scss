@@ -67,21 +67,6 @@ $text-font: Roboto;
     align-items: center;
     padding: 40px 40px 10px 25px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     h1 {
         font: {
             size: 30px;
@@ -97,7 +82,6 @@ $text-font: Roboto;
     &-price {
         vertical-align: super;
     }
-
 
     .fa-check-circle {
         font-size: 40px;
@@ -125,11 +109,11 @@ $text-font: Roboto;
 
 }
 
-
 @mixin dish-title {
     width: 70%;
     overflow: hidden;
     text-overflow: ellipsis;
+
     h3 {
         width: 250px;
         padding-bottom: 5px;
@@ -153,7 +137,6 @@ $text-font: Roboto;
             family: $text-font;
             size: 19px;
         }
-
     }
 
 }
@@ -176,7 +159,6 @@ $text-font: Roboto;
     }
 }
 
-
 @mixin footer {
     background-color: #000;
     padding: 0 0 45px 0;
@@ -190,11 +172,9 @@ $text-font: Roboto;
         padding: 40px 0 25px 35px;
     }
 
-
     .contacts {
         text-decoration: none;
         font-family: $text-font;
-
 
         a {
             text-decoration: none;
@@ -231,7 +211,6 @@ $text-font: Roboto;
     }
 }
 
-
 @media all and (max-width: 768px) {
     * {
         padding: 0;
@@ -254,7 +233,6 @@ $text-font: Roboto;
 
     }
 
-
     .dish-wrap-palette {
         width: 130%;
         display: flex;
@@ -272,8 +250,6 @@ $text-font: Roboto;
                 margin: 30px;
             }
         }
-
-
 
         &:hover {
             width: 100%;
@@ -302,8 +278,6 @@ $text-font: Roboto;
         }
     }
 
-
-
     .container {
         animation-name: container;
         animation-duration: 3s;
@@ -329,8 +303,7 @@ $text-font: Roboto;
         bottom: 20px;
         left: 35px;
 
-           }
-
+    }
 
     @keyframes hideLoading {
         0% {

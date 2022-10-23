@@ -1,19 +1,40 @@
-// body {
-//     outline: 1px solid red;
-//     padding: 0;
-//     margin: 0;
-//     animation-name: body;
-//     animation-duration: 5s;
+body {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    animation-name: container;
+    animation-duration: 3s;
+}
 
-//     @keyframes body {
-//         from {
-//             opacity: 0;
-//         }
+@keyframes container {
+    0% {
+        opacity: 0;
+    }
 
-//         to {
-//             opacity: 1;
-//         }
-//     }
+    100% {
+        opacity: 1;
+    }
+}
 
-// }
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: hideLoading 2s forwards;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    left: 35px;
 
+}
+
+@keyframes hideLoading {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

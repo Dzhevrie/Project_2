@@ -77,25 +77,13 @@ $text-font: Roboto;
 }
 
 @mixin dish {
-    width: 100%;
+    width: 72%;
+    display: flex;
+    align-items: center;
+
 
     &-price {
         vertical-align: super;
-    }
-
-    .fa-check-circle {
-        font-size: 40px;
-        color: #fff;
-        background-color: $third-color;
-        border-radius: 50%;
-        border: 1px solid $third-color;
-        transition: transform 1s;
-        margin: 30px;
-        position: absolute;
-
-        &:hover {
-            transform: rotate(360deg);
-        }
     }
 
     span {
@@ -110,13 +98,19 @@ $text-font: Roboto;
 }
 
 @mixin dish-title {
-    width: 70%;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    // width: 70%;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
 
     h3 {
-        width: 250px;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         padding-bottom: 5px;
+        font-family: Roboto;
+        font-size: 25px;
+        font-weight: 500;
 
         font: {
             family: $text-font;
@@ -127,10 +121,10 @@ $text-font: Roboto;
     }
 
     p {
-        width: 70%;
+        width: 85%;
         overflow: hidden;
         text-overflow: ellipsis;
-        white-space: nowrap;
+        // white-space: nowrap;
         color: gray;
 
         font: {
@@ -149,7 +143,7 @@ $text-font: Roboto;
     font-size: 19px;
     box-shadow: 1px 2px 14px 6px rgb(0 0 0 / 15%);
     padding: 18px 85px;
-    margin: 45px 0 75px 135px;
+    margin: 45px 0 75px 35px;
 
     &:hover {
         cursor: pointer;
@@ -215,11 +209,10 @@ $text-font: Roboto;
     * {
         padding: 0;
         margin: 0;
-
     }
 
     .visible-dish-wrap {
-        width: 92%;
+        // width: 70%;
         background-color: #fff;
         border-radius: 30px;
         margin: 15px;
@@ -234,20 +227,20 @@ $text-font: Roboto;
     }
 
     .dish-wrap-palette {
-        width: 130%;
+        width: 145%;
         display: flex;
         align-items: center;
         transition: width 1s ease-out 100ms;
 
         >.check {
             .fa-check-circle {
-                font-size: 40px;
+                font-size: 35px;
                 color: #fff;
                 background-color: $third-color;
                 border-radius: 50%;
                 border: 1px solid $third-color;
                 transition: transform 1s ease-out 10ms;
-                margin: 30px;
+                // margin: 30px;
             }
         }
 
@@ -263,16 +256,16 @@ $text-font: Roboto;
 
         .dish-info-palette {
             display: inline-block;
-            width: 70%;
-            padding-left: 30px;
-            margin-right: 10px;
+            width: 55%;
+            padding-left: 15px;
+            margin: 0 50px 0 10px;
             overflow: hidden;
             white-space: nowrap;
 
             >p {
-                width: 250px;
+                width: 100%;
                 overflow: hidden;
-                // white-space: nowrap;
+                white-space: nowrap;
                 text-overflow: ellipsis;
             }
         }
@@ -683,8 +676,8 @@ $text-font: Roboto;
     .check {
         background-color: #99E2D0;
         border-radius: 0 25px 25px 0;
-        width: 140px;
-        height: 110px;
+        width: 100px;
+        height: 95px;
         // margin: 0 0 0 -30px;
         // position: absolute;
         // right: 0px;
@@ -693,12 +686,12 @@ $text-font: Roboto;
     }
 
     .fa-check-circle {
-        font-size: 40px;
+        font-size: 35px;
         color: #fff;
         background-color: $third-color;
         border-radius: 50%;
         transition: transform 1s;
-        margin: 35px;
+        margin: 28px 32px;
         // position: absolute;
     }
 

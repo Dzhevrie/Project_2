@@ -107,7 +107,7 @@ body {
 }
 
 /* Section with the buttons for chosing the place 
-and prepare the menu*/
+    and prepare the menu*/
 .btns {
   padding: 40px 10px 50px 15px;
   display: flex;
@@ -164,6 +164,132 @@ and prepare the menu*/
   font-size: 22px;
   font-weight: 700;
   font-family: Roboto;
+}
+
+.rsts-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #99E2D0;
+  padding: 15px 0 50px 0;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.rsts-section h3 {
+  padding: 0px 1240px 10px 0px;
+  font-size: 25px;
+  font-family: Roboto;
+  font-weight: 700;
+}
+
+.rst-ad {
+  background-color: #fff;
+  border-radius: 18px;
+  /* margin: 20px; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.rst-ad a {
+  text-decoration: none;
+}
+.rst-ad span {
+  color: darkcyan;
+  background-color: #99E2D0;
+  font-size: 17px;
+  padding: 6px 30px;
+  font-family: Roboto;
+  font-weight: 700;
+  margin: 15px 0 0 -106px;
+  position: absolute;
+}
+.rst-ad img {
+  width: 320px;
+  border-radius: 18px 18px 0 0;
+}
+
+.ad-info {
+  position: relative;
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info h4 {
+  color: #000;
+  text-decoration: none;
+  padding: 2px 0;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 800;
+}
+.info p {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  color: grey;
+}
+
+.main-heart1 {
+  font-size: 30px;
+  color: gray;
+  position: absolute;
+  left: 250px;
+  opacity: 1;
+}
+
+.main-heart2 {
+  width: auto;
+  font-size: 30px;
+  position: absolute;
+  left: 250px;
+  opacity: 0;
+}
+.main-heart2:hover {
+  opacity: 1;
+  transition-duration: 1s;
+  color: #a16be0;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-wrap: wrap;
+  background-color: #000;
+  padding: 0 0 45px 0;
+}
+footer h5 {
+  color: #fff;
+  font-family: Shrikhand;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.contacts {
+  text-decoration: none;
+  font-family: Roboto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contacts a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+.contacts a .fa-handshake {
+  transform: rotate(-50deg);
+  font-size: 20px;
+  padding-right: 15px;
+}
+.contacts a .fa-utensils {
+  padding-right: 20px;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

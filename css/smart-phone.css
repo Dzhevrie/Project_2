@@ -381,7 +381,7 @@
     font-weight: 100;
   }
   .dish-palette {
-    width: 72%;
+    width: 74%;
     display: flex;
     align-items: center;
   }
@@ -422,7 +422,10 @@
     font-size: 19px;
     box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
     padding: 18px 85px;
-    margin: 45px 0 75px 35px;
+    margin: 50px 0 75px 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
   }
   .order:hover {
     cursor: pointer;
@@ -503,7 +506,7 @@
     font-weight: 100;
   }
   .dish-plate {
-    width: 72%;
+    width: 74%;
     display: flex;
     align-items: center;
   }
@@ -544,7 +547,10 @@
     font-size: 19px;
     box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
     padding: 18px 85px;
-    margin: 45px 0 75px 35px;
+    margin: 50px 0 75px 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
   }
   .order:hover {
     cursor: pointer;
@@ -611,7 +617,7 @@
     font-weight: 100;
   }
   .dish-bastille {
-    width: 72%;
+    width: 74%;
     display: flex;
     align-items: center;
   }
@@ -652,7 +658,10 @@
     font-size: 19px;
     box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
     padding: 18px 85px;
-    margin: 45px 0 75px 35px;
+    margin: 50px 0 75px 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
   }
   .order:hover {
     cursor: pointer;
@@ -719,7 +728,7 @@
     font-weight: 100;
   }
   .dish-gourmand {
-    width: 72%;
+    width: 74%;
     display: flex;
     align-items: center;
   }
@@ -760,7 +769,10 @@
     font-size: 19px;
     box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
     padding: 18px 85px;
-    margin: 45px 0 75px 35px;
+    margin: 50px 0 75px 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
   }
   .order:hover {
     cursor: pointer;

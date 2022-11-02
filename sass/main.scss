@@ -1,8 +1,7 @@
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$third-color: #99E2D0;
-$main-font: Shrikhand;
-$text-font: Roboto;
+@import "./base/animations.scss";
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+
 
 @mixin footer {
     background-color: #000;

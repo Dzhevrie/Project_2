@@ -14,6 +14,7 @@
     margin: 0;
   }
   .visible-dish-wrap {
+    position: relative;
     background-color: #fff;
     border-radius: 30px;
     margin: 15px;
@@ -21,11 +22,13 @@
     box-shadow: 0px 7px 10px 1px rgba(0, 0, 0, 0.15);
   }
   .visible-dish-wrap:hover {
+    width: fit-content;
     cursor: pointer;
     transform: rotate(360deg);
   }
   .dish-wrap-palette {
-    width: 145%;
+    position: relative;
+    width: 150%;
     display: flex;
     align-items: center;
     transition: width 1s ease-out 100ms;
@@ -36,7 +39,7 @@
     background-color: #99E2D0;
     border-radius: 50%;
     border: 1px solid #99E2D0;
-    transition: transform 1s ease-out 10ms;
+    transition: transform 1s ease-in 10ms;
   }
   .dish-wrap-palette:hover {
     width: 100%;
@@ -53,7 +56,7 @@
     white-space: nowrap;
   }
   .dish-wrap-palette .dish-info-palette > p {
-    width: 100%;
+    width: 80%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -381,7 +384,7 @@
     font-weight: 100;
   }
   .dish-palette {
-    width: 74%;
+    width: 128%;
     display: flex;
     align-items: center;
   }
@@ -393,8 +396,12 @@
     font-size: 19px;
     font-weight: 600;
   }
+  .dish-info-palette {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .dish-info-palette h3 {
-    width: 100%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -402,17 +409,17 @@
     font-family: Roboto;
     font-size: 25px;
     font-weight: 500;
-    font-family: Roboto;
-    font-size: 25px;
-    font-weight: 500;
   }
   .dish-info-palette p {
-    width: 85%;
-    overflow: hidden;
-    text-overflow: ellipsis;
     color: gray;
     font-family: Roboto;
     font-size: 19px;
+  }
+  .dish-info-palette p:hover {
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .order {
     background-color: #FF79DA;
@@ -506,7 +513,7 @@
     font-weight: 100;
   }
   .dish-plate {
-    width: 74%;
+    width: 128%;
     display: flex;
     align-items: center;
   }
@@ -518,8 +525,12 @@
     font-size: 19px;
     font-weight: 600;
   }
+  .dish-info-plate {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .dish-info-plate h3 {
-    width: 100%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -527,17 +538,17 @@
     font-family: Roboto;
     font-size: 25px;
     font-weight: 500;
-    font-family: Roboto;
-    font-size: 25px;
-    font-weight: 500;
   }
   .dish-info-plate p {
-    width: 85%;
-    overflow: hidden;
-    text-overflow: ellipsis;
     color: gray;
     font-family: Roboto;
     font-size: 19px;
+  }
+  .dish-info-plate p:hover {
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .order {
     background-color: #FF79DA;
@@ -617,7 +628,7 @@
     font-weight: 100;
   }
   .dish-bastille {
-    width: 74%;
+    width: 128%;
     display: flex;
     align-items: center;
   }
@@ -629,8 +640,12 @@
     font-size: 19px;
     font-weight: 600;
   }
+  .dish-info-bastille {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .dish-info-bastille h3 {
-    width: 100%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -638,17 +653,17 @@
     font-family: Roboto;
     font-size: 25px;
     font-weight: 500;
-    font-family: Roboto;
-    font-size: 25px;
-    font-weight: 500;
   }
   .dish-info-bastille p {
-    width: 85%;
-    overflow: hidden;
-    text-overflow: ellipsis;
     color: gray;
     font-family: Roboto;
     font-size: 19px;
+  }
+  .dish-info-bastille p:hover {
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .order {
     background-color: #FF79DA;
@@ -728,7 +743,7 @@
     font-weight: 100;
   }
   .dish-gourmand {
-    width: 74%;
+    width: 128%;
     display: flex;
     align-items: center;
   }
@@ -740,8 +755,12 @@
     font-size: 19px;
     font-weight: 600;
   }
+  .dish-info-gourmand {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .dish-info-gourmand h3 {
-    width: 100%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -749,17 +768,17 @@
     font-family: Roboto;
     font-size: 25px;
     font-weight: 500;
-    font-family: Roboto;
-    font-size: 25px;
-    font-weight: 500;
   }
   .dish-info-gourmand p {
-    width: 85%;
-    overflow: hidden;
-    text-overflow: ellipsis;
     color: gray;
     font-family: Roboto;
     font-size: 19px;
+  }
+  .dish-info-gourmand p:hover {
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .order {
     background-color: #FF79DA;

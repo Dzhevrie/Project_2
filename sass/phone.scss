@@ -77,7 +77,8 @@ $text-font: Roboto;
 }
 
 @mixin dish {
-    width: 74%;
+    // position: relative;
+    width: 128%;
     display: flex;
     align-items: center;
 
@@ -98,19 +99,16 @@ $text-font: Roboto;
 }
 
 @mixin dish-title {
-    // width: 70%;
-    // overflow: hidden;
-    // text-overflow: ellipsis;
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     h3 {
-        width: 100%;
+        // width: 75%;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
         padding-bottom: 5px;
-        font-family: Roboto;
-        font-size: 25px;
-        font-weight: 500;
 
         font: {
             family: $text-font;
@@ -121,16 +119,20 @@ $text-font: Roboto;
     }
 
     p {
-        width: 85%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        // white-space: nowrap;
         color: gray;
+
+        &:hover {
+            width: 80%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
 
         font: {
             family: $text-font;
             size: 19px;
         }
+
     }
 
 }
@@ -215,7 +217,8 @@ $text-font: Roboto;
     }
 
     .visible-dish-wrap {
-        // width: 70%;
+        position: relative;
+        // width: 93%;
         background-color: #fff;
         border-radius: 30px;
         margin: 15px;
@@ -223,6 +226,7 @@ $text-font: Roboto;
         box-shadow: 0px 7px 10px 1px rgb(0 0 0 / 15%);
 
         &:hover {
+            width: fit-content;
             cursor: pointer;
             transform: rotate(360deg);
         }
@@ -230,7 +234,8 @@ $text-font: Roboto;
     }
 
     .dish-wrap-palette {
-        width: 145%;
+        position: relative;
+        width: 150%;
         display: flex;
         align-items: center;
         transition: width 1s ease-out 100ms;
@@ -242,8 +247,7 @@ $text-font: Roboto;
                 background-color: $third-color;
                 border-radius: 50%;
                 border: 1px solid $third-color;
-                transition: transform 1s ease-out 10ms;
-                // margin: 30px;
+                transition: transform 1s ease-in 10ms;
             }
         }
 
@@ -266,7 +270,7 @@ $text-font: Roboto;
             white-space: nowrap;
 
             >p {
-                width: 100%;
+                width: 80%;
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;

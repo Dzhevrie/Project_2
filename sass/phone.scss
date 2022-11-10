@@ -1,11 +1,9 @@
-
-
-
-
-    
-
+@import "./base/animations.scss";
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
 
 @media all and (max-width: 768px) {
+    
     * {
         padding: 0;
         margin: 0;
@@ -284,6 +282,7 @@
     }
 
     .rst-ad {
+        position: relative;
         background-color: #fff;
         border-radius: 18px;
         margin: 20px;
@@ -352,11 +351,16 @@
 
     }
 
+    // .main-heart{
+    //     position: absolute;
+    //     left: 360px;
+    // }
+
     .main-heart1 {
         font-size: 30px;
         color: gray;
-        position: absolute;
-        right: 35px;
+        position: relative;
+        left: 10px;
         //  margin: 255px 410px; 
         opacity: 1;
     }
@@ -364,8 +368,8 @@
     .main-heart2 {
         width: auto;
         font-size: 30px;
-        position: absolute;
-        right: 35px;
+        position: relative;
+        left: 10px;
         opacity: 0;
         // margin: 255px 410px;
 

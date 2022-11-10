@@ -8,6 +8,22 @@
     opacity: 1;
   }
 }
+@keyframes container {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes hideLoading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @media all and (max-width: 768px) {
   * {
     padding: 0;
@@ -65,14 +81,6 @@
     animation-name: container;
     animation-duration: 3s;
   }
-  @keyframes container {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
   .loading {
     display: flex;
     justify-content: center;
@@ -82,14 +90,6 @@
     right: 0;
     bottom: 20px;
     left: 35px;
-  }
-  @keyframes hideLoading {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
   }
   .navigation {
     width: 100%;
@@ -226,6 +226,7 @@
     padding: 40px 0 0px 30px;
   }
   .rst-ad {
+    position: relative;
     background-color: #fff;
     border-radius: 18px;
     margin: 20px;
@@ -275,15 +276,15 @@
   .main-heart1 {
     font-size: 30px;
     color: gray;
-    position: absolute;
-    right: 35px;
+    position: relative;
+    left: 10px;
     opacity: 1;
   }
   .main-heart2 {
     width: auto;
     font-size: 30px;
-    position: absolute;
-    right: 35px;
+    position: relative;
+    left: 10px;
     opacity: 0;
   }
   .main-heart2:hover {

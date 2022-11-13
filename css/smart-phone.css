@@ -105,11 +105,11 @@
     align-items: center;
   }
   .search-btn-wrap {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #9356DC;
-    padding: 10px;
     box-shadow: rgba(11, 10, 10, 0.18) 0px 13px 12px 0px inset;
   }
   .search-btn-wrap input {
@@ -226,7 +226,6 @@
     padding: 40px 0 0px 30px;
   }
   .rst-ad {
-    position: relative;
     background-color: #fff;
     border-radius: 18px;
     margin: 20px;
@@ -276,14 +275,13 @@
   .main-heart1 {
     font-size: 30px;
     color: gray;
-    position: absolute;
-    right: 100px;
+    position: sticky;
+    left: 665px;
     opacity: 1;
   }
   .main-heart2 {
-    width: auto;
     font-size: 30px;
-    position: relative;
+    position: sticky;
     left: 10px;
     opacity: 0;
   }
@@ -299,32 +297,34 @@
   footer h5 {
     color: #fff;
     font-family: Shrikhand;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 400;
-    display: flex;
-    padding: 40px 0 25px 35px;
+    padding: 40px 0 25px 50px;
   }
   footer .contacts {
+    display: flex;
     text-decoration: none;
     font-family: Roboto;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 50px;
+  }
+  footer .contacts p {
+    position: relative;
   }
   footer .contacts a {
     text-decoration: none;
-    display: flex;
-    justify-content: flex-start;
     color: #fff;
-    font-size: 15px;
-    padding: 10px;
-    margin: 0 30px;
-  }
-  footer .contacts a .fa-handshake {
-    transform: rotate(-50deg);
-    font-size: 15px;
-    padding-right: 15px;
+    font-size: 20px;
+    margin: 4px 0;
   }
   footer .contacts a .fa-utensils {
-    padding-right: 20px;
-    font-size: 15px;
+    font-size: 17px;
+  }
+  footer .contacts a .fa-hands-helping {
+    padding: 7px 11px 5px 0;
+    transform: rotate(-15deg);
+    font-size: 13px;
   }
   .rstnt-navigation-palette {
     display: flex;

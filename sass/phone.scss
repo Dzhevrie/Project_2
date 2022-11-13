@@ -2,6 +2,8 @@
 @import "./utils/variables.scss";
 @import "./utils/mixins.scss";
 
+@import "./layout/footer";
+
 @media all and (max-width: 768px) {
     
     * {
@@ -114,11 +116,12 @@
     }
 
     .search-btn-wrap {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #9356DC;
-        padding: 10px;
+        // padding: 10px;
         box-shadow: rgb(11 10 10 / 18%) 0px 13px 12px 0px inset;
 
         input {
@@ -357,18 +360,19 @@
     // }
 
     .main-heart1 {
+        // width: auto;
         font-size: 30px;
         color: gray;
-        position: absolute;
-        right: 100px;
+        position: sticky;
+        left: 665px;
         //  margin: 255px 410px; 
         opacity: 1;
     }
 
     .main-heart2 {
-        width: auto;
+        // width: auto;
         font-size: 30px;
-        position: relative;
+        position: sticky;
         left: 10px;
         opacity: 0;
         // margin: 255px 410px;

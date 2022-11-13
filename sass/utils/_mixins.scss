@@ -165,8 +165,17 @@
     }
 
     .contacts {
+        display: flex;
         text-decoration: none;
-        font-family: $text-font;
+        font-family: Roboto;
+        flex-direction: column;
+        align-items: flex-start;
+
+        p {
+            margin-left: 32px;
+            position: relative;
+            display: flex;
+        }
 
         a {
             text-decoration: none;
@@ -174,17 +183,21 @@
             justify-content: flex-start;
             color: #fff;
             font-size: 15px;
-            padding: 10px;
-            margin: 0 30px;
+            // padding: 10px;
+            margin: 4px 0;
 
             .fa-handshake {
+                padding: 10px 0;
                 transform: rotate(-50deg);
                 font-size: 15px;
-                padding-right: 15px;
+                /* padding-right: 15px; */
+                // position: absolute;
+                // left: -12px;
             }
 
             .fa-utensils {
-                padding-right: 20px;
+                // position: absolute;
+                // padding-right: 20px;
                 font-size: 15px;
             }
         }

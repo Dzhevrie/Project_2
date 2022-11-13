@@ -276,8 +276,8 @@
   .main-heart1 {
     font-size: 30px;
     color: gray;
-    position: relative;
-    left: 10px;
+    position: absolute;
+    right: 100px;
     opacity: 1;
   }
   .main-heart2 {

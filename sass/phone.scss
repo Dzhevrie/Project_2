@@ -282,7 +282,7 @@
     }
 
     .rst-ad {
-        position: relative;
+        // position: relative;
         background-color: #fff;
         border-radius: 18px;
         margin: 20px;
@@ -359,8 +359,8 @@
     .main-heart1 {
         font-size: 30px;
         color: gray;
-        position: relative;
-        left: 10px;
+        position: absolute;
+        right: 100px;
         //  margin: 255px 410px; 
         opacity: 1;
     }

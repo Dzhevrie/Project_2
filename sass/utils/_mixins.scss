@@ -49,7 +49,7 @@
 
 @mixin line {
     border-bottom: 3px solid $third-color;
-    width: 13%;
+    width: 7%;
     margin: 0 0 25px 27px;
 }
 
@@ -130,7 +130,101 @@
 
 }
 
+
+    // .visible-dish-wrap {
+    //     position: relative;
+    //     // width: 93%;
+    //     background-color: #fff;
+    //     border-radius: 30px;
+    //     margin: 15px;
+    //     overflow: hidden;
+    //     box-shadow: 0px 7px 10px 1px rgb(0 0 0 / 15%);
+
+    //     &:hover {
+    //         width: fit-content;
+    //         cursor: pointer;
+    //         transform: rotate(360deg);
+    //     }
+
+    // }
+
+    // .dish-wrap-palette {
+    //     position: relative;
+    //     width: 150%;
+    //     display: flex;
+    //     align-items: center;
+    //     transition: width 1s ease-out 100ms;
+
+    //     >.check {
+    //         .fa-check-circle {
+    //             font-size: 35px;
+    //             color: #fff;
+    //             background-color: $third-color;
+    //             border-radius: 50%;
+    //             border: 1px solid $third-color;
+    //             transition: transform 1s ease-in 10ms;
+    //         }
+    //     }
+
+    //     &:hover {
+    //         width: 100%;
+
+    //         >.check {
+    //             .fa-check-circle {
+    //                 transform: rotate(360deg);
+    //             }
+    //         }
+    //     }
+
+    //     .dish-info-palette {
+    //         display: inline-block;
+    //         width: 55%;
+    //         padding-left: 15px;
+    //         margin: 0 50px 0 10px;
+    //         overflow: hidden;
+    //         white-space: nowrap;
+
+    //         >p {
+    //             width: 80%;
+    //             overflow: hidden;
+    //             white-space: nowrap;
+    //             text-overflow: ellipsis;
+    //         }
+    //     }
+    // }
+
+    // .container {
+    //     animation-name: container;
+    //     animation-duration: 3s;
+    // }
+
+
+    // .check {
+    //     background-color: #99E2D0;
+    //     border-radius: 0 25px 25px 0;
+    //     width: 100px;
+    //     height: 95px;
+    //     // margin: 0 0 0 -30px;
+    //     // position: absolute;
+    //     // right: 0px;
+    //     // bottom: 0px;
+    //     // z-index: -1;
+    // }
+
+    // .fa-check-circle {
+    //     font-size: 35px;
+    //     color: #fff;
+    //     background-color: $third-color;
+    //     border-radius: 50%;
+    //     transition: transform 1s;
+    //     margin: 28px 32px;
+    //     // position: absolute;
+    // }
+
+
+
 @mixin btn-order {
+    position: relative;
     background-color: #FF79DA;
     color: #fff;
     border: none;
@@ -138,10 +232,10 @@
     font-size: 19px;
     box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
     padding: 18px 85px;
-    margin: 50px 0 75px 90px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+    margin: 50px 0 75px 180px;
+    // display: flex;
+    // align-items: center;
+    // flex-direction: row;
 
     &:hover {
         cursor: pointer;

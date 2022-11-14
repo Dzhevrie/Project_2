@@ -1,11 +1,17 @@
-@import "./base/animations.scss";
-@import "./utils/variables.scss";
-@import "./utils/mixins.scss";
-
-@import "./layout/footer";
-
 @media all and (max-width: 768px) {
+
+    @import "./base/animations.scss";
     
+    @import "./utils/variables.scss";
+    @import "./utils/mixins.scss";
+
+    @import "./layout/footer";
+
+    @import "./pages/the_full_palette.scss";
+    @import "./pages/the_enchanted_plate";
+    @import "./pages/bastille";
+    @import "./pages/le_gourmand.scss";
+
     * {
         padding: 0;
         margin: 0;
@@ -78,7 +84,7 @@
         animation-duration: 3s;
     }
 
- 
+
 
     .loading {
         display: flex;
@@ -92,7 +98,7 @@
 
     }
 
-  
+
 
 
     // HEADER
@@ -390,205 +396,5 @@
     footer {
         @include footer;
     }
-
-    // THE FULL PALETTE RESTAURANT'S SITE
-
-
-    // NAVIGATION
-
-    .rstnt-navigation-palette {
-        @include restorant-navigation;
-    }
-
-    .nav-img {
-        width: 100%;
-    }
-
-    // THE FULL PALETTE RESTAURANT'S MAIN SECTION 
-
-    .menu-palette {
-        @include menu-about-pages;
-    }
-
-    .line {
-        @include line;
-    }
-
-    .menu-title-palette {
-        @include menu-title;
-    }
-
-    .heart {
-        @include heart;
-    }
-
-    // .menu-section {}
-
-    .dish-palette {
-        @include dish;
-    }
-
-    .dish-info-palette {
-        @include dish-title;
-
-    }
-
-    .order {
-        @include btn-order;
-    }
-
-    // THE ENCHANTED PLATE RESTAURANT'S SITE
-
-    // NAVIGATION
-
-    .rstnt-navigation-plate {
-        @include restorant-navigation;
-    }
-
-    .nav-img {
-        width: 100%;
-    }
-
-    // THE FULL PLATE RESTAURANT'S MAIN SECTION 
-
-    .menu-plate {
-        @include menu-about-pages;
-    }
-
-    .line-plate {
-        @include line;
-    }
-
-    .menu-title-plate {
-        @include menu-title;
-    }
-
-    .check {
-        background-color: #99E2D0;
-        border-radius: 0 25px 25px 0;
-        width: 100px;
-        height: 95px;
-        // margin: 0 0 0 -30px;
-        // position: absolute;
-        // right: 0px;
-        // bottom: 0px;
-        // z-index: -1;
-    }
-
-    .fa-check-circle {
-        font-size: 35px;
-        color: #fff;
-        background-color: $third-color;
-        border-radius: 50%;
-        transition: transform 1s;
-        margin: 28px 32px;
-        // position: absolute;
-    }
-
-    .heart {
-        @include heart;
-    }
-
-    .dish-plate {
-        @include dish;
-    }
-
-    .dish-info-plate {
-        @include dish-title;
-
-    }
-
-    .order {
-        @include btn-order;
-    }
-
-    // BASTILLE RESTAURANT'S SITE
-
-    // NAVIGATION
-
-    .rstnt-navigation-bastille {
-        @include restorant-navigation;
-    }
-
-    .nav-img {
-        width: 100%;
-    }
-
-    // BASTILLE MAIN SECTION 
-
-    .menu-bastille {
-        @include menu-about-pages;
-    }
-
-    .line-bastille {
-        @include line;
-    }
-
-    .menu-title-bastille {
-        @include menu-title;
-    }
-
-    .heart {
-        @include heart;
-    }
-
-    .dish-bastille {
-        @include dish;
-    }
-
-    .dish-info-bastille {
-        @include dish-title;
-
-    }
-
-    .order {
-        @include btn-order;
-    }
-
-
-    // LE GOURMAND RESTAURANT'S SITE
-
-    // NAVIGATION
-
-    .rstnt-navigation-gourmand {
-        @include restorant-navigation;
-    }
-
-    .nav-img {
-        width: 100%;
-    }
-
-    // LE GOURMAND RESTAURANT'S MAIN SECTION 
-
-    .menu-gourmand {
-        @include menu-about-pages;
-    }
-
-    .line-gourmand {
-        @include line;
-    }
-
-    .menu-title-gourmand {
-        @include menu-title;
-    }
-
-    .heart {
-        @include heart;
-    }
-
-    .dish-gourmand {
-        @include dish;
-    }
-
-    .dish-info-gourmand {
-        @include dish-title;
-
-    }
-
-    .order {
-        @include btn-order;
-    }
-
-    // CONTACT'S SITE
 
 }

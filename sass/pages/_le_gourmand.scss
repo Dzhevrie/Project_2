@@ -1,0 +1,139 @@
+ 
+ 
+ 
+ // LE GOURMAND RESTAURANT'S SITE
+
+ // NAVIGATION
+
+ .rstnt-navigation-gourmand {
+     @include restorant-navigation;
+ }
+
+ .nav-img {
+     width: 100%;
+ }
+
+ // LE GOURMAND RESTAURANT'S MAIN SECTION 
+
+ .menu-gourmand {
+     @include menu-about-pages;
+ }
+
+ .line-gourmand {
+     @include line;
+ }
+
+ .menu-title-gourmand {
+     @include menu-title;
+ }
+
+ .heart {
+     @include heart;
+ }
+
+ .dish-gourmand {
+     @include dish;
+ }
+
+ .dish-info-gourmand {
+     @include dish-title;
+
+ }
+
+ .visible-dish-wrap {
+     position: relative;
+     // width: 93%;
+     background-color: #fff;
+     border-radius: 30px;
+     margin: 15px;
+     overflow: hidden;
+     box-shadow: 0px 7px 10px 1px rgb(0 0 0 / 15%);
+
+     &:hover {
+         width: fit-content;
+         cursor: pointer;
+         transform: rotate(360deg);
+     }
+
+ }
+
+ .dish-wrap-gourmand {
+     position: relative;
+     width: 150%;
+     display: flex;
+     align-items: center;
+     transition: width 1s ease-out 100ms;
+
+     >.check {
+         .fa-check-circle {
+             font-size: 35px;
+             color: #fff;
+             background-color: $third-color;
+             border-radius: 50%;
+             border: 1px solid $third-color;
+             transition: transform 1s ease-in 10ms;
+         }
+     }
+
+     &:hover {
+         width: 100%;
+
+         >.check {
+             .fa-check-circle {
+                 transform: rotate(360deg);
+             }
+         }
+     }
+
+     .dish-info-gourmand {
+         display: inline-block;
+         width: 55%;
+         padding-left: 15px;
+         margin: 0 50px 0 10px;
+         overflow: hidden;
+         white-space: nowrap;
+
+         >p {
+             width: 80%;
+             overflow: hidden;
+             white-space: nowrap;
+             text-overflow: ellipsis;
+         }
+     }
+ }
+
+ .container {
+     animation-name: container;
+     animation-duration: 3s;
+ }
+
+ .check {
+     background-color: #99E2D0;
+     border-radius: 0 25px 25px 0;
+     width: 100px;
+     height: 95px;
+     // margin: 0 0 0 -30px;
+     // position: absolute;
+     // right: 0px;
+     // bottom: 0px;
+     // z-index: -1;
+ }
+
+ .fa-check-circle {
+     font-size: 35px;
+     color: #fff;
+     background-color: $third-color;
+     border-radius: 50%;
+     transition: transform 1s;
+     margin: 28px 32px;
+     // position: absolute;
+ }
+
+
+ .order {
+     @include btn-order;
+ }
+
+ footer {
+    @include footer;
+}

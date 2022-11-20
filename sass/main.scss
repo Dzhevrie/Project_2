@@ -1,14 +1,10 @@
-@import "./base/animations.scss";
+@import "base/animations";
     
-@import "./utils/variables.scss";
-@import "./utils/mixins.scss";
+@import "utils/variables";
+@import "utils/mixins";
 
-@import "./layout/footer";
+@import "layout/footer";
 
-@import "./pages/the_full_palette.scss";
-@import "./pages/the_enchanted_plate";
-@import "./pages/bastille";
-@import "./pages/le_gourmand.scss";
 
 
 @mixin footer {

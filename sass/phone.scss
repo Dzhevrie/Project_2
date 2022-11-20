@@ -1,16 +1,11 @@
+@import "base/animations";
+
+@import "utils/variables";
+@import "utils/mixins";
+
+@import "layout/footer";
+
 @media all and (max-width: 768px) {
-
-    @import "./base/animations.scss";
-    
-    @import "./utils/variables.scss";
-    @import "./utils/mixins.scss";
-
-    @import "./layout/footer";
-
-    @import "./pages/the_full_palette.scss";
-    @import "./pages/the_enchanted_plate";
-    @import "./pages/bastille";
-    @import "./pages/le_gourmand.scss";
 
     * {
         padding: 0;
@@ -63,7 +58,7 @@
     //         }
     //     }
 
-       
+
     // }
 
     // .dish-info-palette {
@@ -399,5 +394,554 @@
     footer {
         @include footer;
     }
+
+     // THE FULL PALETTE RESTAURANT'S SITE
+
+    // NAVIGATION
+
+    .rstnt-navigation-palette {
+        @include restorant-navigation;
+    }
+
+    .nav-img {
+        width: 100%;
+    }
+
+    // THE FULL PALETTE RESTAURANT'S MAIN SECTION 
+
+    .menu-palette {
+        @include menu-about-pages;
+    }
+
+    .line {
+        @include line;
+    }
+
+    .menu-title-palette {
+        @include menu-title;
+    }
+
+    .heart {
+        @include heart;
+    }
+
+    // .menu-section {}
+
+    .dish-palette {
+        @include dish;
+    }
+
+    // .dish-info-palette {
+    //     @include dish-title;
+
+    // }
+
+    // .visible-dish-wrap {
+    //     position: relative;
+    //     // width: 93%;
+    //     background-color: #fff;
+    //     border-radius: 30px;
+    //     margin: 15px;
+    //     overflow: hidden;
+    //     box-shadow: 0px 7px 10px 1px rgb(0 0 0 / 15%);
+
+    //     &:hover {
+    //         width: fit-content;
+    //         cursor: pointer;
+    //         transform: rotate(360deg);
+    //     }
+
+    // }
+
+    // .dish-wrap-palette {
+    //     position: relative;
+    //     width: 150%;
+    //     display: flex;
+    //     align-items: center;
+    //     transition: width 1s ease-out 100ms;
+
+    //     >.check {
+    //         .fa-check-circle {
+    //             font-size: 35px;
+    //             color: #fff;
+    //             background-color: $third-color;
+    //             border-radius: 50%;
+    //             border: 1px solid $third-color;
+    //             transition: transform 1s ease-in 10ms;
+    //         }
+    //     }
+
+    //     &:hover {
+    //         width: 100%;
+
+    //         >.check {
+    //             .fa-check-circle {
+    //                 transform: rotate(360deg);
+    //             }
+    //         }
+    //     }
+
+    //     .dish-info-palette {
+    //         display: inline-block;
+    //         width: 55%;
+    //         padding-left: 15px;
+    //         margin: 0 50px 0 10px;
+    //         overflow: hidden;
+    //         white-space: nowrap;
+
+    //         >p {
+    //             width: 80%;
+    //             overflow: hidden;
+    //             white-space: nowrap;
+    //             text-overflow: ellipsis;
+    //         }
+    //     }
+    // }
+
+    // .container {
+    //     animation-name: container;
+    //     animation-duration: 3s;
+    // }
+
+    // .check {
+    //     background-color: #99E2D0;
+    //     border-radius: 0 25px 25px 0;
+    //     width: 100px;
+    //     height: 95px;
+    //     // margin: 0 0 0 -30px;
+    //     // position: absolute;
+    //     // right: 0px;
+    //     // bottom: 0px;
+    //     // z-index: -1;
+    // }
+
+    // .fa-check-circle {
+    //     font-size: 35px;
+    //     color: #fff;
+    //     background-color: $third-color;
+    //     border-radius: 50%;
+    //     transition: transform 1s;
+    //     margin: 28px 32px;
+    //     // position: absolute;
+    // }
+
+    .order {
+        @include btn-order;
+    }
+
+    footer {
+        @include footer;
+    }
+
+    // THE ENCHANTED PLATE RESTAURANT'S SITE
+
+    // NAVIGATION
+
+    .rstnt-navigation-plate {
+        @include restorant-navigation;
+    }
+
+    .nav-img {
+        width: 100%;
+    }
+
+    // THE FULL PLATE RESTAURANT'S MAIN SECTION 
+
+    .menu-plate {
+        @include menu-about-pages;
+    }
+
+    .line-plate {
+        @include line;
+    }
+
+    .menu-title-plate {
+        @include menu-title;
+    }
+
+    
+    .heart {
+        @include heart;
+    }
+
+    .dish-plate {
+        @include dish;
+    }
+
+    .dish-info-plate {
+        @include dish-title;
+
+    }
+
+    .visible-dish-wrap {
+        position: relative;
+        // width: 93%;
+        background-color: #fff;
+        border-radius: 30px;
+        margin: 15px;
+        overflow: hidden;
+        box-shadow: 0px 7px 10px 1px rgb(0 0 0 / 15%);
+    
+        &:hover {
+            width: fit-content;
+            cursor: pointer;
+            transform: rotate(360deg);
+        }
+    
+    }
+    
+    .dish-wrap-plate {
+        position: relative;
+        width: 150%;
+        display: flex;
+        align-items: center;
+        transition: width 1s ease-out 100ms;
+    
+        >.check {
+            .fa-check-circle {
+                font-size: 35px;
+                color: #fff;
+                background-color: $third-color;
+                border-radius: 50%;
+                border: 1px solid $third-color;
+                transition: transform 1s ease-in 10ms;
+            }
+        }
+    
+        &:hover {
+            width: 100%;
+    
+            >.check {
+                .fa-check-circle {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    
+        .dish-info-plate {
+            display: inline-block;
+            width: 55%;
+            padding-left: 15px;
+            margin: 0 50px 0 10px;
+            overflow: hidden;
+            white-space: nowrap;
+    
+            >p {
+                width: 80%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+    
+    .container {
+        animation-name: container;
+        animation-duration: 3s;
+    }
+    
+    .check {
+        background-color: #99E2D0;
+        border-radius: 0 25px 25px 0;
+        width: 100px;
+        height: 95px;
+        // margin: 0 0 0 -30px;
+        // position: absolute;
+        // right: 0px;
+        // bottom: 0px;
+        // z-index: -1;
+    }
+    
+    .fa-check-circle {
+        font-size: 35px;
+        color: #fff;
+        background-color: $third-color;
+        border-radius: 50%;
+        transition: transform 1s;
+        margin: 28px 32px;
+        // position: absolute;
+    }
+    
+
+    .order {
+        @include btn-order;
+    }
+
+    footer {
+        @include footer;
+    }
+
+     // LE GOURMAND RESTAURANT'S SITE
+
+ // NAVIGATION
+
+ .rstnt-navigation-gourmand {
+    @include restorant-navigation;
+}
+
+.nav-img {
+    width: 100%;
+}
+
+// LE GOURMAND RESTAURANT'S MAIN SECTION 
+
+.menu-gourmand {
+    @include menu-about-pages;
+}
+
+.line-gourmand {
+    @include line;
+}
+
+.menu-title-gourmand {
+    @include menu-title;
+}
+
+.heart {
+    @include heart;
+}
+
+.dish-gourmand {
+    @include dish;
+}
+
+.dish-info-gourmand {
+    @include dish-title;
+
+}
+
+.visible-dish-wrap {
+    position: relative;
+    // width: 93%;
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 15px;
+    overflow: hidden;
+    box-shadow: 0px 7px 10px 1px rgb(0 0 0 / 15%);
+
+    &:hover {
+        width: fit-content;
+        cursor: pointer;
+        transform: rotate(360deg);
+    }
+
+}
+
+.dish-wrap-gourmand {
+    position: relative;
+    width: 150%;
+    display: flex;
+    align-items: center;
+    transition: width 1s ease-out 100ms;
+
+    >.check {
+        .fa-check-circle {
+            font-size: 35px;
+            color: #fff;
+            background-color: $third-color;
+            border-radius: 50%;
+            border: 1px solid $third-color;
+            transition: transform 1s ease-in 10ms;
+        }
+    }
+
+    &:hover {
+        width: 100%;
+
+        >.check {
+            .fa-check-circle {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    .dish-info-gourmand {
+        display: inline-block;
+        width: 55%;
+        padding-left: 15px;
+        margin: 0 50px 0 10px;
+        overflow: hidden;
+        white-space: nowrap;
+
+        >p {
+            width: 80%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+.container {
+    animation-name: container;
+    animation-duration: 3s;
+}
+
+.check {
+    background-color: #99E2D0;
+    border-radius: 0 25px 25px 0;
+    width: 100px;
+    height: 95px;
+    // margin: 0 0 0 -30px;
+    // position: absolute;
+    // right: 0px;
+    // bottom: 0px;
+    // z-index: -1;
+}
+
+.fa-check-circle {
+    font-size: 35px;
+    color: #fff;
+    background-color: $third-color;
+    border-radius: 50%;
+    transition: transform 1s;
+    margin: 28px 32px;
+    // position: absolute;
+}
+
+
+.order {
+    @include btn-order;
+}
+
+footer {
+   @include footer;
+}
+
+// BASTILLE RESTAURANT'S SITE
+
+// NAVIGATION
+
+.rstnt-navigation-bastille {
+    @include restorant-navigation;
+}
+
+.nav-img {
+    width: 100%;
+}
+
+// BASTILLE MAIN SECTION 
+
+.menu-bastille {
+    @include menu-about-pages;
+}
+
+.line-bastille {
+    @include line;
+}
+
+.menu-title-bastille {
+    @include menu-title;
+}
+
+.heart {
+    @include heart;
+}
+
+.dish-bastille {
+    @include dish;
+}
+
+.dish-info-bastille {
+    @include dish-title;
+
+}
+
+.visible-dish-wrap {
+    position: relative;
+    // width: 93%;
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 15px;
+    overflow: hidden;
+    box-shadow: 0px 7px 10px 1px rgb(0 0 0 / 15%);
+
+    &:hover {
+        width: fit-content;
+        cursor: pointer;
+        transform: rotate(360deg);
+    }
+
+}
+
+.dish-wrap-bastille {
+    position: relative;
+    width: 150%;
+    display: flex;
+    align-items: center;
+    transition: width 1s ease-out 100ms;
+
+    >.check {
+        .fa-check-circle {
+            font-size: 35px;
+            color: #fff;
+            background-color: $third-color;
+            border-radius: 50%;
+            border: 1px solid $third-color;
+            transition: transform 1s ease-in 10ms;
+        }
+    }
+
+    &:hover {
+        width: 100%;
+
+        >.check {
+            .fa-check-circle {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    .dish-info-bastille {
+        display: inline-block;
+        width: 55%;
+        padding-left: 15px;
+        margin: 0 50px 0 10px;
+        overflow: hidden;
+        white-space: nowrap;
+
+        >p {
+            width: 80%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+.container {
+    animation-name: container;
+    animation-duration: 3s;
+}
+
+.check {
+    background-color: #99E2D0;
+    border-radius: 0 25px 25px 0;
+    width: 100px;
+    height: 95px;
+    // margin: 0 0 0 -30px;
+    // position: absolute;
+    // right: 0px;
+    // bottom: 0px;
+    // z-index: -1;
+}
+
+.fa-check-circle {
+    font-size: 35px;
+    color: #fff;
+    background-color: $third-color;
+    border-radius: 50%;
+    transition: transform 1s;
+    margin: 28px 32px;
+    // position: absolute;
+}
+
+.order {
+    @include btn-order;
+}
+
+footer {
+    @include footer;
+}
 
 }

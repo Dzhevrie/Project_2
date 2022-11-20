@@ -17,67 +17,70 @@
         margin: 0;
     }
 
-    .visible-dish-wrap {
-        position: relative;
-        // width: 93%;
-        background-color: #fff;
-        border-radius: 30px;
-        margin: 15px;
-        overflow: hidden;
-        box-shadow: 0px 7px 10px 1px rgb(0 0 0 / 15%);
+    // .visible-dish-wrap {
+    //     position: relative;
+    //     width: 95%;
+    //     background-color: #fff;
+    //     border-radius: 30px;
+    //     margin: 15px;
+    //     overflow: hidden;
+    //     box-shadow: 0px 7px 10px 1px rgb(0 0 0 / 15%);
 
-        &:hover {
-            width: fit-content;
-            cursor: pointer;
-            transform: rotate(360deg);
-        }
+    //     &:hover {
+    //         width: 96%;
+    //         cursor: pointer;
+    //         transform: rotate(360deg);
+    //     }
 
-    }
+    // }
 
-    .dish-wrap-palette {
-        position: relative;
-        width: 150%;
-        display: flex;
-        align-items: center;
-        transition: width 1s ease-out 100ms;
+    // .dish-wrap-palette {
+    //     position: relative;
+    //     width: 150%;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: space-between;
+    //     transition: width 1s ease-out 100ms;
 
-        >.check {
-            .fa-check-circle {
-                font-size: 35px;
-                color: #fff;
-                background-color: $third-color;
-                border-radius: 50%;
-                border: 1px solid $third-color;
-                transition: transform 1s ease-in 10ms;
-            }
-        }
+    //     >.check {
+    //         .fa-check-circle {
+    //             font-size: 35px;
+    //             color: #fff;
+    //             background-color: $third-color;
+    //             border-radius: 50%;
+    //             border: 1px solid $third-color;
+    //             transition: transform 1s ease-in 10ms;
+    //         }
+    //     }
 
-        &:hover {
-            width: 100%;
+    //     &:hover {
+    //         width: 100%;
 
-            >.check {
-                .fa-check-circle {
-                    transform: rotate(360deg);
-                }
-            }
-        }
+    //         >.check {
+    //             .fa-check-circle {
+    //                 transform: rotate(360deg);
+    //             }
+    //         }
+    //     }
 
-        .dish-info-palette {
-            display: inline-block;
-            width: 55%;
-            padding-left: 15px;
-            margin: 0 50px 0 10px;
-            overflow: hidden;
-            white-space: nowrap;
+       
+    // }
 
-            >p {
-                width: 80%;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
-        }
-    }
+    // .dish-info-palette {
+    //     display: inline-block;
+    //     // width: 70%;
+    //     // padding-left: 15px;
+    //     // margin: 0 50px 0 10px;
+    //     overflow: hidden;
+    //     white-space: nowrap;
+
+    //     >p {
+    //         // width: 80%;
+    //         overflow: hidden;
+    //         white-space: nowrap;
+    //         text-overflow: ellipsis;
+    //     }
+    // }
 
     .container {
         animation-name: container;

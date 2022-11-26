@@ -1,19 +1,16 @@
-@import "utils/variables";
-@import "utils/mixins";
-
-@import "base/animations";
-
-@import "layout/navigation";
-@import "layout/header";
-@import "layout/footer";
-
-@import "components/buttons";
-
-@import "pages/contact";
-
-
-
 @media all and (max-width: 768px) {
+    @import "utils/variables";
+    @import "utils/mixins";
+
+    @import "base/animations";
+
+    @import "layout/navigation";
+    @import "layout/header";
+    @import "layout/footer";
+
+    @import "components/buttons";
+
+    @import "pages/contact";
 
     * {
         padding: 0;
@@ -440,46 +437,83 @@
     }
 
     .visible-dish-wrap {
+        // outline: 1px solid yellow;
         // position: relative;
         width: 95%;
         background-color: #fff;
-        border-radius: 30px;
+        border-radius: 20px;
         margin: 15px;
         overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         box-shadow: 0px 7px 10px 1px rgb(0 0 0 / 15%);
 
         &:hover {
-            width: fit-content;
+            width: 95%;
             cursor: pointer;
             transform: rotate(360deg);
+
+            .dish-wrap {
+                width: 100%;
+            }
+
+            .dish-info {
+                width: 85%;
+
+                >p {
+                    width: 70%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+
+                >h3 {
+                    width: 70%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
         }
-        display: flex;
+
+        // display: flex;
 
     }
 
     .dish-wrap {
-        outline: 1px solid red;
+        // outline: 1px solid red;
         // position: relative;
-        width: 123%;
+        width: 124%;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        transition: width 1s ease-out 100ms;
+        margin-left: 10px;
 
+        // align-items: center;
+        // justify-content: space-between;
+        // transition: width 1s ease-out 100ms;
+        // &:hover {
+        //     width: 60%;
+        //     .dish-info {
 
-        >.check {
-            .fa-check-circle {
-                font-size: 35px;
-                color: #fff;
-                background-color: $third-color;
-                border-radius: 50%;
-                border: 1px solid $third-color;
-                transition: transform 1s ease-in 10ms;
-            }
-        }
-
+        //         >p {
+        //             width:90%;
+        //             overflow: hidden;
+        //             white-space: nowrap;
+        //             text-overflow: ellipsis;
+        //         }
+        // }
         &:hover {
-            // width: 100%;
+            >.check {
+                .fa-check-circle {
+                    font-size: 35px;
+                    color: #fff;
+                    background-color: $third-color;
+                    border-radius: 50%;
+                    border: 1px solid $third-color;
+                    transition: transform 1s ease-in 10ms;
+                }
+            }
+
+
 
             >.check {
                 .fa-check-circle {
@@ -487,36 +521,50 @@
                 }
             }
         }
-
-        
-        &:hover {
-            width: fit-content;
-            cursor: pointer;
-            transform: rotate(360deg);
-        }
-
     }
 
-    .dish-info {
-        display: inline-block;
-        width: 75%;
-        padding-left: 15px;
-        margin: 0 50px 0 10px;
-        overflow: hidden;
-        white-space: nowrap;
 
-        >p {
-            width: 80%;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
+
+
+    // &:hover {
+    //     width: fit-content;
+    //     cursor: pointer;
+    //     transform: rotate(360deg);
+    // }
+
+    .dish-info {
+    //     // outline: 1px solid blue;
+        width: 95%;
+        /* padding-left: 15px; */
+        // margin-left: 15px;
+        // overflow: hidden;
+        // white-space: nowrap;
+
+        // >p {
+        //     // width:100%;
+        //     overflow: hidden;
+        //     white-space: nowrap;
+        //     text-overflow: ellipsis;
+        // }
+
+        // &:hover {
+        //     width: 60%;
+        //     >p {
+        //         // width:100%;
+        //         overflow: hidden;
+        //         white-space: nowrap;
+        //         text-overflow: ellipsis;
+        // }
+    }
+
+    .dish-price {
+        padding-right: 15px;
     }
 
     .check {
         background-color: #99E2D0;
-        border-radius: 0 25px 25px 0;
-        // width: 100px;
+        border-radius: 0 20px 20px 0;
+        width: 100px;
         height: 95px;
         // margin: 0 0 0 -30px;
         // position: absolute;
@@ -529,11 +577,17 @@
         font-size: 35px;
         color: #fff;
         background-color: $third-color;
-        border-radius: 50%;
+        border-radius: 50;
         transition: transform 1s;
         margin: 28px 32px;
         // position: absolute;
     }
+
+
+
+
+
+
 
     .order {
         @include btn-order;

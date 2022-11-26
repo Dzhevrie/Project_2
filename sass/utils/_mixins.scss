@@ -54,6 +54,7 @@
 }
 
 @mixin menu-title {
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -71,11 +72,12 @@
 
 @mixin dish {
     // position: relative;
-    // width: 128%;
+    width: 79%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 10px;
+    align-items:flex-end;
+    // justify-content: space-between;
+    // padding-right: 10px;
+    margin: 0 0 17px 0;
 
     // &-price {
     //     // vertical-align: super;
@@ -94,20 +96,21 @@
 }
 
 @mixin dish-title {
-    width: 70%;
+    // width: 70%;
     overflow: hidden;
     text-overflow: ellipsis;
 
     h3 {
-        width: auto;
-        overflow: hidden;
-        white-space: nowrap;
+        width: 70%;
+        overflow:visible;
+        white-space: pre-line;
+
         text-overflow: ellipsis;
         padding-bottom: 5px;
 
         font: {
             family: $text-font;
-            size: 25px;
+            size: 22px;
             weight: 500;
 
         }
@@ -125,7 +128,7 @@
 
         font: {
             family: $text-font;
-            size: 19px;
+            size: 18px;
         }
 
     }
@@ -226,7 +229,7 @@
 
 
 @mixin btn-order {
-    position: relative;
+    // position: relative;
     background-color: #FF79DA;
     color: #fff;
     border: none;
@@ -234,9 +237,9 @@
     font-size: 19px;
     box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
     padding: 18px 85px;
-    margin: 50px 0 75px 180px;
+    margin: 50px 28% 75px 30%;
     // display: flex;
-    // align-items: center;
+    //align-items: center;
     // flex-direction: row;
 
     &:hover {

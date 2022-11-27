@@ -6,6 +6,29 @@
     align-items: center;
     justify-content: flex-start;
 
+    a {
+        text-decoration: none;
+    }
+
+    i {
+        font-size: 20px;
+        color: gray;
+        margin: 0 25px;
+    }
+
+    img {
+        width: 170px;
+        padding: 0 0 0 60px;
+    }
+}
+
+@mixin main-restorant-navigation {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0 15px 0;
+    /* margin: 20px 0 0 0; */
+    align-items: center;
+    justify-content: flex-start;
 
     a {
         text-decoration: none;
@@ -19,7 +42,7 @@
 
     img {
         width: 170px;
-        margin: 0 45px;
+        padding: 0 60px;
     }
 }
 
@@ -54,7 +77,6 @@
 }
 
 @mixin menu-title {
-    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -62,6 +84,8 @@
     padding: 40px 40px 10px 25px;
 
     h1 {
+        width: 70%;
+
         font: {
             size: 30px;
             weight: 500;
@@ -71,24 +95,15 @@
 }
 
 @mixin dish {
-    // position: relative;
     width: 79%;
     display: flex;
-    align-items:flex-end;
-    // justify-content: space-between;
-    // padding-right: 10px;
+    align-items: flex-end;
     margin: 0 0 17px 0;
 
-    // &-price {
-    //     // vertical-align: super;
-    // }
-
     span {
-        // margin-left: 95px;
-
         font: {
             family: Roboto;
-            size: 19px;
+            size: 18px;
             weight: 600;
         }
     }
@@ -96,28 +111,33 @@
 }
 
 @mixin dish-title {
-    // width: 70%;
     overflow: hidden;
     text-overflow: ellipsis;
+    width: 125%;
+    margin-right: 10px;
 
     h3 {
         width: 70%;
-        overflow:visible;
+        overflow: visible;
         white-space: pre-line;
-
         text-overflow: ellipsis;
         padding-bottom: 5px;
 
         font: {
             family: $text-font;
-            size: 22px;
-            weight: 500;
+            size: 20px;
+            weight: 600;
 
         }
     }
 
     p {
         color: gray;
+
+        font: {
+            family: $text-font;
+            size: 17px;
+        }
 
         &:hover {
             width: 80%;
@@ -126,110 +146,11 @@
             white-space: nowrap;
         }
 
-        font: {
-            family: $text-font;
-            size: 18px;
-        }
-
     }
 
 }
 
-
-// .visible-dish-wrap {
-//     position: relative;
-//     // width: 93%;
-//     background-color: #fff;
-//     border-radius: 30px;
-//     margin: 15px;
-//     overflow: hidden;
-//     box-shadow: 0px 7px 10px 1px rgb(0 0 0 / 15%);
-
-//     &:hover {
-//         width: fit-content;
-//         cursor: pointer;
-//         transform: rotate(360deg);
-//     }
-
-// }
-
-// .dish-wrap-palette {
-//     position: relative;
-//     width: 150%;
-//     display: flex;
-//     align-items: center;
-//     transition: width 1s ease-out 100ms;
-
-//     >.check {
-//         .fa-check-circle {
-//             font-size: 35px;
-//             color: #fff;
-//             background-color: $third-color;
-//             border-radius: 50%;
-//             border: 1px solid $third-color;
-//             transition: transform 1s ease-in 10ms;
-//         }
-//     }
-
-//     &:hover {
-//         width: 100%;
-
-//         >.check {
-//             .fa-check-circle {
-//                 transform: rotate(360deg);
-//             }
-//         }
-//     }
-
-//     .dish-info-palette {
-//         display: inline-block;
-//         width: 55%;
-//         padding-left: 15px;
-//         margin: 0 50px 0 10px;
-//         overflow: hidden;
-//         white-space: nowrap;
-
-//         >p {
-//             width: 80%;
-//             overflow: hidden;
-//             white-space: nowrap;
-//             text-overflow: ellipsis;
-//         }
-//     }
-// }
-
-// .container {
-//     animation-name: container;
-//     animation-duration: 3s;
-// }
-
-
-// .check {
-//     background-color: #99E2D0;
-//     border-radius: 0 25px 25px 0;
-//     width: 100px;
-//     height: 95px;
-//     // margin: 0 0 0 -30px;
-//     // position: absolute;
-//     // right: 0px;
-//     // bottom: 0px;
-//     // z-index: -1;
-// }
-
-// .fa-check-circle {
-//     font-size: 35px;
-//     color: #fff;
-//     background-color: $third-color;
-//     border-radius: 50%;
-//     transition: transform 1s;
-//     margin: 28px 32px;
-//     // position: absolute;
-// }
-
-
-
 @mixin btn-order {
-    // position: relative;
     background-color: #FF79DA;
     color: #fff;
     border: none;
@@ -237,16 +158,57 @@
     font-size: 19px;
     box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
     padding: 18px 85px;
-    margin: 50px 28% 75px 30%;
-    // display: flex;
-    //align-items: center;
-    // flex-direction: row;
+    margin: 50px 0 50px 80px;
 
     &:hover {
         cursor: pointer;
         box-shadow: -6px 20px 10px 1px rgb(0 0 0 / 15%);
         transition-duration: 1s;
         background-color: lighten($secondary-color, 10);
+    }
+}
+
+@mixin main-footer {
+    background-color: #000;
+    padding: 0 0 45px 0;
+
+    h5 {
+        color: #fff;
+        font-family: Shrikhand;
+        font-size: 35px;
+        font-weight: 400;
+        padding: 45px 0 0 40px;
+    }
+
+    .contacts {
+        width: 100%;
+        text-decoration: none;
+        font-family: Roboto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+        }
+
+    }
+
+    .fa-hands-helping {
+        transform: rotate(-3deg);
+        font-size: 18px;
+        padding: 15px 10px;
+    }
+
+    .fa-utensils {
+        padding-right: 13px;
+        font-size: 20px;
     }
 }
 
@@ -284,21 +246,16 @@
             font-size: 15px;
             // padding: 10px;
             margin: 4px 0;
+        }
 
-            .fa-handshake {
-                padding: 10px 0;
-                transform: rotate(-50deg);
-                font-size: 15px;
-                /* padding-right: 15px; */
-                // position: absolute;
-                // left: -12px;
-            }
+        .fa-hands-helping {
+            padding: 10px 0;
+            transform: rotate(-50deg);
+            font-size: 15px;
+        }
 
-            .fa-utensils {
-                // position: absolute;
-                // padding-right: 20px;
-                font-size: 15px;
-            }
+        .fa-utensils {
+            font-size: 15px;
         }
     }
 }

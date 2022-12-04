@@ -1,0 +1,230 @@
+// DESCTOP VERSION
+
+// THE FULL PALETTE RESTAURANT'S SITE
+
+// NAVIGATION
+
+// .rstnt-navigation {
+//     @include restorant-navigation;
+// }
+
+.rstnt-navigation {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0 15px 0;
+    /* margin: 20px 0 0 0; */
+    align-items: center;
+    justify-content: flex-start;
+
+    a {
+        text-decoration: none;
+    }
+
+    i {
+        font-size: 20px;
+        color: gray;
+        margin: 0 25px;
+    }
+
+    img {
+        width: 170px;
+        padding: 0 60px;
+    }
+}
+
+
+.nav-img {
+    width: 100%;
+}
+
+// THE FULL PALETTE RESTAURANT'S MAIN SECTION 
+
+.menu {
+    @include menu-about-pages;
+}
+
+.line {
+    @include line;
+}
+
+.menu-title {
+    @include menu-title;
+}
+
+.heart {
+    @include heart;
+}
+
+// .menu-section {}
+
+.dish {
+    @include dish;
+}
+
+.dish-info {
+    @include dish-title;
+
+}
+
+.visible-dish-wrap {
+    // outline: 1px solid yellow;
+    // position: relative;
+    width: 95%;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-shadow: 0px 7px 10px 1px rgb(0 0 0 / 15%);
+
+    &:hover {
+        width: 95%;
+        cursor: pointer;
+        transform: rotate(360deg);
+
+        .dish-wrap {
+            width: 100%;
+        }
+
+        .dish-info {
+            width: 85%;
+
+            >p {
+                width: 70%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            >h3 {
+                width: 70%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+
+    // display: flex;
+
+}
+
+// @keyframes mymove {
+//     from {
+//         right: 0px;
+//     }
+
+//     to {
+//         left: 10px
+//     }
+// }
+
+.dish-wrap {
+    // outline: 1px solid red;
+    // position: relative;
+    width: 124%;
+    display: flex;
+    margin-left: 10px;
+
+    // align-items: center;
+    // justify-content: space-between;
+    // transition: width 1s ease-out 100ms;
+    // &:hover {
+    //     width: 60%;
+    //     .dish-info {
+
+    //         >p {
+    //             width:90%;
+    //             overflow: hidden;
+    //             white-space: nowrap;
+    //             text-overflow: ellipsis;
+    //         }
+    // }
+    &:hover {
+        >.check {
+            .fa-check-circle {
+                font-size: 35px;
+                color: #fff;
+                background-color: $third-color;
+                border-radius: 50%;
+                border: 1px solid $third-color;
+                transition: transform 1s ease-out 10ms;
+            }
+        }
+
+        >.check {
+            .fa-check-circle {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+
+
+
+// &:hover {
+//     width: fit-content;
+//     cursor: pointer;
+//     transform: rotate(360deg);
+// }
+
+.dish-info {
+    //     // outline: 1px solid blue;
+    width: 95%;
+    /* padding-left: 15px; */
+    // margin-left: 15px;
+    // overflow: hidden;
+    // white-space: nowrap;
+
+    // >p {
+    //     // width:100%;
+    //     overflow: hidden;
+    //     white-space: nowrap;
+    //     text-overflow: ellipsis;
+    // }
+
+    // &:hover {
+    //     width: 60%;
+    //     >p {
+    //         // width:100%;
+    //         overflow: hidden;
+    //         white-space: nowrap;
+    //         text-overflow: ellipsis;
+    // }
+}
+
+.dish-price {
+    padding-right: 15px;
+}
+
+.check {
+    background-color: #99E2D0;
+    border-radius: 0 20px 20px 0;
+    width: 100px;
+    height: 95px;
+    // margin: 0 0 0 -30px;
+    // position: absolute;
+    // right: 0px;
+    // bottom: 0px;
+    // z-index: -1;
+}
+
+.fa-check-circle {
+    font-size: 35px;
+    color: #fff;
+    background-color: $third-color;
+    border-radius: 50;
+    transition: transform 1s;
+    margin: 28px 32px;
+    // position: absolute;
+}
+
+.order {
+    @include btn-order;
+}
+
+footer {
+    @include footer;
+}

@@ -1,0 +1,344 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    animation-name: container;
+    animation-duration: 3s;
+}
+
+@keyframes container {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: hideLoading 2s forwards;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    left: 35px;
+
+}
+
+@keyframes hideLoading {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.navigation {
+    width: 100%;
+
+    &-link {
+        padding: 20px 0;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    img {
+        // width: 200px;
+        align-items: center;
+    }
+
+}
+
+// .search-btn-wrap {
+//     padding: 30px;
+//     background-color: $third-color;
+// }
+
+.search-btn-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9356DC;
+    padding: 35px 0;
+    box-shadow: rgb(11 10 10 / 18%) 0px 13px 12px 0px inset;
+
+    input {
+        border: none;
+        background-color: $primary-color;
+
+        &::placeholder {
+            color: #000;
+        }
+
+        font: {
+            size: 25px;
+            family: $text-font
+        }
+
+    }
+
+}
+
+.fa-map-marker-alt {
+    font-size: 22px;
+    margin: 15px 15px 15px 130px;
+}
+
+
+
+.head {
+    background-color: $third-color;
+    text-align: center;
+    padding: 35px 0 60px 0;
+
+    h1 {
+        font: {
+            family: $text-font;
+            size: 30px;
+            weight: 700
+        }
+
+    }
+
+    p {
+        padding: 25px 10px;
+        text-align: center;
+        color: gray;
+
+        font: {
+            family: $text-font;
+            size: 22px;
+        }
+    }
+
+    button {
+        background-color: $secondary-color;
+        padding: 25px 40px;
+        color: white;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: 500;
+        border: none;
+        align-items: center;
+        box-shadow: 1px 7px 10px 1px rgb(0 0 0 / 15%);
+
+        &:hover {
+            box-shadow: -6px 20px 10px 1px rgb(0 0 0 / 15%);
+            transition-duration: 1s;
+            background-color: lighten($secondary-color, 10);
+        }
+    }
+}
+
+// MAIN SECTION
+
+/* Section with the buttons for chosing the place 
+    and prepare the menu*/
+
+.btns {
+    padding: 40px 10px 50px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font: {
+            family: $text-font;
+            size: 40px;
+            weight: 700;
+        }
+    }
+}
+
+.btn-wrap {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    background-color: $third-color;
+    border-radius: 23px;
+    margin: 25px 0 10px 10px;
+    box-shadow: -2px 6px 11px 2px rgb(0 0 0 / 15%);
+    font-size: 25px;
+
+    &:hover {
+        box-shadow: -6px 20px 10px 1px rgb(0 0 0 / 15%);
+        transition-duration: 1s;
+        background-color: lighten($third-color, 10);
+    }
+
+    span {
+        font-size: 20px;
+        border: 5px solid #9356DC;
+        color: white;
+        border-radius: 35px;
+        padding: 0 5px;
+        background-color: #9356DC;
+        margin: 0 10px 0 -10px;
+    }
+
+    .fas {
+        font-size: 27px;
+        padding: 20px 0 20px 10px;
+    }
+
+    .fa-mobile-alt {
+        color: gray;
+    }
+
+    .fa-list {
+        color: gray;
+    }
+
+    .fa-store {
+        color: $primary-color;
+    }
+
+    p {
+        padding: 25px 0 25px 25px;
+
+        font: {
+            size: 22px;
+            weight: 700;
+            family: $text-font;
+        }
+    }
+}
+
+// Section of the restaurants 
+
+.rsts-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #99E2D0;
+    padding: 15px 0 50px 0;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    h3 {
+        padding: 0px 1240px 10px 0px;
+
+        font: {
+            size: 25px;
+            family: $text-font;
+            weight: 700;
+        }
+
+    }
+
+
+}
+
+.rst-ad {
+    background-color: #fff;
+    border-radius: 18px;
+    /* margin: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    a {
+        text-decoration: none;
+
+    }
+
+    span {
+        color: darkcyan;
+        background-color: #99E2D0;
+        font-size: 17px;
+        padding: 6px 30px;
+        font-family: Roboto;
+        font-weight: 700;
+        margin: 15px 0 0 -106px;
+        position: absolute;
+    }
+
+    img {
+        width: 320px;
+        border-radius: 18px 18px 0 0;
+    }
+}
+
+
+
+.ad-info {
+    position: relative;
+    // width: 100%;
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.info {
+
+    h4 {
+        color: #000;
+        text-decoration: none;
+        padding: 2px 0;
+
+        font: {
+            family: $text-font;
+            size: 20px;
+            weight: 800;
+
+        }
+    }
+
+    p {
+        font: {
+            family: $text-font;
+            size: 20px;
+            weight: 400;
+        }
+
+        color:grey;
+    }
+
+}
+
+.main-heart1 {
+    font-size: 30px;
+    color: gray;
+    position: absolute;
+    left: 250px;
+    //  margin: 255px 410px; 
+    opacity: 1;
+}
+
+.main-heart2 {
+    width: auto;
+    font-size: 30px;
+    position: absolute;
+    left: 250px;
+    opacity: 0;
+    // margin: 255px 410px;
+
+    &:hover {
+        opacity: 1;
+        transition-duration: 1s;
+        color: lighten($primary-color, 5);
+    }
+
+}
+
+// FOOTER
+
+footer {
+    @include main-footer;
+}
+
+

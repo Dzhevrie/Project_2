@@ -1,0 +1,50 @@
+@media all and (max-width: 768px){
+     // THE ENCHANTED PLATE RESTAURANT'S SITE
+
+    // NAVIGATION
+
+    .rstnt-navigation-plate {
+        @include restorant-navigation;
+    }
+
+    .nav-img {
+        width: 100%;
+    }
+
+    // THE FULL PLATE RESTAURANT'S MAIN SECTION 
+
+    .menu-plate {
+        @include menu-about-pages;
+    }
+
+    .line-plate {
+        @include line;
+    }
+
+    .menu-title-plate {
+        @include menu-title;
+    }
+
+
+    .heart {
+        @include heart;
+    }
+
+    .dish-plate {
+        @include dish;
+    }
+
+    .dish-info-plate {
+        @include dish-title;
+
+    }
+
+    .order {
+        @include btn-order;
+    }
+
+    // footer {
+    //     @include footer;
+    // }
+
+}

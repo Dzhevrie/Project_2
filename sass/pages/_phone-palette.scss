@@ -1,0 +1,125 @@
+@media all and (max-width: 768px) {
+    // THE FULL PALETTE RESTAURANT'S SITE
+
+    // NAVIGATION
+
+    .rstnt-navigation {
+        @include restorant-navigation;
+    }
+
+    .nav-img {
+        width: 100%;
+    }
+
+    // THE FULL PALETTE RESTAURANT'S MAIN SECTION 
+
+    .menu {
+        @include menu-about-pages;
+    }
+
+    .line {
+        @include line;
+    }
+
+    .menu-title {
+        @include menu-title;
+    }
+
+    .heart {
+        @include heart;
+    }
+
+    .dish {
+        @include dish;
+    }
+
+    .dish-info {
+        @include dish-title;
+
+    }
+
+    .visible-dish-wrap {
+        position: relative;
+        width: 93%;
+        background-color: #fff;
+        border-radius: 20px;
+        margin: 15px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        box-shadow: 0px 7px 10px 1px rgb(0 0 0 / 15%);
+
+        &:hover {
+            width: 93%;
+            cursor: pointer;
+            transform: rotate(360deg);
+
+            .dish-wrap {
+                width: 96%;
+            }
+
+            .dish-info {
+
+                >p {
+                    width: 345px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+
+                >h3 {
+                    width: 350px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+
+    }
+
+    .dish-wrap {
+        width: 131%;
+        display: flex;
+        margin-left: 10px;
+
+        &:hover {
+            >.check {
+                .fa-check-circle {
+                    font-size: 25px;
+                    color: #fff;
+                    background-color: $third-color;
+                    border-radius: 50%;
+                    border: 1px solid $third-color;
+                    transition: transform 1s ease-out 10ms;
+                    margin: 30px;
+                }
+            }
+
+            >.check {
+                .fa-check-circle {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+
+    .dish-price {
+        padding-right: 10px;
+    }
+
+    .check {
+        background-color: #99E2D0;
+        border-radius: 0 20px 20px 0;
+        width: 120px;
+        height: 90px;
+    }
+
+    .order {
+        @include btn-order;
+    }
+
+    // footer {
+    //     @include phone-footer;
+    // }
+}

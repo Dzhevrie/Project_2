@@ -168,7 +168,7 @@
     }
 }
 
-@mixin main-footer {
+@mixin desktop-footer {
     background-color: #000;
     padding: 0 0 45px 0;
 
@@ -212,7 +212,7 @@
     }
 }
 
-@mixin footer {
+@mixin phone-footer {
     background-color: #000;
     padding: 0 0 45px 0;
 

@@ -17,18 +17,20 @@
     }
 
     img {
+        position: relative;
         width: 170px;
-        padding: 0 0 0 60px;
+        padding: 0 0 0 53px;
     }
 }
 
 @mixin main-restorant-navigation {
+    position: relative;
     display: flex;
     flex-direction: row;
     padding: 30px 0 15px 0;
     /* margin: 20px 0 0 0; */
     align-items: center;
-    justify-content: flex-start;
+    // /* justify-content: flex-start;
 
     a {
         text-decoration: none;
@@ -47,6 +49,9 @@
 }
 
 @mixin menu-about-pages {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
     position: relative;
     margin-top: -60px;
     background-color: #fafafa;
@@ -151,14 +156,18 @@
 }
 
 @mixin btn-order {
+    display: block;
+    width: 250px;
     background-color: #FF79DA;
     color: #fff;
     border: none;
     border-radius: 55px;
     font-size: 19px;
-    box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
-    padding: 18px 85px;
-    margin: 50px 0 50px 80px;
+    box-shadow: 1px 2px 14px 6px rgb(0 0 0 / 15%);
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    margin: 50px auto;
 
     &:hover {
         cursor: pointer;
@@ -219,43 +228,49 @@
     h5 {
         color: #fff;
         font-family: $main-font;
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 400;
         display: flex;
-        padding: 40px 0 25px 35px;
+        padding: 40px 0 25px 30px;
     }
 
     .contacts {
+        width: auto;
         display: flex;
         text-decoration: none;
         font-family: Roboto;
         flex-direction: column;
         align-items: flex-start;
+        margin-left: 15px;
 
         p {
-            margin-left: 30px;
+            // margin-left: 30px;
             position: relative;
             display: flex;
+            font-size: 20px;
         }
 
         a {
             text-decoration: none;
-            display: flex;
+            // display: flex;
             justify-content: flex-start;
             color: #fff;
-            font-size: 15px;
+            // font-size: 18px;
             padding: 0 15px;
-            margin: 4px 0;
+            margin-bottom: 5px;
         }
 
         .fa-hands-helping {
-            padding: 10px 0;
+            color: #fff;
+            // padding: 10px 0;
             transform: rotate(-20deg);
-            font-size: 15px;
+            font-size: 14px;
+            margin: 0 0 0 -10px;
         }
 
         .fa-utensils {
-            font-size: 15px;
+            color: #fff;
+            font-size: 17px;
         }
     }
 }

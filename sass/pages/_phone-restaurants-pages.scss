@@ -1,5 +1,10 @@
 @media all and (max-width: 768px) {
-    // THE FULL PALETTE RESTAURANT'S SITE
+    // THE RESTAURANT'S SITES
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
 
     // NAVIGATION
 
@@ -11,7 +16,7 @@
         width: 100%;
     }
 
-    // THE FULL PALETTE RESTAURANT'S MAIN SECTION 
+    // THE RESTAURANT'S MAIN SECTION 
 
     .menu {
         @include menu-about-pages;
@@ -30,7 +35,7 @@
     }
 
     .dish {
-        position: relative;
+        // position: relative;
         @include dish;
     }
 
@@ -50,34 +55,6 @@
         text-overflow: ellipsis;
         box-shadow: 0px 7px 10px 1px rgb(0 0 0 / 15%);
 
-        // &:hover {
-        //     position: relative;
-        //     // width:100%;
-        //     cursor: pointer;
-        //     transform: rotate(360deg);
-
-        //     .dish-wrap {
-        //         width: 72%;
-        //     }
-
-        //     .dish-info {
-
-        //         >p {
-        //             width: 345px;
-        //             overflow: hidden;
-        //             white-space: nowrap;
-        //             text-overflow: ellipsis;
-        //         }
-
-        //         >h3 {
-        //             width: 350px;
-        //             overflow: hidden;
-        //             white-space: nowrap;
-        //             text-overflow: ellipsis;
-        //         }
-        //     }
-        // }
-
     }
 
     .dish-wrap {
@@ -87,6 +64,7 @@
 
         &:hover {
             position: relative;
+
             // width: 95%;
             >.check {
                 .fa-check-circle {
@@ -96,7 +74,7 @@
                     border-radius: 50%;
                     border: 1px solid $third-color;
                     transition: transform 1s ease-out 10ms;
-                    margin:30px 30px 30px 26px;
+                    margin: 30px 30px 30px 26px;
                 }
             }
 
@@ -123,7 +101,10 @@
         @include btn-order;
     }
 
+    // FOOTER
+
     footer {
         @include phone-footer;
     }
+
 }

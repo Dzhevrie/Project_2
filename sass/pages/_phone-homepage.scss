@@ -11,14 +11,15 @@
     }
 
     .loading {
-        display: flex;
-        justify-content: center;
+        // width: 100%;
+        // display: flex;
+        // justify-content: center;
         align-items: center;
         animation: hideLoading 2s forwards;
         position: absolute;
-        right: 0;
-        bottom: 366px;
-        left: 35px;
+        left: 70px;
+        // bottom: 0px;
+        // left: 35px;
 
     }
 

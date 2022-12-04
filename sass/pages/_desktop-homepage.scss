@@ -19,14 +19,14 @@ body {
 }
 
 .loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // width: 100%;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     animation: hideLoading 2s forwards;
     position: absolute;
-    right: 0;
-    bottom: -23px;
-    left: 35px;
+    left: 637px;
+    bottom: 286px;
 
 }
 

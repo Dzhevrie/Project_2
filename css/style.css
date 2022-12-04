@@ -62,49 +62,50 @@ footer .fa-utensils {
   font-size: 20px;
 }
 
-@media all and (max-width: 768px) {
-  footer {
-    background-color: #000;
-    padding: 0 0 45px 0;
-  }
-  footer h5 {
-    color: #fff;
-    font-family: Shrikhand;
-    font-size: 20px;
-    font-weight: 400;
-    display: flex;
-    padding: 40px 0 25px 35px;
-  }
-  footer .contacts {
-    display: flex;
-    text-decoration: none;
-    font-family: Roboto;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  footer .contacts p {
-    margin-left: 30px;
-    position: relative;
-    display: flex;
-  }
-  footer .contacts a {
-    text-decoration: none;
-    display: flex;
-    justify-content: flex-start;
-    color: #fff;
-    font-size: 15px;
-    padding: 0 15px;
-    margin: 4px 0;
-  }
-  footer .contacts .fa-hands-helping {
-    padding: 10px 0;
-    transform: rotate(-50deg);
-    font-size: 15px;
-  }
-  footer .contacts .fa-utensils {
-    font-size: 15px;
-  }
+footer {
+  background-color: #000;
+  padding: 0 0 45px 0;
 }
+footer h5 {
+  color: #fff;
+  font-family: Shrikhand;
+  font-size: 22px;
+  font-weight: 400;
+  display: flex;
+  padding: 40px 0 25px 30px;
+}
+footer .contacts {
+  width: auto;
+  display: flex;
+  text-decoration: none;
+  font-family: Roboto;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 15px;
+}
+footer .contacts p {
+  position: relative;
+  display: flex;
+  font-size: 20px;
+}
+footer .contacts a {
+  text-decoration: none;
+  justify-content: flex-start;
+  color: #fff;
+  padding: 0 15px;
+  margin-bottom: 5px;
+}
+footer .contacts .fa-hands-helping {
+  color: #fff;
+  transform: rotate(-20deg);
+  font-size: 14px;
+  margin: 0 0 0 -10px;
+}
+footer .contacts .fa-utensils {
+  color: #fff;
+  font-size: 17px;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -124,14 +125,10 @@ body {
   }
 }
 .loading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   animation: hideLoading 2s forwards;
   position: absolute;
-  right: 0;
-  bottom: -23px;
-  left: 35px;
+  left: 637px;
+  bottom: 286px;
 }
 
 @keyframes hideLoading {
@@ -580,14 +577,18 @@ footer .fa-utensils {
 }
 
 .order {
+  display: block;
+  width: 250px;
   background-color: #FF79DA;
   color: #fff;
   border: none;
   border-radius: 55px;
   font-size: 19px;
   box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
-  padding: 18px 85px;
-  margin: 50px 0 50px 80px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  margin: 50px auto;
 }
 .order:hover {
   cursor: pointer;
@@ -644,14 +645,10 @@ footer .fa-utensils {
     animation-duration: 3s;
   }
   .loading {
-    display: flex;
-    justify-content: center;
     align-items: center;
     animation: hideLoading 2s forwards;
     position: absolute;
-    right: 0;
-    bottom: 366px;
-    left: 35px;
+    left: 70px;
   }
   .navigation {
     width: 100%;
@@ -859,42 +856,48 @@ footer .fa-utensils {
   footer h5 {
     color: #fff;
     font-family: Shrikhand;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     display: flex;
-    padding: 40px 0 25px 35px;
+    padding: 40px 0 25px 30px;
   }
   footer .contacts {
+    width: auto;
     display: flex;
     text-decoration: none;
     font-family: Roboto;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 15px;
   }
   footer .contacts p {
-    margin-left: 30px;
     position: relative;
     display: flex;
+    font-size: 20px;
   }
   footer .contacts a {
     text-decoration: none;
-    display: flex;
     justify-content: flex-start;
     color: #fff;
-    font-size: 15px;
     padding: 0 15px;
-    margin: 4px 0;
+    margin-bottom: 5px;
   }
   footer .contacts .fa-hands-helping {
-    padding: 10px 0;
-    transform: rotate(-50deg);
-    font-size: 15px;
+    color: #fff;
+    transform: rotate(-20deg);
+    font-size: 14px;
+    margin: 0 0 0 -10px;
   }
   footer .contacts .fa-utensils {
-    font-size: 15px;
+    color: #fff;
+    font-size: 17px;
   }
 }
 @media all and (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
   .rstnt-navigation {
     display: flex;
     flex-direction: row;
@@ -912,8 +915,9 @@ footer .fa-utensils {
     margin: 0 25px;
   }
   .rstnt-navigation img {
+    position: relative;
     width: 170px;
-    padding: 0 0 0 60px;
+    padding: 0 0 0 53px;
   }
   .nav-img {
     width: 100%;
@@ -955,7 +959,6 @@ footer .fa-utensils {
     font-weight: 100;
   }
   .dish {
-    position: relative;
     width: 75%;
     display: flex;
     align-items: flex-end;
@@ -1034,14 +1037,18 @@ footer .fa-utensils {
     height: 90px;
   }
   .order {
+    display: block;
+    width: 250px;
     background-color: #FF79DA;
     color: #fff;
     border: none;
     border-radius: 55px;
     font-size: 19px;
     box-shadow: 1px 2px 14px 6px rgba(0, 0, 0, 0.15);
-    padding: 18px 85px;
-    margin: 50px 0 50px 80px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    margin: 50px auto;
   }
   .order:hover {
     cursor: pointer;
@@ -1056,39 +1063,41 @@ footer .fa-utensils {
   footer h5 {
     color: #fff;
     font-family: Shrikhand;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     display: flex;
-    padding: 40px 0 25px 35px;
+    padding: 40px 0 25px 30px;
   }
   footer .contacts {
+    width: auto;
     display: flex;
     text-decoration: none;
     font-family: Roboto;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 15px;
   }
   footer .contacts p {
-    margin-left: 30px;
     position: relative;
     display: flex;
+    font-size: 20px;
   }
   footer .contacts a {
     text-decoration: none;
-    display: flex;
     justify-content: flex-start;
     color: #fff;
-    font-size: 15px;
     padding: 0 15px;
-    margin: 4px 0;
+    margin-bottom: 5px;
   }
   footer .contacts .fa-hands-helping {
-    padding: 10px 0;
-    transform: rotate(-50deg);
-    font-size: 15px;
+    color: #fff;
+    transform: rotate(-20deg);
+    font-size: 14px;
+    margin: 0 0 0 -10px;
   }
   footer .contacts .fa-utensils {
-    font-size: 15px;
+    color: #fff;
+    font-size: 17px;
   }
 }
 

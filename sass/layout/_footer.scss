@@ -1,46 +1,10 @@
-@include desktop-footer;
-@include phone-footer;
+footer {
+    @include desktop-footer;
+}
 
-// @mixin footer {
-//     background-color: #000;
-//     padding: 0 0 45px 0;
+@media all and (max-width: 768px) {
+    footer {
+        @include phone-footer;
+    }
 
-//     h5 {
-//         color: #fff;
-//         font-family: $main-font;
-//         font-size: 25px;
-//         font-weight: 400;
-//         padding: 40px 0 15px 28px;
-//     }
-
-//     .contacts {
-//         display: flex;
-//         text-decoration: none;
-//         font-family: Roboto;
-//         flex-direction: column;
-//         align-items: flex-start;
-//         margin: 0 30px;
-
-//         p {
-//             position: relative;
-//         }
-
-//         a {
-//             text-decoration: none;
-//             color: #fff;
-//             font-size: 20px;
-//             margin: 4px 0;
-
-//             .fa-utensils {
-//                 font-size: 20px;
-//             }
-
-//             .fa-hands-helping {
-//                 padding: 9px 11px 5px 0;
-//                 transform: rotate(-15deg);
-//                 font-size: 15px;
-//             }
-
-//         }
-//     }
-// }
+}

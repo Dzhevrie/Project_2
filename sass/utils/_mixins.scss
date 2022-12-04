@@ -95,7 +95,7 @@
 }
 
 @mixin dish {
-    width: 79%;
+    width: 75%;
     display: flex;
     align-items: flex-end;
     margin: 0 0 17px 0;
@@ -233,7 +233,7 @@
         align-items: flex-start;
 
         p {
-            margin-left: 32px;
+            margin-left: 30px;
             position: relative;
             display: flex;
         }
@@ -250,7 +250,7 @@
 
         .fa-hands-helping {
             padding: 10px 0;
-            transform: rotate(-50deg);
+            transform: rotate(-20deg);
             font-size: 15px;
         }
 

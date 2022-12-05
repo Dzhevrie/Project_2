@@ -543,7 +543,7 @@ footer .fa-utensils {
   font-size: 35px;
   color: #fff;
   background-color: #99E2D0;
-  border-radius: 50%;
+  border-radius: 50px;
   border: 1px solid #99E2D0;
   transition: transform 1s ease-out 10ms;
 }
@@ -1032,7 +1032,7 @@ footer .fa-utensils {
     font-size: 25px;
     color: #fff;
     background-color: #99E2D0;
-    border-radius: 50%;
+    border-radius: 50px;
     border: 1px solid #99E2D0;
     transition: transform 1s ease-out 10ms;
     margin: 30px 30px 30px 26px;

@@ -953,6 +953,19 @@ footer .fa-utensils {
     font-weight: 500;
     font-family: Shrikhand;
   }
+  @keyframes menu-animation {
+    from {
+      bottom: -50px;
+      opacity: 0;
+    }
+    to {
+      bottom: 0px;
+      opacity: 1;
+    }
+  }
+  .menu-section {
+    animation: menu-animation;
+  }
   .heart {
     color: gray;
     font-size: 25px;

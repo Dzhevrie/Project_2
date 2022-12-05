@@ -29,6 +29,21 @@
     .menu-title {
         @include menu-title;
     }
+    
+    @keyframes menu-animation {
+        from {
+            bottom: -50px;
+            opacity: 0;
+        }
+    
+        to {
+            bottom: 0px;
+            opacity: 1;
+        }
+    }
+    .menu-section{
+        animation: menu-animation;
+    }
 
     .heart {
         @include heart;

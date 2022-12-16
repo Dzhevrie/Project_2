@@ -19,15 +19,13 @@ body {
 }
 
 .loading {
-    // width: 100%;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    animation: hideLoading 2s forwards;
-    position: absolute;
-    left: 637px;
-    bottom: 286px;
-
+    img {
+        width: 250px;
+        animation: hideLoading 2s forwards;
+        position: absolute;
+        left: 637px;
+        bottom: 286px;
+    }
 }
 
 @keyframes hideLoading {
@@ -340,5 +338,3 @@ body {
 footer {
     @include desktop-footer;
 }
-
-

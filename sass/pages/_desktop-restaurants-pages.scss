@@ -28,7 +28,7 @@
 
     img {
         width: 170px;
-        padding: 0 60px;
+        // padding: 0 60px;
     }
 }
 
@@ -57,58 +57,52 @@
 
 // .menu-section {}
 
-.dish {
-    @include dish;
-}
+// .dish {
+//     @include dish;
+// }
 
-.dish-info {
-    @include dish-title;
+// // .dish-info {
+//     @include dish-title;
 
-}
+// }
 
-.visible-dish-wrap {
-    // outline: 1px solid yellow;
-    // position: relative;
-    width: 95%;
-    background-color: #fff;
-    border-radius: 20px;
-    margin: 15px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    box-shadow: 0px 7px 10px 1px rgb(0 0 0 / 15%);
+// .visible-dish-wrap {
+//     background-color: #fff;
+//     border-radius: 20px;
+//     margin: 15px;
+//     overflow: hidden;
+//     white-space: nowrap;
+//     text-overflow: ellipsis;
+//     box-shadow: 0px 7px 10px 1px rgb(0 0 0 / 15%);
 
-    &:hover {
-        width: 95%;
-        cursor: pointer;
-        transform: rotate(360deg);
+//     &:hover {
+//         cursor: pointer;
+//         transform: rotate(360deg);
 
-        .dish-wrap {
-            width: 100%;
-        }
+//         .dish-wrap {
+//             width: 100%;
+//         }
 
-        .dish-info {
-            width: 85%;
+//         .dish-info {
+//             margin: 15px;
 
-            >p {
-                width: 70%;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
+//             >p {
+//                 width: 70%;
+//                 overflow: hidden;
+//                 white-space: nowrap;
+//                 text-overflow: ellipsis;
+//             }
 
-            >h3 {
-                width: 70%;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
-        }
-    }
+//             >h3 {
+//                 width: 70%;
+//                 overflow: hidden;
+//                 white-space: nowrap;
+//                 text-overflow: ellipsis;
+//             }
+//         }
+//     }
 
-    // display: flex;
-
-}
+// }
 
 // @keyframes mymove {
 //     from {
@@ -120,106 +114,55 @@
 //     }
 // }
 
-.dish-wrap {
-    // outline: 1px solid red;
-    // position: relative;
-    width: 124%;
-    display: flex;
-    margin-left: 10px;
+// .dish-wrap {
+//     position: relative;
+//     width: 130%;
+//     display: flex;
+//     margin-left: 10px;
 
-    // align-items: center;
-    // justify-content: space-between;
-    // transition: width 1s ease-out 100ms;
-    // &:hover {
-    //     width: 60%;
-    //     .dish-info {
+//     &:hover {
+//         >.check {
+//             .fa-check-circle {
+//                 font-size: 35px;
+//                 color: #fff;
+//                 background-color: $third-color;
+//                 border-radius: 50px;
+//                 border: 1px solid $third-color;
+//                 transition: transform 1s ease-out 10ms;
+//             }
+//         }
 
-    //         >p {
-    //             width:90%;
-    //             overflow: hidden;
-    //             white-space: nowrap;
-    //             text-overflow: ellipsis;
-    //         }
-    // }
-    &:hover {
-        >.check {
-            .fa-check-circle {
-                font-size: 35px;
-                color: #fff;
-                background-color: $third-color;
-                border-radius: 50px;
-                border: 1px solid $third-color;
-                transition: transform 1s ease-out 10ms;
-            }
-        }
-
-        >.check {
-            .fa-check-circle {
-                transform: rotate(360deg);
-            }
-        }
-    }
-}
-
-
-
-
-// &:hover {
-//     width: fit-content;
-//     cursor: pointer;
-//     transform: rotate(360deg);
+//         >.check {
+//             .fa-check-circle {
+//                 transform: rotate(360deg);
+//             }
+//         }
+//     }
 // }
 
-.dish-info {
-    //     // outline: 1px solid blue;
-    width: 95%;
-    /* padding-left: 15px; */
-    // margin-left: 15px;
-    // overflow: hidden;
-    // white-space: nowrap;
 
-    // >p {
-    //     // width:100%;
-    //     overflow: hidden;
-    //     white-space: nowrap;
-    //     text-overflow: ellipsis;
-    // }
+// .dish-info {
+//     width: 100%;
 
-    // &:hover {
-    //     width: 60%;
-    //     >p {
-    //         // width:100%;
-    //         overflow: hidden;
-    //         white-space: nowrap;
-    //         text-overflow: ellipsis;
-    // }
-}
+// }
 
-.dish-price {
-    padding-right: 15px;
-}
+// .dish-price {
+//     // padding-right: 15px;
+// }
 
-.check {
-    background-color: #99E2D0;
-    border-radius: 0 20px 20px 0;
-    width: 100px;
-    height: 95px;
-    // margin: 0 0 0 -30px;
-    // position: absolute;
-    // right: 0px;
-    // bottom: 0px;
-    // z-index: -1;
-}
+// .check {
+//     background-color: #99E2D0;
+//     border-radius: 0 20px 20px 0;
+// }
 
-.fa-check-circle {
-    font-size: 35px;
-    color: #fff;
-    background-color: $third-color;
-    border-radius: 50;
-    transition: transform 1s;
-    margin: 28px 32px;
-    // position: absolute;
-}
+// .fa-check-circle {
+//     font-size: 30px;
+//     color: #fff;
+//     background-color: $third-color;
+//     border-radius: 50;
+//     transition: transform 1s;
+//     margin: 35px 32px;
+// }
 
 .order {
     @include btn-order;

@@ -11,16 +11,14 @@
     }
 
     .loading {
-        // width: 100%;
-        // display: flex;
-        // justify-content: center;
-        align-items: center;
-        animation: hideLoading 2s forwards;
-        position: absolute;
-        left: 70px;
-        // bottom: 0px;
-        // left: 35px;
-
+        img {
+            width: 150px;
+            align-items: center;
+            animation: hideLoading 2s forwards;
+            position: absolute;
+            bottom: 195px;
+            left: 130px;
+        }
     }
 
     // HEADER
@@ -29,21 +27,19 @@
     .navigation {
         width: 100%;
 
-        &-link {
-            padding: 20px 0;
-            width: 100%;
-            display: block;
-            text-align: center;
-        }
-
         img {
             width: 200px;
+            display: flex;
             align-items: center;
+            position: relative;
+            margin: auto;
+            padding: 20px;
         }
 
     }
 
     .search-btn-wrap {
+        padding: 0;
         position: relative;
         display: flex;
         justify-content: center;

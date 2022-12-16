@@ -97,9 +97,10 @@ footer .contacts a {
 }
 footer .contacts .fa-hands-helping {
   color: #fff;
+  padding: 10px 0;
   transform: rotate(-20deg);
   font-size: 14px;
-  margin: 0 0 0 -10px;
+  margin: 0 10px 0 0;
 }
 footer .contacts .fa-utensils {
   color: #fff;
@@ -124,7 +125,8 @@ body {
     opacity: 1;
   }
 }
-.loading {
+.loading img {
+  width: 250px;
   animation: hideLoading 2s forwards;
   position: absolute;
   left: 637px;
@@ -413,7 +415,6 @@ footer .fa-utensils {
 }
 .rstnt-navigation img {
   width: 170px;
-  padding: 0 60px;
 }
 
 .nav-img {
@@ -458,122 +459,6 @@ footer .fa-utensils {
   color: gray;
   font-size: 25px;
   font-weight: 100;
-}
-
-.dish {
-  width: 75%;
-  display: flex;
-  align-items: flex-end;
-  margin: 0 0 17px 0;
-}
-.dish span {
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.dish-info {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 125%;
-  margin-right: 10px;
-}
-.dish-info h3 {
-  width: 70%;
-  overflow: visible;
-  white-space: pre-line;
-  text-overflow: ellipsis;
-  padding-bottom: 5px;
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 600;
-}
-.dish-info p {
-  color: gray;
-  font-family: Roboto;
-  font-size: 17px;
-}
-.dish-info p:hover {
-  width: 80%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.visible-dish-wrap {
-  width: 95%;
-  background-color: #fff;
-  border-radius: 20px;
-  margin: 15px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  box-shadow: 0px 7px 10px 1px rgba(0, 0, 0, 0.15);
-}
-.visible-dish-wrap:hover {
-  width: 95%;
-  cursor: pointer;
-  transform: rotate(360deg);
-}
-.visible-dish-wrap:hover .dish-wrap {
-  width: 100%;
-}
-.visible-dish-wrap:hover .dish-info {
-  width: 85%;
-}
-.visible-dish-wrap:hover .dish-info > p {
-  width: 70%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.visible-dish-wrap:hover .dish-info > h3 {
-  width: 70%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.dish-wrap {
-  width: 124%;
-  display: flex;
-  margin-left: 10px;
-}
-.dish-wrap:hover > .check .fa-check-circle {
-  font-size: 35px;
-  color: #fff;
-  background-color: #99E2D0;
-  border-radius: 50px;
-  border: 1px solid #99E2D0;
-  transition: transform 1s ease-out 10ms;
-}
-.dish-wrap:hover > .check .fa-check-circle {
-  transform: rotate(360deg);
-}
-
-.dish-info {
-  width: 95%;
-  /* padding-left: 15px; */
-}
-
-.dish-price {
-  padding-right: 15px;
-}
-
-.check {
-  background-color: #99E2D0;
-  border-radius: 0 20px 20px 0;
-  width: 100px;
-  height: 95px;
-}
-
-.fa-check-circle {
-  font-size: 35px;
-  color: #fff;
-  background-color: #99E2D0;
-  border-radius: 50;
-  transition: transform 1s;
-  margin: 28px 32px;
 }
 
 .order {
@@ -644,26 +529,27 @@ footer .fa-utensils {
     animation-name: container;
     animation-duration: 3s;
   }
-  .loading {
+  .loading img {
+    width: 150px;
     align-items: center;
     animation: hideLoading 2s forwards;
     position: absolute;
-    left: 70px;
+    bottom: 195px;
+    left: 130px;
   }
   .navigation {
     width: 100%;
   }
-  .navigation-link {
-    padding: 20px 0;
-    width: 100%;
-    display: block;
-    text-align: center;
-  }
   .navigation img {
     width: 200px;
+    display: flex;
     align-items: center;
+    position: relative;
+    margin: auto;
+    padding: 20px;
   }
   .search-btn-wrap {
+    padding: 0;
     position: relative;
     display: flex;
     justify-content: center;
@@ -884,9 +770,10 @@ footer .fa-utensils {
   }
   footer .contacts .fa-hands-helping {
     color: #fff;
+    padding: 10px 0;
     transform: rotate(-20deg);
     font-size: 14px;
-    margin: 0 0 0 -10px;
+    margin: 0 10px 0 0;
   }
   footer .contacts .fa-utensils {
     color: #fff;
@@ -901,9 +788,9 @@ footer .fa-utensils {
   .rstnt-navigation {
     display: flex;
     flex-direction: row;
-    padding: 30px 0 15px 0;
-    /* margin: 20px 0 0 0; */
+    /* padding: 30px 0 15px 0; */
     align-items: center;
+    position: relative;
     justify-content: flex-start;
   }
   .rstnt-navigation a {
@@ -911,13 +798,14 @@ footer .fa-utensils {
   }
   .rstnt-navigation i {
     font-size: 20px;
-    color: gray;
-    margin: 0 25px;
+    color: #000;
+    margin: 0 -30px 0 28px;
   }
   .rstnt-navigation img {
-    position: relative;
-    width: 170px;
-    padding: 0 0 0 53px;
+    width: 175px;
+    align-items: center;
+    display: flex;
+    margin: auto;
   }
   .nav-img {
     width: 100%;
@@ -972,36 +860,39 @@ footer .fa-utensils {
     font-weight: 100;
   }
   .dish {
+    position: relative;
     width: 75%;
     display: flex;
-    align-items: flex-end;
-    margin: 0 0 17px 0;
+    align-items: center;
+    justify-content: space-between;
   }
   .dish span {
+    margin-right: 10px;
+    margin-top: 40px;
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
   }
   .dish-info {
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 125%;
-    margin-right: 10px;
+    width: 95%;
   }
   .dish-info h3 {
-    width: 70%;
+    width: 90%;
     overflow: visible;
     white-space: pre-line;
     text-overflow: ellipsis;
-    padding-bottom: 5px;
+    padding-bottom: 14px;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 600;
   }
   .dish-info p {
+    width: 90%;
     color: gray;
     font-family: Roboto;
-    font-size: 17px;
+    font-size: 16px;
   }
   .dish-info p:hover {
     width: 80%;
@@ -1010,46 +901,63 @@ footer .fa-utensils {
     white-space: nowrap;
   }
   .visible-dish-wrap {
-    position: relative;
     width: 92%;
     background-color: #fff;
     border-radius: 20px;
-    margin: 15px;
+    margin: 20px;
     overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
     box-shadow: 0px 7px 10px 1px rgba(0, 0, 0, 0.15);
   }
+  .visible-dish-wrap:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+  }
+  .visible-dish-wrap:hover .check {
+    margin-left: auto;
+  }
   .dish-wrap {
-    outline: 1px solid red;
     width: 132%;
     display: flex;
-    margin-left: 11px;
+    align-items: center;
+    transition: width 1s ease-out 100ms;
   }
-  .dish-wrap:hover {
-    width: 132%;
-    position: relative;
-  }
-  .dish-wrap:hover > .check .fa-check-circle {
-    font-size: 25px;
+  .dish-wrap > .check .fa-check-circle {
+    font-size: 30px;
     color: #fff;
     background-color: #99E2D0;
-    border-radius: 50px;
+    border-radius: 20px;
     border: 1px solid #99E2D0;
     transition: transform 1s ease-out 10ms;
-    margin: 30px 30px 30px 42px;
+    margin: 25px;
+  }
+  .dish-wrap:hover {
+    width: 100%;
+    padding-right: 40px;
   }
   .dish-wrap:hover > .check .fa-check-circle {
     transform: rotate(360deg);
   }
-  .dish-price {
-    padding-right: 10px;
+  .dish-info {
+    display: inline-block;
+    width: 75%;
+    padding-left: 15px;
+    margin-right: 10px;
+  }
+  .dish-info:hover h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .dish-info > p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   .check {
     background-color: #99E2D0;
     border-radius: 0 20px 20px 0;
-    width: 110px;
-    height: 90px;
+    margin-left: 10px;
+    width: 85px;
   }
   .order {
     display: block;
@@ -1106,13 +1014,22 @@ footer .fa-utensils {
   }
   footer .contacts .fa-hands-helping {
     color: #fff;
+    padding: 10px 0;
     transform: rotate(-20deg);
     font-size: 14px;
-    margin: 0 0 0 -10px;
+    margin: 0 10px 0 0;
   }
   footer .contacts .fa-utensils {
     color: #fff;
     font-size: 17px;
+  }
+  footer h4 {
+    color: #fff;
+    font-family: Shrikhand;
+    font-size: 22px;
+    font-weight: 400;
+    display: flex;
+    padding: 40px 0 25px 30px;
   }
 }
 

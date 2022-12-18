@@ -1,43 +1,34 @@
-// DESCTOP VERSION
+// DESKTOP VERSION
 
-// THE FULL PALETTE RESTAURANT'S SITE
+// RESTAURANT'S SITE
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 
 // NAVIGATION
 
-// .rstnt-navigation {
-//     @include restorant-navigation;
-// }
-
 .rstnt-navigation {
-    display: flex;
-    flex-direction: row;
-    padding: 30px 0 15px 0;
-    /* margin: 20px 0 0 0; */
-    align-items: center;
-    justify-content: flex-start;
+    @include restorant-navigation;
+    padding: 15px 0;
 
-    a {
-        text-decoration: none;
+    img {
+        width: 350px;
     }
 
     i {
-        font-size: 20px;
-        color: gray;
-        margin: 0 25px;
-    }
-
-    img {
-        width: 170px;
-        // padding: 0 60px;
+        font-size: 35px;
     }
 }
-
 
 .nav-img {
     width: 100%;
+    height: 500px;
 }
 
-// THE FULL PALETTE RESTAURANT'S MAIN SECTION 
+// THE RESTAURANT'S MAIN SECTION 
 
 .menu {
     @include menu-about-pages;
@@ -45,6 +36,10 @@
 
 .line {
     @include line;
+}
+
+.menu-section {
+    display: flex;
 }
 
 .menu-title {
@@ -55,119 +50,126 @@
     @include heart;
 }
 
-// .menu-section {}
+.dish {
+    position: relative;
+    @include dish;
+}
 
-// .dish {
-//     @include dish;
-// }
+.dish-info {
+    @include dish-title;
+    h3{
+        padding-bottom: 0;
+    }
 
-// // .dish-info {
-//     @include dish-title;
+}
 
-// }
+.visible-dish-wrap {
+    @include visible-dish-wrap;
+}
 
-// .visible-dish-wrap {
-//     background-color: #fff;
-//     border-radius: 20px;
-//     margin: 15px;
-//     overflow: hidden;
-//     white-space: nowrap;
-//     text-overflow: ellipsis;
-//     box-shadow: 0px 7px 10px 1px rgb(0 0 0 / 15%);
+.first {
+    position: relative;
+    animation: menu-animation 2s;
+    animation-timing-function: ease-out;
+}
 
-//     &:hover {
-//         cursor: pointer;
-//         transform: rotate(360deg);
+.second {
+    position: relative;
+    animation: menu-animation 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.1s;
+}
 
-//         .dish-wrap {
-//             width: 100%;
-//         }
+.third {
+    position: relative;
+    animation: menu-animation 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.18s;
+}
 
-//         .dish-info {
-//             margin: 15px;
+.fourth {
+    position: relative;
+    animation: menu-animation 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.26s;
+}
 
-//             >p {
-//                 width: 70%;
-//                 overflow: hidden;
-//                 white-space: nowrap;
-//                 text-overflow: ellipsis;
-//             }
+.fifth {
+    position: relative;
+    animation: menu-animation 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.34s;
+}
 
-//             >h3 {
-//                 width: 70%;
-//                 overflow: hidden;
-//                 white-space: nowrap;
-//                 text-overflow: ellipsis;
-//             }
-//         }
-//     }
+.sixth {
+    position: relative;
+    animation: menu-animation 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.42s;
+}
 
-// }
+.seventh {
+    position: relative;
+    animation: menu-animation 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.5s;
+}
 
-// @keyframes mymove {
-//     from {
-//         right: 0px;
-//     }
+.eighth {
+    position: relative;
+    animation: menu-animation 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.58s;
+}
 
-//     to {
-//         left: 10px
-//     }
-// }
+.ninth {
+    position: relative;
+    animation: menu-animation 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.66s;
+}
 
-// .dish-wrap {
-//     position: relative;
-//     width: 130%;
-//     display: flex;
-//     margin-left: 10px;
+.tenth {
+    position: relative;
+    animation: menu-animation 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.74s;
+}
 
-//     &:hover {
-//         >.check {
-//             .fa-check-circle {
-//                 font-size: 35px;
-//                 color: #fff;
-//                 background-color: $third-color;
-//                 border-radius: 50px;
-//                 border: 1px solid $third-color;
-//                 transition: transform 1s ease-out 10ms;
-//             }
-//         }
+.dish-wrap {
+    @include dish-wrap;
+}
 
-//         >.check {
-//             .fa-check-circle {
-//                 transform: rotate(360deg);
-//             }
-//         }
-//     }
-// }
+.dish-info {
+    @include dish-info;
+}
 
+.check {
+    @include check;
+    width: 86px;
+    height: 97px;
+}
 
-// .dish-info {
-//     width: 100%;
-
-// }
-
-// .dish-price {
-//     // padding-right: 15px;
-// }
-
-// .check {
-//     background-color: #99E2D0;
-//     border-radius: 0 20px 20px 0;
-// }
-
-// .fa-check-circle {
-//     font-size: 30px;
-//     color: #fff;
-//     background-color: $third-color;
-//     border-radius: 50;
-//     transition: transform 1s;
-//     margin: 35px 32px;
-// }
+.fa-check-circle {
+    @include check-icon;
+    font-size: 40px;
+    margin: 50px;
+}
 
 .order {
     @include btn-order;
 }
 
+// FOOTER
+
 footer {
     @include desktop-footer;
+
+    h4 {
+        color: #fff;
+        font-family: Shrikhand;
+        font-size: 35px;
+        font-weight: 400;
+        padding: 45px 0 0 40px;
+    }
 }

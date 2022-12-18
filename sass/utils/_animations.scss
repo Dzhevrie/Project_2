@@ -1,14 +1,22 @@
 @keyframes menu-animation {
-    from {
-        bottom: -50px;
+    0% {
+        bottom: -100px;
         opacity: 0;
     }
 
-    to {
+    50%{
+        bottom: -80px;
+        opacity: 0;
+    }
+
+    100% {
         bottom: 0px;
         opacity: 1;
     }
+
 }
+
+
 
 @keyframes container {
     0% {

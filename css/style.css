@@ -1,9 +1,13 @@
 @keyframes menu-animation {
-  from {
-    bottom: -50px;
+  0% {
+    bottom: -100px;
     opacity: 0;
   }
-  to {
+  50% {
+    bottom: -80px;
+    opacity: 0;
+  }
+  100% {
     bottom: 0px;
     opacity: 1;
   }
@@ -29,10 +33,10 @@ footer {
   padding: 0 0 45px 0;
 }
 footer h5 {
-  color: #fff;
   font-family: Shrikhand;
   font-size: 35px;
   font-weight: 400;
+  color: #fff;
   padding: 45px 0 0 40px;
 }
 footer .contacts {
@@ -67,10 +71,10 @@ footer {
   padding: 0 0 45px 0;
 }
 footer h5 {
-  color: #fff;
   font-family: Shrikhand;
   font-size: 22px;
   font-weight: 400;
+  color: #fff;
   display: flex;
   padding: 40px 0 25px 30px;
 }
@@ -144,14 +148,12 @@ body {
 .navigation {
   width: 100%;
 }
-.navigation-link {
-  padding: 20px 0;
-  width: 100%;
-  display: block;
-  text-align: center;
-}
 .navigation img {
   align-items: center;
+  position: relative;
+  margin: auto;
+  display: block;
+  padding: 25px 0;
 }
 
 .search-btn-wrap {
@@ -364,10 +366,10 @@ footer {
   padding: 0 0 45px 0;
 }
 footer h5 {
-  color: #fff;
   font-family: Shrikhand;
   font-size: 35px;
   font-weight: 400;
+  color: #fff;
   padding: 45px 0 0 40px;
 }
 footer .contacts {
@@ -397,28 +399,45 @@ footer .fa-utensils {
   font-size: 20px;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .rstnt-navigation {
   display: flex;
   flex-direction: row;
-  padding: 30px 0 15px 0;
-  /* margin: 20px 0 0 0; */
+  /* padding: 30px 0 15px 0; */
   align-items: center;
+  position: relative;
   justify-content: flex-start;
+  padding: 15px 0;
 }
 .rstnt-navigation a {
   text-decoration: none;
 }
 .rstnt-navigation i {
   font-size: 20px;
-  color: gray;
-  margin: 0 25px;
+  color: #000;
+  margin: 0 -30px 0 28px;
 }
 .rstnt-navigation img {
-  width: 170px;
+  width: 175px;
+  align-items: center;
+  display: flex;
+  margin: auto;
+  padding: 15px 0;
+}
+.rstnt-navigation img {
+  width: 350px;
+}
+.rstnt-navigation i {
+  font-size: 35px;
 }
 
 .nav-img {
   width: 100%;
+  height: 500px;
 }
 
 .menu {
@@ -441,6 +460,10 @@ footer .fa-utensils {
   margin: 0 0 25px 27px;
 }
 
+.menu-section {
+  display: flex;
+}
+
 .menu-title {
   display: flex;
   flex-direction: row;
@@ -459,6 +482,201 @@ footer .fa-utensils {
   color: gray;
   font-size: 25px;
   font-weight: 100;
+}
+
+.dish {
+  position: relative;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dish .dish-price {
+  margin-right: 10px;
+  margin-top: 40px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dish-info {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 95%;
+}
+.dish-info h3 {
+  width: 90%;
+  overflow: visible;
+  white-space: pre-line;
+  text-overflow: ellipsis;
+  padding-bottom: 14px;
+  font-family: Roboto;
+  font-size: 19px;
+  font-weight: 600;
+}
+.dish-info p {
+  width: 90%;
+  color: gray;
+  font-family: Roboto;
+  font-size: 16px;
+}
+.dish-info p:hover {
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dish-info h3 {
+  padding-bottom: 0;
+}
+
+.visible-dish-wrap {
+  width: 90%;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 20px;
+  overflow: hidden;
+  box-shadow: 0px 7px 10px 1px rgba(0, 0, 0, 0.15);
+}
+.visible-dish-wrap:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+.first {
+  position: relative;
+  animation: menu-animation 2s;
+  animation-timing-function: ease-out;
+}
+
+.second {
+  position: relative;
+  animation: menu-animation 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.1s;
+}
+
+.third {
+  position: relative;
+  animation: menu-animation 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.18s;
+}
+
+.fourth {
+  position: relative;
+  animation: menu-animation 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.26s;
+}
+
+.fifth {
+  position: relative;
+  animation: menu-animation 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.34s;
+}
+
+.sixth {
+  position: relative;
+  animation: menu-animation 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.42s;
+}
+
+.seventh {
+  position: relative;
+  animation: menu-animation 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.5s;
+}
+
+.eighth {
+  position: relative;
+  animation: menu-animation 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.58s;
+}
+
+.ninth {
+  position: relative;
+  animation: menu-animation 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.66s;
+}
+
+.tenth {
+  position: relative;
+  animation: menu-animation 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.74s;
+}
+
+.dish-wrap {
+  width: 134%;
+  display: flex;
+  align-items: center;
+  transition: width 1s ease-out 100ms;
+}
+.dish-wrap > .check .fa-check-circle {
+  font-size: 25px;
+  color: #fff;
+  background-color: #99E2D0;
+  border-radius: 20px;
+  position: relative;
+  margin: 28px 32px;
+  transition: transform 1s ease-out 10ms;
+}
+.dish-wrap:hover {
+  width: 103%;
+}
+.dish-wrap:hover .check {
+  padding-right: 10px;
+}
+.dish-wrap:hover .check .fa-check-circle {
+  font-size: 25px;
+  color: #fff;
+  background-color: #99E2D0;
+  border-radius: 20px;
+  position: relative;
+  margin: 28px 32px;
+  transform: rotate(360deg);
+}
+
+.dish-info {
+  display: block;
+  padding-left: 15px;
+  padding-right: 25px;
+}
+.dish-info:hover > h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.dish-info > p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.check {
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  margin-left: 10px;
+  width: 82px;
+  width: 86px;
+  height: 97px;
+}
+
+.fa-check-circle {
+  font-size: 25px;
+  color: #fff;
+  background-color: #99E2D0;
+  border-radius: 20px;
+  position: relative;
+  margin: 28px 32px;
+  font-size: 40px;
+  margin: 50px;
 }
 
 .order {
@@ -487,10 +705,10 @@ footer {
   padding: 0 0 45px 0;
 }
 footer h5 {
-  color: #fff;
   font-family: Shrikhand;
   font-size: 35px;
   font-weight: 400;
+  color: #fff;
   padding: 45px 0 0 40px;
 }
 footer .contacts {
@@ -518,6 +736,13 @@ footer .fa-hands-helping {
 footer .fa-utensils {
   padding-right: 13px;
   font-size: 20px;
+}
+footer h4 {
+  color: #fff;
+  font-family: Shrikhand;
+  font-size: 35px;
+  font-weight: 400;
+  padding: 45px 0 0 40px;
 }
 
 @media all and (max-width: 768px) {
@@ -740,10 +965,10 @@ footer .fa-utensils {
     padding: 0 0 45px 0;
   }
   footer h5 {
-    color: #fff;
     font-family: Shrikhand;
     font-size: 22px;
     font-weight: 400;
+    color: #fff;
     display: flex;
     padding: 40px 0 25px 30px;
   }
@@ -806,6 +1031,7 @@ footer .fa-utensils {
     align-items: center;
     display: flex;
     margin: auto;
+    padding: 15px 0;
   }
   .nav-img {
     width: 100%;
@@ -841,19 +1067,6 @@ footer .fa-utensils {
     font-weight: 500;
     font-family: Shrikhand;
   }
-  @keyframes menu-animation {
-    from {
-      bottom: -50px;
-      opacity: 0;
-    }
-    to {
-      bottom: 0px;
-      opacity: 1;
-    }
-  }
-  .menu-section {
-    animation: menu-animation;
-  }
   .heart {
     color: gray;
     font-size: 25px;
@@ -866,7 +1079,7 @@ footer .fa-utensils {
     align-items: center;
     justify-content: space-between;
   }
-  .dish span {
+  .dish .dish-price {
     margin-right: 10px;
     margin-top: 40px;
     font-family: Roboto;
@@ -901,7 +1114,7 @@ footer .fa-utensils {
     white-space: nowrap;
   }
   .visible-dish-wrap {
-    width: 92%;
+    width: 90%;
     background-color: #fff;
     border-radius: 20px;
     margin: 20px;
@@ -912,38 +1125,101 @@ footer .fa-utensils {
     cursor: pointer;
     transform: rotate(360deg);
   }
-  .visible-dish-wrap:hover .check {
-    margin-left: auto;
+  .first {
+    position: relative;
+    animation: menu-animation 2s;
+    animation-timing-function: ease-out;
+  }
+  .second {
+    position: relative;
+    animation: menu-animation 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.1s;
+  }
+  .third {
+    position: relative;
+    animation: menu-animation 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.18s;
+  }
+  .fourth {
+    position: relative;
+    animation: menu-animation 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.26s;
+  }
+  .fifth {
+    position: relative;
+    animation: menu-animation 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.34s;
+  }
+  .sixth {
+    position: relative;
+    animation: menu-animation 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.42s;
+  }
+  .seventh {
+    position: relative;
+    animation: menu-animation 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.5s;
+  }
+  .eighth {
+    position: relative;
+    animation: menu-animation 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.58s;
+  }
+  .ninth {
+    position: relative;
+    animation: menu-animation 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.66s;
+  }
+  .tenth {
+    position: relative;
+    animation: menu-animation 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.74s;
   }
   .dish-wrap {
-    width: 132%;
+    width: 134%;
     display: flex;
     align-items: center;
     transition: width 1s ease-out 100ms;
   }
   .dish-wrap > .check .fa-check-circle {
-    font-size: 30px;
+    font-size: 25px;
     color: #fff;
     background-color: #99E2D0;
     border-radius: 20px;
-    border: 1px solid #99E2D0;
+    position: relative;
+    margin: 28px 32px;
     transition: transform 1s ease-out 10ms;
-    margin: 25px;
   }
   .dish-wrap:hover {
-    width: 100%;
-    padding-right: 40px;
+    width: 103%;
   }
-  .dish-wrap:hover > .check .fa-check-circle {
+  .dish-wrap:hover .check {
+    padding-right: 10px;
+  }
+  .dish-wrap:hover .check .fa-check-circle {
+    font-size: 25px;
+    color: #fff;
+    background-color: #99E2D0;
+    border-radius: 20px;
+    position: relative;
+    margin: 28px 32px;
     transform: rotate(360deg);
   }
   .dish-info {
-    display: inline-block;
-    width: 75%;
+    display: block;
     padding-left: 15px;
-    margin-right: 10px;
+    padding-right: 25px;
   }
-  .dish-info:hover h3 {
+  .dish-info:hover > h3 {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -957,7 +1233,10 @@ footer .fa-utensils {
     background-color: #99E2D0;
     border-radius: 0 20px 20px 0;
     margin-left: 10px;
-    width: 85px;
+    width: 82px;
+  }
+  .fa-check-circle {
+    margin: 25px 30px;
   }
   .order {
     display: block;
@@ -984,10 +1263,10 @@ footer .fa-utensils {
     padding: 0 0 45px 0;
   }
   footer h5 {
-    color: #fff;
     font-family: Shrikhand;
     font-size: 22px;
     font-weight: 400;
+    color: #fff;
     display: flex;
     padding: 40px 0 25px 30px;
   }

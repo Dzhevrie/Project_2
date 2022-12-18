@@ -6,6 +6,7 @@
         padding: 0;
     }
 
+
     // NAVIGATION
 
     .rstnt-navigation {
@@ -30,22 +31,6 @@
         @include menu-title;
     }
 
-    @keyframes menu-animation {
-        from {
-            bottom: -50px;
-            opacity: 0;
-        }
-
-        to {
-            bottom: 0px;
-            opacity: 1;
-        }
-    }
-
-    .menu-section {
-        animation: menu-animation;
-    }
-
     .heart {
         @include heart;
     }
@@ -61,86 +46,92 @@
     }
 
     .visible-dish-wrap {
-        // outline: 1px solid blue;
-        width: 92%;
-        background-color: #fff;
-        border-radius: 20px;
-        margin: 20px;
-        overflow: hidden;
-        box-shadow: 0px 7px 10px 1px rgb(0 0 0 / 15%);
-
-        &:hover {
-            cursor: pointer;
-            transform: rotate(360deg);
-
-            .check {
-                margin-left: auto;
-            }
-        }
-
+        @include visible-dish-wrap;
     }
 
+    .first {
+        position: relative;
+        animation: menu-animation 2s;
+        animation-timing-function: ease-out;
+    }
+
+    .second {
+        position: relative;
+        animation: menu-animation 2s;
+        animation-timing-function: ease-out;
+        animation-delay: 0.1s;
+    }
+
+    .third {
+        position: relative;
+        animation: menu-animation 2s;
+        animation-timing-function: ease-out;
+        animation-delay: 0.18s;
+    }
+
+    .fourth {
+        position: relative;
+        animation: menu-animation 2s;
+        animation-timing-function: ease-out;
+        animation-delay: 0.26s;
+    }
+
+    .fifth{
+        position: relative;
+        animation: menu-animation 2s;
+        animation-timing-function: ease-out;
+        animation-delay: 0.34s;
+    }
+
+    .sixth{
+        position: relative;
+        animation: menu-animation 2s;
+        animation-timing-function: ease-out;
+        animation-delay: 0.42s;
+    }
+
+    .seventh{
+        position: relative;
+        animation: menu-animation 2s;
+        animation-timing-function: ease-out;
+        animation-delay: 0.5s;
+    }
+
+    .eighth{
+        position: relative;
+        animation: menu-animation 2s;
+        animation-timing-function: ease-out;
+        animation-delay: 0.58s;
+    }
+
+    .ninth{
+        position: relative;
+        animation: menu-animation 2s;
+        animation-timing-function: ease-out;
+        animation-delay: 0.66s;
+    }
+
+    .tenth{
+        position: relative;
+        animation: menu-animation 2s;
+        animation-timing-function: ease-out;
+        animation-delay: 0.74s;
+    }
 
     .dish-wrap {
-        width: 132%;
-        display: flex;
-        align-items: center;
-        transition: width 1s ease-out 100ms;
-
-        >.check {
-            .fa-check-circle {
-                font-size: 30px;
-                color: #fff;
-                background-color: $third-color;
-                border-radius: 20px;
-                border: 1px solid $third-color;
-                transition: transform 1s ease-out 10ms;
-                margin: 25px;
-
-            }
-        }
-
-        &:hover {
-            width: 100%;
-            padding-right: 40px;
-
-            >.check {
-                .fa-check-circle {
-                    transform: rotate(360deg);
-                }
-            }
-        }
-
-
+        @include dish-wrap;
     }
 
     .dish-info {
-        display: inline-block;
-        width: 75%;
-        padding-left: 15px;
-        margin-right: 10px;
-
-        &:hover {
-            h3 {
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
-        }
-
-        >p {
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
+        @include dish-info;
     }
 
     .check {
-        background-color: #99E2D0;
-        border-radius: 0 20px 20px 0;
-        margin-left: 10px;
-        width: 85px;
+        @include check;
+    }
 
+    .fa-check-circle {
+        margin: 25px 30px;
     }
 
     .order {

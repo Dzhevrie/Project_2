@@ -41,16 +41,19 @@ body {
 .navigation {
     width: 100%;
 
-    &-link {
-        padding: 20px 0;
-        width: 100%;
-        display: block;
-        text-align: center;
-    }
+    // &-link {
+    //     padding: 20px 0;
+    //     width: 100%;
+    //     display: block;
+    //     text-align: center;
+    // }
 
     img {
-        // width: 200px;
         align-items: center;
+        position: relative;
+        margin: auto;
+        display: block;
+        padding: 25px 0;
     }
 
 }

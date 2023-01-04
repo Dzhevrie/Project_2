@@ -1,175 +1,176 @@
 // DESKTOP VERSION
 
 // RESTAURANT'S SITE
+@media all and (min-width: 769px) {
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
-
-// NAVIGATION
-
-.rstnt-navigation {
-    @include restorant-navigation;
-    padding: 15px 0;
-
-    img {
-        width: 350px;
+    body {
+        margin: 0;
+        padding: 0;
     }
 
-    i {
+    // NAVIGATION
+
+    .rstnt-navigation {
+        @include restorant-navigation;
+        padding: 15px 0;
+
+        img {
+            width: 350px;
+        }
+
+        i {
+            font-size: 35px;
+        }
+    }
+
+    .nav-img {
+        width: 100%;
+        height: 500px;
+    }
+
+    // THE RESTAURANT'S MAIN SECTION 
+
+    .menu {
+        @include menu-about-pages;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+        align-items: stretch;
+    }
+
+    .line {
+        @include line;
+    }
+
+    .menu-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .menu-title {
+        @include menu-title;
+
+        h1 {
+            font-size: 38px;
+        }
+    }
+
+    .heart {
+        @include heart;
+        font-size: 33px;
+    }
+
+
+    // Start of the menu animation section
+    .first {
+        @include menu-movment;
+    }
+
+    .second {
+        @include menu-movment;
+        animation-delay: 0.1s;
+    }
+
+    .third {
+        @include menu-movment;
+        animation-delay: 0.18s;
+    }
+
+    .fourth {
+        @include menu-movment;
+        animation-delay: 0.26s;
+    }
+
+    .fifth {
+        @include menu-movment;
+        animation-delay: 0.34s;
+    }
+
+    .sixth {
+        @include menu-movment;
+        animation-delay: 0.42s;
+    }
+
+    .seventh {
+        @include menu-movment;
+        animation-delay: 0.5s;
+    }
+
+    .eighth {
+        @include menu-movment;
+        animation-delay: 0.58s;
+    }
+
+    .ninth {
+        @include menu-movment;
+        animation-delay: 0.66s;
+    }
+
+    .tenth {
+        @include menu-movment;
+        animation-delay: 0.74s;
+    }
+
+    // End of the menu animation section
+
+    .visible-dish-wrap {
+        @include visible-dish-wrap;
+        width: 460px;
+    }
+
+    .dish-wrap {
+        @include dish-wrap;
+    }
+
+    .dish {
+        position: relative;
+        @include dish;
+    }
+
+    .dish-info {
+        @include dish-info;
+        @include dish-title;
+
+        h3 {
+            width: 100%;
+            font-size: 25px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            margin: 0;
+            padding: 20px 0 10px 0;
+        }
+    }
+
+    .check {
+        @include check;
+    }
+
+    .fa-check-circle {
+        @include check-icon;
         font-size: 35px;
     }
-}
 
-.nav-img {
-    width: 100%;
-    height: 500px;
-}
-
-// THE RESTAURANT'S MAIN SECTION 
-
-.menu {
-    @include menu-about-pages;
-}
-
-.line {
-    @include line;
-}
-
-.menu-section {
-    display: flex;
-}
-
-.menu-title {
-    @include menu-title;
-}
-
-.heart {
-    @include heart;
-}
-
-.dish {
-    position: relative;
-    @include dish;
-}
-
-.dish-info {
-    @include dish-title;
-    h3{
-        padding-bottom: 0;
+    .order {
+        @include btn-order;
+        padding: 30px 255px 30px 190px;
+        font-size: 30px;
     }
 
-}
+    // FOOTER
 
-.visible-dish-wrap {
-    @include visible-dish-wrap;
-}
+    footer {
+        @include desktop-footer;
 
-.first {
-    position: relative;
-    animation: menu-animation 2s;
-    animation-timing-function: ease-out;
-}
-
-.second {
-    position: relative;
-    animation: menu-animation 2s;
-    animation-timing-function: ease-out;
-    animation-delay: 0.1s;
-}
-
-.third {
-    position: relative;
-    animation: menu-animation 2s;
-    animation-timing-function: ease-out;
-    animation-delay: 0.18s;
-}
-
-.fourth {
-    position: relative;
-    animation: menu-animation 2s;
-    animation-timing-function: ease-out;
-    animation-delay: 0.26s;
-}
-
-.fifth {
-    position: relative;
-    animation: menu-animation 2s;
-    animation-timing-function: ease-out;
-    animation-delay: 0.34s;
-}
-
-.sixth {
-    position: relative;
-    animation: menu-animation 2s;
-    animation-timing-function: ease-out;
-    animation-delay: 0.42s;
-}
-
-.seventh {
-    position: relative;
-    animation: menu-animation 2s;
-    animation-timing-function: ease-out;
-    animation-delay: 0.5s;
-}
-
-.eighth {
-    position: relative;
-    animation: menu-animation 2s;
-    animation-timing-function: ease-out;
-    animation-delay: 0.58s;
-}
-
-.ninth {
-    position: relative;
-    animation: menu-animation 2s;
-    animation-timing-function: ease-out;
-    animation-delay: 0.66s;
-}
-
-.tenth {
-    position: relative;
-    animation: menu-animation 2s;
-    animation-timing-function: ease-out;
-    animation-delay: 0.74s;
-}
-
-.dish-wrap {
-    @include dish-wrap;
-}
-
-.dish-info {
-    @include dish-info;
-}
-
-.check {
-    @include check;
-    width: 86px;
-    height: 97px;
-}
-
-.fa-check-circle {
-    @include check-icon;
-    font-size: 40px;
-    margin: 50px;
-}
-
-.order {
-    @include btn-order;
-}
-
-// FOOTER
-
-footer {
-    @include desktop-footer;
-
-    h4 {
-        color: #fff;
-        font-family: Shrikhand;
-        font-size: 35px;
-        font-weight: 400;
-        padding: 45px 0 0 40px;
+        h4 {
+            color: #fff;
+            font-family: $main-font;
+            font-size: 35px;
+            font-weight: 400;
+            padding: 45px 0 0 40px;
+        }
     }
 }

@@ -1,7 +1,6 @@
 @mixin restorant-navigation {
     display: flex;
     flex-direction: row;
-    /* padding: 30px 0 15px 0; */
     align-items: center;
     position: relative;
     justify-content: flex-start;
@@ -38,7 +37,7 @@
 
     i {
         font-size: 20px;
-        color: gray;
+        color: #808080;
         margin: 0 25px;
     }
 
@@ -56,25 +55,30 @@
 
     h2 {
         padding: 30px 0 7px 25px;
-        color: gray;
 
         font: {
-            family: $text-font;
+            family: $main-font;
             size: 20px;
-            weight: 300;
+            weight: 500;
         }
     }
 }
 
+@mixin menu-movment {
+    position: relative;
+    animation: menu-animation 2s;
+    animation-timing-function: ease-out;
+}
+
 @mixin heart {
-    color: gray;
+    color: #808080;
     font-size: 25px;
     font-weight: 100;
 }
 
 @mixin line {
     border-bottom: 3px solid $third-color;
-    width: 7%;
+    width: 10%;
     margin: 0 0 25px 27px;
 }
 
@@ -99,151 +103,125 @@
 @mixin dish {
     width: 75%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin: 0;
 
     .dish-price {
-        margin-right: 10px;
-        margin-top: 40px;
+        margin: 55px 15px 0 0;
 
         font: {
-            family: Roboto;
-            size: 16px;
-            weight: 600;
+            family: $text-font;
+            size: 20px;
+            weight: 800;
         }
     }
-
 }
 
 @mixin dish-title {
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 95%;
+    white-space: nowrap;
 
     h3 {
-        width: 90%;
-        overflow: visible;
-        white-space: pre-line;
-        text-overflow: ellipsis;
-        padding-bottom: 14px;
+        width: 99%;
+        white-space: break-spaces;
+        padding: 0px 0 5px 0px;
 
         font: {
-            family: $text-font;
-            size: 19px;
+            family: $main-font;
+            size: 25px;
             weight: 600;
 
         }
     }
 
     p {
-        width: 90%;
-        color: gray;
+        margin: 0;
+        color: #808080;
 
         font: {
             family: $text-font;
-            size: 16px;
+            size: 20px;
         }
-
-        &:hover {
-            width: 80%;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-
     }
-
 }
 
 @mixin visible-dish-wrap {
-    width: 90%;
     background-color: #fff;
     border-radius: 20px;
-    margin: 20px;
+    margin: 25px 20px;
     overflow: hidden;
     box-shadow: 0px 7px 10px 1px rgb(0 0 0 / 15%);
 
     &:hover {
         cursor: pointer;
         transform: rotate(360deg);
+
+        .dish-wrap {
+            h3 {
+                width: 70%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            p {
+                width: 70%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
     }
 }
 
 @mixin dish-wrap {
     width: 134%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     transition: width 1s ease-out 100ms;
 
-    >.check {
-        .fa-check-circle {
-            @include check-icon;
-            transition: transform 1s ease-out 10ms;
-
-        }
+    .fa-check-circle {
+        transition: transform 1s ease-out 10ms;
     }
 
     &:hover {
-        width: 103%;
+        width: 100%;
 
-        .check {
-            padding-right: 10px;
-
-            .fa-check-circle {
-                @include check-icon;
-                transform: rotate(360deg);
-            }
+        .fa-check-circle {
+            transform: rotate(360deg);
         }
     }
-
-
 }
 
 
 @mixin dish-info {
-    display: block;
-    // width: 80%;
+    width: inherit;
     padding-left: 15px;
-    // margin-right: 55px;
-    padding-right: 25px;
-
-    &:hover {
-        >h3 {
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
-    }
-
-    >p {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    }
+    margin-right: auto;
 }
 
 
 @mixin check {
-    background-color: #99E2D0;
+    background-color: $third-color;
     border-radius: 0 20px 20px 0;
     margin-left: 10px;
-    width: 82px;
 }
 
 @mixin check-icon {
-    font-size: 25px;
+    font-size: 27px;
     color: #fff;
     background-color: $third-color;
     border-radius: 20px;
     position: relative;
-    margin: 28px 32px;
+    margin: 35px 39px;
 }
-
 
 @mixin btn-order {
     display: block;
     width: 250px;
-    background-color: #FF79DA;
+    background-color: $secondary-color;
     color: #fff;
     border: none;
     border-radius: 55px;
@@ -268,7 +246,7 @@
 
     h5 {
         font: {
-            family: Shrikhand;
+            family: $main-font;
             size: 35px;
             weight: 400;
         }
@@ -280,7 +258,7 @@
     .contacts {
         width: 100%;
         text-decoration: none;
-        font-family: Roboto;
+        font-family: $text-font;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -294,7 +272,6 @@
             flex-direction: row;
             align-items: baseline;
         }
-
     }
 
     .fa-hands-helping {
@@ -329,7 +306,7 @@
         width: auto;
         display: flex;
         text-decoration: none;
-        font-family: Roboto;
+        font-family: $text-font;
         flex-direction: column;
         align-items: flex-start;
         margin-left: 15px;
@@ -351,7 +328,7 @@
         .fa-hands-helping {
             color: #fff;
             padding: 10px 0;
-            transform: rotate(-20deg);
+            transform: rotate(-13deg);
             font-size: 14px;
             margin: 0 10px 0 0;
         }

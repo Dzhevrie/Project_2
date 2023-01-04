@@ -6,7 +6,6 @@
         padding: 0;
     }
 
-
     // NAVIGATION
 
     .rstnt-navigation {
@@ -35,87 +34,65 @@
         @include heart;
     }
 
+    // Start of the menu animation section
+    .first {
+        @include menu-movment;
+    }
+
+    .second {
+        @include menu-movment;
+        animation-delay: 0.1s;
+    }
+
+    .third {
+        @include menu-movment;
+        animation-delay: 0.18s;
+    }
+
+    .fourth {
+        @include menu-movment;
+        animation-delay: 0.26s;
+    }
+
+    .fifth {
+        @include menu-movment;
+        animation-delay: 0.34s;
+    }
+
+    .sixth {
+        @include menu-movment;
+        animation-delay: 0.42s;
+    }
+
+    .seventh {
+        @include menu-movment;
+        animation-delay: 0.5s;
+    }
+
+    .eighth {
+        @include menu-movment;
+        animation-delay: 0.58s;
+    }
+
+    .ninth {
+        @include menu-movment;
+        animation-delay: 0.66s;
+    }
+
+    .tenth {
+        @include menu-movment;
+        animation-delay: 0.74s;
+    }
+
+    // End of the menu animation section
+
     .dish {
         position: relative;
         @include dish;
     }
 
-    .dish-info {
-        @include dish-title;
-
-    }
-
     .visible-dish-wrap {
         @include visible-dish-wrap;
-    }
-
-    .first {
-        position: relative;
-        animation: menu-animation 2s;
-        animation-timing-function: ease-out;
-    }
-
-    .second {
-        position: relative;
-        animation: menu-animation 2s;
-        animation-timing-function: ease-out;
-        animation-delay: 0.1s;
-    }
-
-    .third {
-        position: relative;
-        animation: menu-animation 2s;
-        animation-timing-function: ease-out;
-        animation-delay: 0.18s;
-    }
-
-    .fourth {
-        position: relative;
-        animation: menu-animation 2s;
-        animation-timing-function: ease-out;
-        animation-delay: 0.26s;
-    }
-
-    .fifth{
-        position: relative;
-        animation: menu-animation 2s;
-        animation-timing-function: ease-out;
-        animation-delay: 0.34s;
-    }
-
-    .sixth{
-        position: relative;
-        animation: menu-animation 2s;
-        animation-timing-function: ease-out;
-        animation-delay: 0.42s;
-    }
-
-    .seventh{
-        position: relative;
-        animation: menu-animation 2s;
-        animation-timing-function: ease-out;
-        animation-delay: 0.5s;
-    }
-
-    .eighth{
-        position: relative;
-        animation: menu-animation 2s;
-        animation-timing-function: ease-out;
-        animation-delay: 0.58s;
-    }
-
-    .ninth{
-        position: relative;
-        animation: menu-animation 2s;
-        animation-timing-function: ease-out;
-        animation-delay: 0.66s;
-    }
-
-    .tenth{
-        position: relative;
-        animation: menu-animation 2s;
-        animation-timing-function: ease-out;
-        animation-delay: 0.74s;
     }
 
     .dish-wrap {
@@ -124,6 +101,7 @@
 
     .dish-info {
         @include dish-info;
+        @include dish-title;
     }
 
     .check {
@@ -131,7 +109,7 @@
     }
 
     .fa-check-circle {
-        margin: 25px 30px;
+        @include check-icon;
     }
 
     .order {
@@ -145,12 +123,11 @@
 
         h4 {
             color: #fff;
-            font-family: Shrikhand;
+            font-family: $main-font;
             font-size: 22px;
             font-weight: 400;
             display: flex;
             padding: 40px 0 25px 30px;
         }
     }
-
 }

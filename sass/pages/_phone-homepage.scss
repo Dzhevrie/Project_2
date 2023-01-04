@@ -16,8 +16,8 @@
             align-items: center;
             animation: hideLoading 2s forwards;
             position: absolute;
-            bottom: 195px;
-            left: 130px;
+            bottom: 304px;
+            left: 123px;
         }
     }
 
@@ -35,7 +35,6 @@
             margin: auto;
             padding: 20px;
         }
-
     }
 
     .search-btn-wrap {
@@ -44,7 +43,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #9356DC;
+        background-color: $primary-color;
         box-shadow: rgb(11 10 10 / 18%) 0px 13px 12px 0px inset;
 
         input {
@@ -57,18 +56,15 @@
 
             font: {
                 size: 20px;
-                family: $text-font
+                family: $text-font;
             }
-
         }
-
     }
 
     .fa-map-marker-alt {
         font-size: 22px;
         margin: 15px;
     }
-
 
     .head {
         background-color: $third-color;
@@ -77,17 +73,16 @@
 
         h1 {
             font: {
-                family: $text-font;
+                family: $main-font;
                 size: 27px;
-                weight: 700
+                weight: 700;
             }
-
         }
 
         p {
             padding: 35px 10px;
             text-align: center;
-            color: gray;
+            color: #808080;
 
             font: {
                 family: $text-font;
@@ -98,7 +93,7 @@
         .button {
             background-color: $secondary-color;
             padding: 17px 30px;
-            color: white;
+            color: #fff;
             border-radius: 50px;
             font-size: 18px;
             font-weight: 500;
@@ -124,7 +119,7 @@
 
         h2 {
             font: {
-                family: $text-font;
+                family: $main-font;
                 size: 25px;
                 weight: 700;
             }
@@ -151,11 +146,11 @@
 
         span {
             font-size: 15px;
-            border: 5px solid #9356DC;
-            color: white;
+            border: 5px solid $primary-color;
+            color: #fff;
             border-radius: 35px;
             padding: 0 5px;
-            background-color: #9356DC;
+            background-color: $primary-color;
             margin: 0 10px 0 -10px;
         }
 
@@ -165,11 +160,11 @@
         }
 
         .fa-mobile-alt {
-            color: gray;
+            color: #808080;
         }
 
         .fa-list {
-            color: gray;
+            color: #808080;
         }
 
         .fa-store {
@@ -187,7 +182,6 @@
         }
     }
 
-
     // Section of the restaurants 
 
     .rsts-section {
@@ -199,7 +193,7 @@
         h3 {
             font: {
                 size: 25px;
-                family: $text-font;
+                family: $main-font;
                 weight: 700;
             }
 
@@ -218,15 +212,14 @@
 
         a {
             text-decoration: none;
-
         }
 
         span {
             color: darkcyan;
-            background-color: #99E2D0;
+            background-color: $third-color;
             font-size: 17px;
             padding: 6px 30px;
-            font-family: Roboto;
+            font-family: $text-font;
             font-weight: 700;
             margin: 15px 0 0 -106px;
             position: absolute;
@@ -238,15 +231,12 @@
         }
     }
 
-
-
     .ad-info {
         width: 100%;
         margin: 10px 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-
     }
 
     .info {
@@ -257,10 +247,9 @@
             padding: 2px 0;
 
             font: {
-                family: $text-font;
+                family: $main-font;
                 size: 20px;
                 weight: 800;
-
             }
         }
 
@@ -271,14 +260,13 @@
                 weight: 400;
             }
 
-            color:grey;
+            color:#808080;
         }
-
     }
 
     .main-heart1 {
         font-size: 30px;
-        color: gray;
+        color: #808080;
         position: sticky;
         left: 665px;
         opacity: 1;
@@ -295,7 +283,6 @@
             transition-duration: 1s;
             color: lighten($primary-color, 5);
         }
-
     }
 
     // FOOTER
@@ -303,5 +290,4 @@
     footer {
         @include phone-footer;
     }
-
 }

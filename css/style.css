@@ -151,7 +151,7 @@ footer .contacts .fa-utensils {
   align-items: center;
   position: relative;
   margin: auto;
-  display: block;
+  display: flex;
   padding: 25px 0;
 }
 

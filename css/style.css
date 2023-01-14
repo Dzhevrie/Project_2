@@ -185,7 +185,7 @@ footer .contacts .fa-utensils {
   padding: 35px 0 60px 0;
 }
 .head h1 {
-  font-family: Shrikhand;
+  font-family: Roboto;
   font-size: 30px;
   font-weight: 700;
 }
@@ -222,7 +222,7 @@ footer .contacts .fa-utensils {
   align-items: center;
 }
 .btns h2 {
-  font-family: Shrikhand;
+  font-family: Roboto;
   font-size: 40px;
   font-weight: 700;
 }
@@ -283,9 +283,10 @@ footer .contacts .fa-utensils {
   flex-wrap: wrap;
 }
 .rsts-section h3 {
-  padding: 0px 560px 10px 0px;
+  padding: 10px 0px 20px 30px;
+  width: auto;
   font-size: 25px;
-  font-family: Shrikhand;
+  font-family: Roboto;
   font-weight: 700;
 }
 
@@ -327,7 +328,7 @@ footer .contacts .fa-utensils {
   color: #000;
   text-decoration: none;
   padding: 2px 0;
-  font-family: Shrikhand;
+  font-family: Roboto;
   font-size: 20px;
   font-weight: 800;
 }
@@ -777,7 +778,7 @@ footer .fa-utensils {
     padding: 40px 0;
   }
   .head h1 {
-    font-family: Shrikhand;
+    font-family: Roboto;
     font-size: 27px;
     font-weight: 700;
   }
@@ -810,7 +811,7 @@ footer .fa-utensils {
     padding: 40px 10px 50px 15px;
   }
   .btns h2 {
-    font-family: Shrikhand;
+    font-family: Roboto;
     font-size: 25px;
     font-weight: 700;
   }
@@ -855,7 +856,7 @@ footer .fa-utensils {
   }
   .btn-wrap p {
     padding: 25px 0 25px 10px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
     font-family: Roboto;
   }
@@ -866,15 +867,15 @@ footer .fa-utensils {
     padding: 15px 0 50px 0;
   }
   .rsts-section h3 {
+    width: auto;
     font-size: 25px;
-    font-family: Shrikhand;
+    font-family: Roboto;
     font-weight: 700;
-    padding: 40px 0 0px 30px;
   }
   .rst-ad {
     background-color: #fff;
     border-radius: 18px;
-    margin: 20px;
+    margin: 15px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -899,7 +900,7 @@ footer .fa-utensils {
   }
   .ad-info {
     width: 100%;
-    margin: 10px 20px;
+    margin: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -908,7 +909,7 @@ footer .fa-utensils {
     color: #000;
     text-decoration: none;
     padding: 2px 0;
-    font-family: Shrikhand;
+    font-family: Roboto;
     font-size: 20px;
     font-weight: 800;
   }

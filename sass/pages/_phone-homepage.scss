@@ -73,7 +73,7 @@
 
         h1 {
             font: {
-                family: $main-font;
+                family: $text-font;
                 size: 27px;
                 weight: 700;
             }
@@ -119,7 +119,7 @@
 
         h2 {
             font: {
-                family: $main-font;
+                family: $text-font;
                 size: 25px;
                 weight: 700;
             }
@@ -175,7 +175,7 @@
             padding: 25px 0 25px 10px;
 
             font: {
-                size: 15px;
+                size: 18px;
                 weight: 700;
                 family: $text-font;
             }
@@ -191,20 +191,21 @@
         padding: 15px 0 50px 0;
 
         h3 {
+            width: auto;
             font: {
                 size: 25px;
-                family: $main-font;
+                family: $text-font;
                 weight: 700;
             }
 
-            padding: 40px 0 0px 30px;
+            // padding: 40px 0 0px 30px;
         }
     }
 
     .rst-ad {
         background-color: #fff;
         border-radius: 18px;
-        margin: 20px;
+        margin: 15px;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -233,7 +234,7 @@
 
     .ad-info {
         width: 100%;
-        margin: 10px 20px;
+        margin: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -247,7 +248,7 @@
             padding: 2px 0;
 
             font: {
-                family: $main-font;
+                family: $text-font;
                 size: 20px;
                 weight: 800;
             }

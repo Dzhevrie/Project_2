@@ -1,4 +1,4 @@
-body {
+* {
     padding: 0;
     margin: 0;
 }
@@ -23,7 +23,7 @@ body {
         width: 250px;
         animation: hideLoading 2s forwards;
         position: absolute;
-        left: 637px;
+        left: 280px;
         bottom: 286px;
     }
 }
@@ -210,7 +210,7 @@ body {
     flex-wrap: wrap;
 
     h3 {
-        padding: 0px 1240px 10px 0px;
+        padding: 0px 560px 10px 0px;
 
         font: {
             size: 25px;

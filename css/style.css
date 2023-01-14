@@ -85,7 +85,6 @@ footer .contacts {
   font-family: Roboto;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 15px;
 }
 footer .contacts p {
   position: relative;
@@ -111,7 +110,7 @@ footer .contacts .fa-utensils {
   font-size: 17px;
 }
 
-body {
+* {
   padding: 0;
   margin: 0;
 }
@@ -133,7 +132,7 @@ body {
   width: 250px;
   animation: hideLoading 2s forwards;
   position: absolute;
-  left: 637px;
+  left: 280px;
   bottom: 286px;
 }
 
@@ -186,21 +185,21 @@ body {
   padding: 35px 0 60px 0;
 }
 .head h1 {
-  font-family: Roboto;
+  font-family: Shrikhand;
   font-size: 30px;
   font-weight: 700;
 }
 .head p {
   padding: 25px 10px;
   text-align: center;
-  color: gray;
+  color: #808080;
   font-family: Roboto;
   font-size: 22px;
 }
 .head button {
   background-color: #FF79DA;
   padding: 25px 40px;
-  color: white;
+  color: #fff;
   border-radius: 50px;
   font-size: 18px;
   font-weight: 500;
@@ -223,7 +222,7 @@ body {
   align-items: center;
 }
 .btns h2 {
-  font-family: Roboto;
+  font-family: Shrikhand;
   font-size: 40px;
   font-weight: 700;
 }
@@ -259,10 +258,10 @@ body {
   padding: 20px 0 20px 10px;
 }
 .btn-wrap .fa-mobile-alt {
-  color: gray;
+  color: #808080;
 }
 .btn-wrap .fa-list {
-  color: gray;
+  color: #808080;
 }
 .btn-wrap .fa-store {
   color: #9356DC;
@@ -284,16 +283,15 @@ body {
   flex-wrap: wrap;
 }
 .rsts-section h3 {
-  padding: 0px 1240px 10px 0px;
+  padding: 0px 560px 10px 0px;
   font-size: 25px;
-  font-family: Roboto;
+  font-family: Shrikhand;
   font-weight: 700;
 }
 
 .rst-ad {
   background-color: #fff;
   border-radius: 18px;
-  /* margin: 20px; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -329,12 +327,12 @@ body {
   color: #000;
   text-decoration: none;
   padding: 2px 0;
-  font-family: Roboto;
+  font-family: Shrikhand;
   font-size: 20px;
   font-weight: 800;
 }
 .info p {
-  color: grey;
+  color: #808080;
   font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
@@ -342,7 +340,7 @@ body {
 
 .main-heart1 {
   font-size: 30px;
-  color: gray;
+  color: #808080;
   position: absolute;
   left: 250px;
   opacity: 1;
@@ -400,14 +398,13 @@ footer .fa-utensils {
 }
 
 @media all and (min-width: 769px) {
-  body {
+  * {
     margin: 0;
     padding: 0;
   }
   .rstnt-navigation {
     display: flex;
     flex-direction: row;
-    /* padding: 30px 0 15px 0; */
     align-items: center;
     position: relative;
     justify-content: flex-start;
@@ -451,7 +448,7 @@ footer .fa-utensils {
   }
   .menu h2 {
     padding: 30px 0 7px 25px;
-    font-family: Roboto;
+    font-family: Shrikhand;
     font-size: 20px;
     font-weight: 500;
   }
@@ -483,7 +480,7 @@ footer .fa-utensils {
     font-size: 38px;
   }
   .heart {
-    color: gray;
+    color: #808080;
     font-size: 25px;
     font-weight: 100;
     font-size: 33px;
@@ -612,13 +609,13 @@ footer .fa-utensils {
     width: 99%;
     white-space: break-spaces;
     padding: 0px 0 5px 0px;
-    font-family: Roboto;
+    font-family: Shrikhand;
     font-size: 25px;
     font-weight: 600;
   }
   .dish-info p {
     margin: 0;
-    color: gray;
+    color: #808080;
     font-family: Roboto;
     font-size: 20px;
   }
@@ -712,6 +709,18 @@ footer .fa-utensils {
     padding: 45px 0 0 40px;
   }
 }
+@media all and (max-width: 992px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media all and (max-width: 992px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+}
 @media all and (max-width: 768px) {
   * {
     padding: 0;
@@ -768,21 +777,21 @@ footer .fa-utensils {
     padding: 40px 0;
   }
   .head h1 {
-    font-family: Roboto;
+    font-family: Shrikhand;
     font-size: 27px;
     font-weight: 700;
   }
   .head p {
     padding: 35px 10px;
     text-align: center;
-    color: gray;
+    color: #808080;
     font-family: Roboto;
     font-size: 20px;
   }
   .head .button {
     background-color: #FF79DA;
     padding: 17px 30px;
-    color: white;
+    color: #fff;
     border-radius: 50px;
     font-size: 18px;
     font-weight: 500;
@@ -801,7 +810,7 @@ footer .fa-utensils {
     padding: 40px 10px 50px 15px;
   }
   .btns h2 {
-    font-family: Roboto;
+    font-family: Shrikhand;
     font-size: 25px;
     font-weight: 700;
   }
@@ -825,7 +834,7 @@ footer .fa-utensils {
   .btn-wrap span {
     font-size: 15px;
     border: 5px solid #9356DC;
-    color: white;
+    color: #fff;
     border-radius: 35px;
     padding: 0 5px;
     background-color: #9356DC;
@@ -836,10 +845,10 @@ footer .fa-utensils {
     padding: 20px 0 20px 10px;
   }
   .btn-wrap .fa-mobile-alt {
-    color: gray;
+    color: #808080;
   }
   .btn-wrap .fa-list {
-    color: gray;
+    color: #808080;
   }
   .btn-wrap .fa-store {
     color: #9356DC;
@@ -858,7 +867,7 @@ footer .fa-utensils {
   }
   .rsts-section h3 {
     font-size: 25px;
-    font-family: Roboto;
+    font-family: Shrikhand;
     font-weight: 700;
     padding: 40px 0 0px 30px;
   }
@@ -899,7 +908,7 @@ footer .fa-utensils {
     color: #000;
     text-decoration: none;
     padding: 2px 0;
-    font-family: Roboto;
+    font-family: Shrikhand;
     font-size: 20px;
     font-weight: 800;
   }
@@ -907,11 +916,11 @@ footer .fa-utensils {
     font-family: Roboto;
     font-size: 20px;
     font-weight: 400;
-    color: grey;
+    color: #808080;
   }
   .main-heart1 {
     font-size: 30px;
-    color: gray;
+    color: #808080;
     position: sticky;
     left: 665px;
     opacity: 1;
@@ -946,7 +955,6 @@ footer .fa-utensils {
     font-family: Roboto;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 15px;
   }
   footer .contacts p {
     position: relative;
@@ -973,14 +981,13 @@ footer .fa-utensils {
   }
 }
 @media all and (max-width: 768px) {
-  body {
+  * {
     margin: 0;
     padding: 0;
   }
   .rstnt-navigation {
     display: flex;
     flex-direction: row;
-    /* padding: 30px 0 15px 0; */
     align-items: center;
     position: relative;
     justify-content: flex-start;
@@ -1011,7 +1018,7 @@ footer .fa-utensils {
   }
   .menu h2 {
     padding: 30px 0 7px 25px;
-    font-family: Roboto;
+    font-family: Shrikhand;
     font-size: 20px;
     font-weight: 500;
   }
@@ -1034,7 +1041,7 @@ footer .fa-utensils {
     font-family: Shrikhand;
   }
   .heart {
-    color: gray;
+    color: #808080;
     font-size: 25px;
     font-weight: 100;
   }
@@ -1161,13 +1168,13 @@ footer .fa-utensils {
     width: 99%;
     white-space: break-spaces;
     padding: 0px 0 5px 0px;
-    font-family: Roboto;
+    font-family: Shrikhand;
     font-size: 25px;
     font-weight: 600;
   }
   .dish-info p {
     margin: 0;
-    color: gray;
+    color: #808080;
     font-family: Roboto;
     font-size: 20px;
   }
@@ -1223,7 +1230,6 @@ footer .fa-utensils {
     font-family: Roboto;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 15px;
   }
   footer .contacts p {
     position: relative;

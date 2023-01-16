@@ -33,11 +33,11 @@ footer {
   padding: 0 0 45px 0;
 }
 footer h5 {
+  color: #fff;
+  padding: 45px 0 35px 20px;
   font-family: Shrikhand;
   font-size: 35px;
   font-weight: 400;
-  color: #fff;
-  padding: 45px 0 0 40px;
 }
 footer .contacts {
   width: 100%;
@@ -76,7 +76,7 @@ footer h5 {
   font-weight: 400;
   color: #fff;
   display: flex;
-  padding: 40px 0 25px 30px;
+  padding: 30px 0 25px 15px;
 }
 footer .contacts {
   width: auto;
@@ -109,6 +109,13 @@ footer .contacts .fa-utensils {
   color: #fff;
   font-size: 17px;
 }
+footer h3 {
+  font-family: Shrikhand;
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+  padding: 30px 0 15px 15px;
+}
 
 * {
   padding: 0;
@@ -129,11 +136,11 @@ footer .contacts .fa-utensils {
   }
 }
 .loading img {
-  width: 250px;
+  width: 230px;
   animation: hideLoading 2s forwards;
   position: absolute;
-  left: 280px;
-  bottom: 286px;
+  left: 655px;
+  bottom: 70px;
 }
 
 @keyframes hideLoading {
@@ -185,9 +192,9 @@ footer .contacts .fa-utensils {
   padding: 35px 0 60px 0;
 }
 .head h1 {
-  font-family: Roboto;
+  font-family: Shrikhand;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 100;
 }
 .head p {
   padding: 25px 10px;
@@ -222,13 +229,13 @@ footer .contacts .fa-utensils {
   align-items: center;
 }
 .btns h2 {
-  font-family: Roboto;
+  font-family: Shrikhand;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 100;
 }
 
 .btn-wrap {
-  width: 35%;
+  width: 37%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -284,19 +291,22 @@ footer .contacts .fa-utensils {
 }
 .rsts-section h3 {
   padding: 10px 0px 20px 30px;
-  width: auto;
+  width: 100%;
   font-size: 25px;
-  font-family: Roboto;
-  font-weight: 700;
+  font-family: Shrikhand;
+  font-weight: 100;
 }
 
 .rst-ad {
+  position: relative;
   background-color: #fff;
   border-radius: 18px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  margin: 20px auto;
+  width: 360px;
 }
 .rst-ad a {
   text-decoration: none;
@@ -312,7 +322,8 @@ footer .contacts .fa-utensils {
   position: absolute;
 }
 .rst-ad img {
-  width: 320px;
+  width: 360px;
+  height: 170px;
   border-radius: 18px 18px 0 0;
 }
 
@@ -324,19 +335,21 @@ footer .contacts .fa-utensils {
   align-items: center;
 }
 
+.info {
+  padding: 10px 0;
+}
 .info h4 {
   color: #000;
   text-decoration: none;
   padding: 2px 0;
-  font-family: Roboto;
+  font-family: Shrikhand;
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 100;
 }
 .info p {
   color: #808080;
   font-family: Roboto;
   font-size: 20px;
-  font-weight: 400;
 }
 
 .main-heart1 {
@@ -365,11 +378,11 @@ footer {
   padding: 0 0 45px 0;
 }
 footer h5 {
+  color: #fff;
+  padding: 45px 0 35px 20px;
   font-family: Shrikhand;
   font-size: 35px;
   font-weight: 400;
-  color: #fff;
-  padding: 45px 0 0 40px;
 }
 footer .contacts {
   width: 100%;
@@ -451,7 +464,7 @@ footer .fa-utensils {
     padding: 30px 0 7px 25px;
     font-family: Shrikhand;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 100;
   }
   .line {
     border-bottom: 3px solid #99E2D0;
@@ -474,7 +487,7 @@ footer .fa-utensils {
   .menu-title h1 {
     width: 70%;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 100;
     font-family: Shrikhand;
   }
   .menu-title h1 {
@@ -606,21 +619,21 @@ footer .fa-utensils {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  .dish-info h3 {
+  .dish-info span {
     width: 99%;
     white-space: break-spaces;
     padding: 0px 0 5px 0px;
-    font-family: Shrikhand;
-    font-size: 25px;
+    font-family: Roboto;
+    font-size: 23px;
     font-weight: 600;
   }
   .dish-info p {
-    margin: 0;
+    margin-top: 10px;
     color: #808080;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 18px;
   }
-  .dish-info h3 {
+  .dish-info span {
     width: 100%;
     font-size: 25px;
     overflow: hidden;
@@ -670,11 +683,11 @@ footer .fa-utensils {
     padding: 0 0 45px 0;
   }
   footer h5 {
+    color: #fff;
+    padding: 45px 0 35px 20px;
     font-family: Shrikhand;
     font-size: 35px;
     font-weight: 400;
-    color: #fff;
-    padding: 45px 0 0 40px;
   }
   footer .contacts {
     width: 100%;
@@ -702,25 +715,6 @@ footer .fa-utensils {
     padding-right: 13px;
     font-size: 20px;
   }
-  footer h4 {
-    color: #fff;
-    font-family: Shrikhand;
-    font-size: 35px;
-    font-weight: 400;
-    padding: 45px 0 0 40px;
-  }
-}
-@media all and (max-width: 992px) {
-  * {
-    padding: 0;
-    margin: 0;
-  }
-}
-@media all and (max-width: 992px) {
-  * {
-    padding: 0;
-    margin: 0;
-  }
 }
 @media all and (max-width: 768px) {
   * {
@@ -737,7 +731,7 @@ footer .fa-utensils {
     animation: hideLoading 2s forwards;
     position: absolute;
     bottom: 304px;
-    left: 123px;
+    left: 163px;
   }
   .navigation {
     width: 100%;
@@ -768,6 +762,10 @@ footer .fa-utensils {
   .search-btn-wrap input::placeholder {
     color: #000;
   }
+  .search-btn-wrap i {
+    margin: 15px 17px 15px 62px;
+    font-size: 19px;
+  }
   .fa-map-marker-alt {
     font-size: 22px;
     margin: 15px;
@@ -778,9 +776,9 @@ footer .fa-utensils {
     padding: 40px 0;
   }
   .head h1 {
-    font-family: Roboto;
+    font-family: Shrikhand;
     font-size: 27px;
-    font-weight: 700;
+    font-weight: 100;
   }
   .head p {
     padding: 35px 10px;
@@ -811,9 +809,9 @@ footer .fa-utensils {
     padding: 40px 10px 50px 15px;
   }
   .btns h2 {
-    font-family: Roboto;
+    font-family: Shrikhand;
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 100;
   }
   .btn-wrap {
     width: 95%;
@@ -865,14 +863,17 @@ footer .fa-utensils {
     flex-direction: column;
     background-color: #99E2D0;
     padding: 15px 0 50px 0;
+    align-content: center;
   }
   .rsts-section h3 {
     width: auto;
     font-size: 25px;
-    font-family: Roboto;
-    font-weight: 700;
+    font-family: Shrikhand;
+    font-weight: 100;
   }
   .rst-ad {
+    width: auto;
+    position: relative;
     background-color: #fff;
     border-radius: 18px;
     margin: 15px;
@@ -882,25 +883,26 @@ footer .fa-utensils {
     flex-wrap: wrap;
   }
   .rst-ad a {
+    width: 100%;
     text-decoration: none;
   }
   .rst-ad span {
     color: darkcyan;
     background-color: #99E2D0;
-    font-size: 17px;
     padding: 6px 30px;
-    font-family: Roboto;
-    font-weight: 700;
     margin: 15px 0 0 -106px;
     position: absolute;
+    font-size: 17px;
+    font-family: Roboto;
+    font-weight: 700;
   }
   .rst-ad img {
-    width: 100%;
+    position: relative;
     border-radius: 18px 18px 0 0;
+    width: inherit;
   }
   .ad-info {
     width: 100%;
-    margin: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -909,15 +911,14 @@ footer .fa-utensils {
     color: #000;
     text-decoration: none;
     padding: 2px 0;
-    font-family: Roboto;
+    font-family: Shrikhand;
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 100;
   }
   .info p {
+    color: #808080;
     font-family: Roboto;
     font-size: 20px;
-    font-weight: 400;
-    color: #808080;
   }
   .main-heart1 {
     font-size: 30px;
@@ -947,7 +948,7 @@ footer .fa-utensils {
     font-weight: 400;
     color: #fff;
     display: flex;
-    padding: 40px 0 25px 30px;
+    padding: 30px 0 25px 15px;
   }
   footer .contacts {
     width: auto;
@@ -1021,7 +1022,7 @@ footer .fa-utensils {
     padding: 30px 0 7px 25px;
     font-family: Shrikhand;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 100;
   }
   .line {
     border-bottom: 3px solid #99E2D0;
@@ -1038,7 +1039,7 @@ footer .fa-utensils {
   .menu-title h1 {
     width: 70%;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 100;
     font-family: Shrikhand;
   }
   .heart {
@@ -1165,19 +1166,19 @@ footer .fa-utensils {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  .dish-info h3 {
+  .dish-info span {
     width: 99%;
     white-space: break-spaces;
     padding: 0px 0 5px 0px;
-    font-family: Shrikhand;
-    font-size: 25px;
+    font-family: Roboto;
+    font-size: 23px;
     font-weight: 600;
   }
   .dish-info p {
-    margin: 0;
+    margin-top: 10px;
     color: #808080;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 18px;
   }
   .check {
     background-color: #99E2D0;
@@ -1222,7 +1223,7 @@ footer .fa-utensils {
     font-weight: 400;
     color: #fff;
     display: flex;
-    padding: 40px 0 25px 30px;
+    padding: 30px 0 25px 15px;
   }
   footer .contacts {
     width: auto;
@@ -1255,13 +1256,13 @@ footer .fa-utensils {
     color: #fff;
     font-size: 17px;
   }
-  footer h4 {
+  footer h3 {
     color: #fff;
+    display: flex;
+    padding: 30px 0 25px 15px;
     font-family: Shrikhand;
     font-size: 22px;
     font-weight: 400;
-    display: flex;
-    padding: 40px 0 25px 30px;
   }
 }
 

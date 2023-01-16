@@ -134,7 +134,7 @@
         @include dish-info;
         @include dish-title;
 
-        h3 {
+        span {
             width: 100%;
             font-size: 25px;
             overflow: hidden;
@@ -164,13 +164,5 @@
 
     footer {
         @include desktop-footer;
-
-        h4 {
-            color: #fff;
-            font-family: $main-font;
-            font-size: 35px;
-            font-weight: 400;
-            padding: 45px 0 0 40px;
-        }
     }
 }

@@ -121,13 +121,16 @@
     footer {
         @include phone-footer;
 
-        h4 {
+        h3 {
             color: #fff;
-            font-family: $main-font;
-            font-size: 22px;
-            font-weight: 400;
             display: flex;
-            padding: 40px 0 25px 30px;
+            padding: 30px 0 25px 15px;
+
+            font: {
+                family: $main-font;
+                size: 22px;
+                weight: 400;
+            }
         }
     }
 }

@@ -356,7 +356,7 @@ footer h3 {
   font-size: 30px;
   color: #808080;
   position: absolute;
-  left: 250px;
+  left: 280px;
   opacity: 1;
 }
 
@@ -364,7 +364,7 @@ footer h3 {
   width: auto;
   font-size: 30px;
   position: absolute;
-  left: 250px;
+  left: 280px;
   opacity: 0;
 }
 .main-heart2:hover {
@@ -731,7 +731,7 @@ footer .fa-utensils {
     animation: hideLoading 2s forwards;
     position: absolute;
     bottom: 304px;
-    left: 163px;
+    left: 122px;
   }
   .navigation {
     width: 100%;
@@ -864,26 +864,27 @@ footer .fa-utensils {
     background-color: #99E2D0;
     padding: 15px 0 50px 0;
     align-content: center;
+    align-items: center;
   }
   .rsts-section h3 {
-    width: auto;
-    font-size: 25px;
+    width: 90%;
+    padding: 40px 5px 10px 0px;
+    font-size: 28px;
     font-family: Shrikhand;
     font-weight: 100;
   }
   .rst-ad {
-    width: auto;
+    width: 94%;
     position: relative;
     background-color: #fff;
     border-radius: 18px;
-    margin: 15px;
+    margin: 10px 32px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
   }
   .rst-ad a {
-    width: 100%;
     text-decoration: none;
   }
   .rst-ad span {
@@ -897,12 +898,11 @@ footer .fa-utensils {
     font-weight: 700;
   }
   .rst-ad img {
-    position: relative;
+    width: 100%;
     border-radius: 18px 18px 0 0;
-    width: inherit;
+    height: 220px;
   }
   .ad-info {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -924,13 +924,13 @@ footer .fa-utensils {
     font-size: 30px;
     color: #808080;
     position: sticky;
-    left: 665px;
+    left: 363px;
     opacity: 1;
   }
   .main-heart2 {
     font-size: 30px;
     position: sticky;
-    left: 10px;
+    left: 187px;
     opacity: 0;
   }
   .main-heart2:hover {

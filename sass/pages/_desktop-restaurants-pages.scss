@@ -34,7 +34,6 @@
         @include menu-about-pages;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         align-content: space-around;
         align-items: stretch;
     }
@@ -46,7 +45,7 @@
     .menu-section {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
     }
 

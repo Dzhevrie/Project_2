@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dzhevrie/DzhevrieLyumanova_3_06192022_A.git"
+    "url": "https://github.com/Dzhevrie/Project_2t"
   },
   "author": "Dzhevrie Lyumanova",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Dzhevrie/DzhevrieLyumanova_3_06192022_A/issues"
+    "url": "https://github.com/Dzhevrie/Project_2/issues"
   },
-  "homepage": "https://github.com/Dzhevrie/DzhevrieLyumanova_3_06192022_A#readme"
+  "homepage": "https://github.com/Dzhevrie/Project_2#readme" 
 }

@@ -3,35 +3,43 @@
     bottom: -100px;
     opacity: 0;
   }
+
   50% {
     bottom: -80px;
     opacity: 0;
   }
+
   100% {
     bottom: 0px;
     opacity: 1;
   }
 }
+
 @keyframes container {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @keyframes hideLoading {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
 }
+
 footer {
   background-color: #000;
   padding: 0 0 45px 0;
 }
+
 footer h5 {
   color: #fff;
   padding: 45px 0 35px 20px;
@@ -39,6 +47,7 @@ footer h5 {
   font-size: 35px;
   font-weight: 400;
 }
+
 footer .contacts {
   width: 100%;
   text-decoration: none;
@@ -48,6 +57,7 @@ footer .contacts {
   justify-content: space-evenly;
   align-items: center;
 }
+
 footer .contacts a {
   text-decoration: none;
   color: #fff;
@@ -56,11 +66,13 @@ footer .contacts a {
   flex-direction: row;
   align-items: baseline;
 }
+
 footer .fa-hands-helping {
   transform: rotate(-3deg);
   font-size: 18px;
   padding: 15px 10px;
 }
+
 footer .fa-utensils {
   padding-right: 13px;
   font-size: 20px;
@@ -70,6 +82,7 @@ footer {
   background-color: #000;
   padding: 0 0 45px 0;
 }
+
 footer h5 {
   font-family: Shrikhand;
   font-size: 22px;
@@ -78,6 +91,7 @@ footer h5 {
   display: flex;
   padding: 30px 0 25px 15px;
 }
+
 footer .contacts {
   width: auto;
   display: flex;
@@ -86,11 +100,13 @@ footer .contacts {
   flex-direction: column;
   align-items: flex-start;
 }
+
 footer .contacts p {
   position: relative;
   display: flex;
   font-size: 20px;
 }
+
 footer .contacts a {
   text-decoration: none;
   justify-content: flex-start;
@@ -98,6 +114,7 @@ footer .contacts a {
   padding: 0 15px;
   margin-bottom: 5px;
 }
+
 footer .contacts .fa-hands-helping {
   color: #fff;
   padding: 10px 0;
@@ -105,10 +122,12 @@ footer .contacts .fa-hands-helping {
   font-size: 14px;
   margin: 0 10px 0 0;
 }
+
 footer .contacts .fa-utensils {
   color: #fff;
   font-size: 17px;
 }
+
 footer h3 {
   font-family: Shrikhand;
   font-size: 30px;
@@ -131,10 +150,12 @@ footer h3 {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 .loading img {
   width: 230px;
   animation: hideLoading 2s forwards;
@@ -147,13 +168,16 @@ footer h3 {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
 }
+
 .navigation {
   width: 100%;
 }
+
 .navigation img {
   align-items: center;
   position: relative;
@@ -171,12 +195,14 @@ footer h3 {
   padding: 35px 0;
   box-shadow: rgba(11, 10, 10, 0.18) 0px 13px 12px 0px inset;
 }
+
 .search-btn-wrap input {
   border: 1px solid #9356DC;
   background-color: #9356DC;
   font-size: 25px;
   font-family: Roboto;
 }
+
 .search-btn-wrap input::placeholder {
   color: #000;
 }
@@ -191,11 +217,13 @@ footer h3 {
   text-align: center;
   padding: 35px 0 60px 0;
 }
+
 .head h1 {
   font-family: Shrikhand;
   font-size: 30px;
   font-weight: 100;
 }
+
 .head p {
   padding: 25px 10px;
   text-align: center;
@@ -203,6 +231,7 @@ footer h3 {
   font-family: Roboto;
   font-size: 22px;
 }
+
 .head button {
   background-color: #FF79DA;
   padding: 25px 40px;
@@ -214,6 +243,7 @@ footer h3 {
   align-items: center;
   box-shadow: 1px 7px 10px 1px rgba(0, 0, 0, 0.15);
 }
+
 .head button:hover {
   box-shadow: -6px 20px 10px 1px rgba(0, 0, 0, 0.15);
   transition-duration: 1s;
@@ -228,6 +258,7 @@ footer h3 {
   flex-direction: column;
   align-items: center;
 }
+
 .btns h2 {
   font-family: Shrikhand;
   font-size: 40px;
@@ -246,11 +277,13 @@ footer h3 {
   box-shadow: -2px 6px 11px 2px rgba(0, 0, 0, 0.15);
   font-size: 25px;
 }
+
 .btn-wrap:hover {
   box-shadow: -6px 20px 10px 1px rgba(0, 0, 0, 0.15);
   transition-duration: 1s;
   background-color: #c1ede2;
 }
+
 .btn-wrap span {
   font-size: 20px;
   border: 5px solid #9356DC;
@@ -260,19 +293,24 @@ footer h3 {
   background-color: #9356DC;
   margin: 0 10px 0 -10px;
 }
+
 .btn-wrap .fas {
   font-size: 27px;
   padding: 20px 0 20px 10px;
 }
+
 .btn-wrap .fa-mobile-alt {
   color: #808080;
 }
+
 .btn-wrap .fa-list {
   color: #808080;
 }
+
 .btn-wrap .fa-store {
   color: #9356DC;
 }
+
 .btn-wrap p {
   padding: 25px 0 25px 25px;
   font-size: 22px;
@@ -289,6 +327,7 @@ footer h3 {
   align-items: stretch;
   flex-wrap: wrap;
 }
+
 .rsts-section h3 {
   padding: 10px 0px 20px 30px;
   width: 100%;
@@ -308,9 +347,11 @@ footer h3 {
   margin: 20px auto;
   width: 360px;
 }
+
 .rst-ad a {
   text-decoration: none;
 }
+
 .rst-ad span {
   color: darkcyan;
   background-color: #99E2D0;
@@ -321,6 +362,7 @@ footer h3 {
   margin: 15px 0 0 -106px;
   position: absolute;
 }
+
 .rst-ad img {
   width: 360px;
   height: 170px;
@@ -338,6 +380,7 @@ footer h3 {
 .info {
   padding: 10px 0;
 }
+
 .info h4 {
   color: #000;
   text-decoration: none;
@@ -346,6 +389,7 @@ footer h3 {
   font-size: 20px;
   font-weight: 100;
 }
+
 .info p {
   color: #808080;
   font-family: Roboto;
@@ -367,6 +411,7 @@ footer h3 {
   left: 280px;
   opacity: 0;
 }
+
 .main-heart2:hover {
   opacity: 1;
   transition-duration: 1s;
@@ -377,6 +422,7 @@ footer {
   background-color: #000;
   padding: 0 0 45px 0;
 }
+
 footer h5 {
   color: #fff;
   padding: 45px 0 35px 20px;
@@ -384,6 +430,7 @@ footer h5 {
   font-size: 35px;
   font-weight: 400;
 }
+
 footer .contacts {
   width: 100%;
   text-decoration: none;
@@ -393,6 +440,7 @@ footer .contacts {
   justify-content: space-evenly;
   align-items: center;
 }
+
 footer .contacts a {
   text-decoration: none;
   color: #fff;
@@ -401,11 +449,13 @@ footer .contacts a {
   flex-direction: row;
   align-items: baseline;
 }
+
 footer .fa-hands-helping {
   transform: rotate(-3deg);
   font-size: 18px;
   padding: 15px 10px;
 }
+
 footer .fa-utensils {
   padding-right: 13px;
   font-size: 20px;
@@ -416,6 +466,7 @@ footer .fa-utensils {
     margin: 0;
     padding: 0;
   }
+
   .rstnt-navigation {
     display: flex;
     flex-direction: row;
@@ -424,14 +475,17 @@ footer .fa-utensils {
     justify-content: flex-start;
     padding: 15px 0;
   }
+
   .rstnt-navigation a {
     text-decoration: none;
   }
+
   .rstnt-navigation i {
     font-size: 20px;
     color: #000;
     margin: 0 -30px 0 28px;
   }
+
   .rstnt-navigation img {
     width: 175px;
     align-items: center;
@@ -439,16 +493,20 @@ footer .fa-utensils {
     margin: auto;
     padding: 15px 0;
   }
+
   .rstnt-navigation img {
     width: 350px;
   }
+
   .rstnt-navigation i {
     font-size: 35px;
   }
+
   .nav-img {
     width: 100%;
     height: 500px;
   }
+
   .menu {
     position: relative;
     margin-top: -60px;
@@ -459,23 +517,27 @@ footer .fa-utensils {
     align-content: space-around;
     align-items: stretch;
   }
+
   .menu h2 {
     padding: 30px 0 7px 25px;
     font-family: Shrikhand;
     font-size: 20px;
     font-weight: 100;
   }
+
   .line {
     border-bottom: 3px solid #99E2D0;
     width: 10%;
     margin: 0 0 25px 27px;
   }
+
   .menu-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
   }
+
   .menu-title {
     display: flex;
     flex-direction: row;
@@ -483,80 +545,94 @@ footer .fa-utensils {
     align-items: center;
     padding: 40px 40px 10px 25px;
   }
+
   .menu-title h1 {
     width: 70%;
     font-size: 30px;
     font-weight: 100;
     font-family: Shrikhand;
   }
+
   .menu-title h1 {
     font-size: 38px;
   }
+
   .heart {
     color: #808080;
     font-size: 25px;
     font-weight: 100;
     font-size: 33px;
   }
+
   .first {
     position: relative;
     animation: menu-animation 2s;
     animation-timing-function: ease-out;
   }
+
   .second {
     position: relative;
     animation: menu-animation 2s;
     animation-timing-function: ease-out;
     animation-delay: 0.1s;
   }
+
   .third {
     position: relative;
     animation: menu-animation 2s;
     animation-timing-function: ease-out;
     animation-delay: 0.18s;
   }
+
   .fourth {
     position: relative;
     animation: menu-animation 2s;
     animation-timing-function: ease-out;
     animation-delay: 0.26s;
   }
+
   .fifth {
     position: relative;
     animation: menu-animation 2s;
     animation-timing-function: ease-out;
     animation-delay: 0.34s;
   }
+
   .sixth {
     position: relative;
     animation: menu-animation 2s;
     animation-timing-function: ease-out;
     animation-delay: 0.42s;
   }
+
   .seventh {
     position: relative;
     animation: menu-animation 2s;
     animation-timing-function: ease-out;
     animation-delay: 0.5s;
   }
+
   .eighth {
     position: relative;
     animation: menu-animation 2s;
     animation-timing-function: ease-out;
     animation-delay: 0.58s;
   }
+
   .ninth {
     position: relative;
     animation: menu-animation 2s;
     animation-timing-function: ease-out;
     animation-delay: 0.66s;
   }
+
   .tenth {
     position: relative;
     animation: menu-animation 2s;
     animation-timing-function: ease-out;
     animation-delay: 0.74s;
   }
+
   .visible-dish-wrap {
     background-color: #fff;
     border-radius: 20px;
@@ -565,37 +641,45 @@ footer .fa-utensils {
     box-shadow: 0px 7px 10px 1px rgba(0, 0, 0, 0.15);
     width: 460px;
   }
+
   .visible-dish-wrap:hover {
     cursor: pointer;
     transform: rotate(360deg);
   }
+
   .visible-dish-wrap:hover .dish-wrap h3 {
     width: 70%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+
   .visible-dish-wrap:hover .dish-wrap p {
     width: 70%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+
   .dish-wrap {
     width: 134%;
     display: flex;
     align-items: flex-start;
     transition: width 1s ease-out 100ms;
   }
+
   .dish-wrap .fa-check-circle {
     transition: transform 1s ease-out 10ms;
   }
+
   .dish-wrap:hover {
     width: 100%;
   }
+
   .dish-wrap:hover .fa-check-circle {
     transform: rotate(360deg);
   }
+
   .dish {
     position: relative;
     width: 75%;
@@ -604,12 +688,14 @@ footer .fa-utensils {
     justify-content: flex-start;
     margin: 0;
   }
+
   .dish .dish-price {
     margin: 55px 15px 0 0;
     font-family: Roboto;
     font-size: 20px;
     font-weight: 800;
   }
+
   .dish-info {
     width: inherit;
     padding-left: 15px;
@@ -618,6 +704,7 @@ footer .fa-utensils {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+
   .dish-info span {
     width: 99%;
     white-space: break-spaces;
@@ -626,12 +713,14 @@ footer .fa-utensils {
     font-size: 23px;
     font-weight: 600;
   }
+
   .dish-info p {
     margin-top: 10px;
     color: #808080;
     font-family: Roboto;
     font-size: 18px;
   }
+
   .dish-info span {
     width: 100%;
     font-size: 25px;
@@ -641,11 +730,13 @@ footer .fa-utensils {
     margin: 0;
     padding: 20px 0 10px 0;
   }
+
   .check {
     background-color: #99E2D0;
     border-radius: 0 20px 20px 0;
     margin-left: 10px;
   }
+
   .fa-check-circle {
     font-size: 27px;
     color: #fff;
@@ -655,6 +746,7 @@ footer .fa-utensils {
     margin: 35px 39px;
     font-size: 35px;
   }
+
   .order {
     display: block;
     width: 250px;
@@ -671,16 +763,19 @@ footer .fa-utensils {
     padding: 30px 255px 30px 190px;
     font-size: 30px;
   }
+
   .order:hover {
     cursor: pointer;
     box-shadow: -6px 20px 10px 1px rgba(0, 0, 0, 0.15);
     transition-duration: 1s;
     background-color: #fface8;
   }
+
   footer {
     background-color: #000;
     padding: 0 0 45px 0;
   }
+
   footer h5 {
     color: #fff;
     padding: 45px 0 35px 20px;
@@ -688,6 +783,7 @@ footer .fa-utensils {
     font-size: 35px;
     font-weight: 400;
   }
+
   footer .contacts {
     width: 100%;
     text-decoration: none;
@@ -697,6 +793,7 @@ footer .fa-utensils {
     justify-content: space-evenly;
     align-items: center;
   }
+
   footer .contacts a {
     text-decoration: none;
     color: #fff;
@@ -705,25 +802,30 @@ footer .fa-utensils {
     flex-direction: row;
     align-items: baseline;
   }
+
   footer .fa-hands-helping {
     transform: rotate(-3deg);
     font-size: 18px;
     padding: 15px 10px;
   }
+
   footer .fa-utensils {
     padding-right: 13px;
     font-size: 20px;
   }
 }
+
 @media all and (max-width: 768px) {
   * {
     padding: 0;
     margin: 0;
   }
+
   .container {
     animation-name: container;
     animation-duration: 3s;
   }
+
   .loading img {
     width: 150px;
     align-items: center;
@@ -732,9 +834,11 @@ footer .fa-utensils {
     bottom: 304px;
     left: 122px;
   }
+
   .navigation {
     width: 100%;
   }
+
   .navigation img {
     width: 200px;
     display: flex;
@@ -743,6 +847,7 @@ footer .fa-utensils {
     margin: auto;
     padding: 20px;
   }
+
   .search-btn-wrap {
     padding: 0;
     position: relative;
@@ -752,33 +857,40 @@ footer .fa-utensils {
     background-color: #9356DC;
     box-shadow: rgba(11, 10, 10, 0.18) 0px 13px 12px 0px inset;
   }
+
   .search-btn-wrap input {
     border: none;
     background-color: #9356DC;
     font-size: 20px;
     font-family: Roboto;
   }
+
   .search-btn-wrap input::placeholder {
     color: #000;
   }
+
   .search-btn-wrap i {
     margin: 15px 17px 15px 62px;
     font-size: 19px;
   }
+
   .fa-map-marker-alt {
     font-size: 22px;
     margin: 15px;
   }
+
   .head {
     background-color: #99E2D0;
     text-align: center;
     padding: 40px 0;
   }
+
   .head h1 {
     font-family: Shrikhand;
     font-size: 27px;
     font-weight: 100;
   }
+
   .head p {
     padding: 35px 10px;
     text-align: center;
@@ -786,6 +898,7 @@ footer .fa-utensils {
     font-family: Roboto;
     font-size: 20px;
   }
+
   .head .button {
     background-color: #FF79DA;
     padding: 17px 30px;
@@ -797,21 +910,25 @@ footer .fa-utensils {
     align-items: center;
     box-shadow: 1px 7px 10px 1px rgba(0, 0, 0, 0.15);
   }
+
   .head .button:hover {
     box-shadow: -6px 20px 10px 1px rgba(0, 0, 0, 0.15);
     transition-duration: 1s;
     background-color: #fface8;
   }
+
   /* Section with the buttons for chosing the place 
   and prepare the menu*/
   .btns {
     padding: 40px 10px 50px 15px;
   }
+
   .btns h2 {
     font-family: Shrikhand;
     font-size: 25px;
     font-weight: 100;
   }
+
   .btn-wrap {
     width: 95%;
     display: flex;
@@ -824,11 +941,13 @@ footer .fa-utensils {
     box-shadow: -2px 6px 11px 2px rgba(0, 0, 0, 0.15);
     font-size: 25px;
   }
+
   .btn-wrap:hover {
     box-shadow: -6px 20px 10px 1px rgba(0, 0, 0, 0.15);
     transition-duration: 1s;
     background-color: #c1ede2;
   }
+
   .btn-wrap span {
     font-size: 15px;
     border: 5px solid #9356DC;
@@ -838,25 +957,31 @@ footer .fa-utensils {
     background-color: #9356DC;
     margin: 0 10px 0 -10px;
   }
+
   .btn-wrap .fas {
     font-size: 20px;
     padding: 20px 0 20px 10px;
   }
+
   .btn-wrap .fa-mobile-alt {
     color: #808080;
   }
+
   .btn-wrap .fa-list {
     color: #808080;
   }
+
   .btn-wrap .fa-store {
     color: #9356DC;
   }
+
   .btn-wrap p {
     padding: 25px 0 25px 10px;
     font-size: 18px;
     font-weight: 700;
     font-family: Roboto;
   }
+
   .rsts-section {
     display: flex;
     flex-direction: column;
@@ -865,6 +990,7 @@ footer .fa-utensils {
     align-content: center;
     align-items: center;
   }
+
   .rsts-section h3 {
     width: 90%;
     padding: 40px 5px 10px 0px;
@@ -872,6 +998,7 @@ footer .fa-utensils {
     font-family: Shrikhand;
     font-weight: 100;
   }
+
   .rst-ad {
     width: 94%;
     position: relative;
@@ -883,9 +1010,11 @@ footer .fa-utensils {
     align-items: flex-start;
     flex-wrap: wrap;
   }
+
   .rst-ad a {
     text-decoration: none;
   }
+
   .rst-ad span {
     color: darkcyan;
     background-color: #99E2D0;
@@ -896,16 +1025,19 @@ footer .fa-utensils {
     font-family: Roboto;
     font-weight: 700;
   }
+
   .rst-ad img {
     width: 100%;
     border-radius: 18px 18px 0 0;
     height: 220px;
   }
+
   .ad-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .info h4 {
     color: #000;
     text-decoration: none;
@@ -914,11 +1046,13 @@ footer .fa-utensils {
     font-size: 20px;
     font-weight: 100;
   }
+
   .info p {
     color: #808080;
     font-family: Roboto;
     font-size: 20px;
   }
+
   .main-heart1 {
     font-size: 30px;
     color: #808080;
@@ -926,21 +1060,25 @@ footer .fa-utensils {
     left: 363px;
     opacity: 1;
   }
+
   .main-heart2 {
     font-size: 30px;
     position: sticky;
     left: 189px;
     opacity: 0;
   }
+
   .main-heart2:hover {
     opacity: 1;
     transition-duration: 1s;
     color: #a16be0;
   }
+
   footer {
     background-color: #000;
     padding: 0 0 45px 0;
   }
+
   footer h5 {
     font-family: Shrikhand;
     font-size: 22px;
@@ -949,6 +1087,7 @@ footer .fa-utensils {
     display: flex;
     padding: 30px 0 25px 15px;
   }
+
   footer .contacts {
     width: auto;
     display: flex;
@@ -957,11 +1096,13 @@ footer .fa-utensils {
     flex-direction: column;
     align-items: flex-start;
   }
+
   footer .contacts p {
     position: relative;
     display: flex;
     font-size: 20px;
   }
+
   footer .contacts a {
     text-decoration: none;
     justify-content: flex-start;
@@ -969,6 +1110,7 @@ footer .fa-utensils {
     padding: 0 15px;
     margin-bottom: 5px;
   }
+
   footer .contacts .fa-hands-helping {
     color: #fff;
     padding: 10px 0;
@@ -976,16 +1118,19 @@ footer .fa-utensils {
     font-size: 14px;
     margin: 0 10px 0 0;
   }
+
   footer .contacts .fa-utensils {
     color: #fff;
     font-size: 17px;
   }
 }
+
 @media all and (max-width: 768px) {
   * {
     margin: 0;
     padding: 0;
   }
+
   .rstnt-navigation {
     display: flex;
     flex-direction: row;
@@ -993,14 +1138,17 @@ footer .fa-utensils {
     position: relative;
     justify-content: flex-start;
   }
+
   .rstnt-navigation a {
     text-decoration: none;
   }
+
   .rstnt-navigation i {
     font-size: 20px;
     color: #000;
     margin: 0 -30px 0 28px;
   }
+
   .rstnt-navigation img {
     width: 175px;
     align-items: center;
@@ -1008,26 +1156,31 @@ footer .fa-utensils {
     margin: auto;
     padding: 15px 0;
   }
+
   .nav-img {
     width: 100%;
   }
+
   .menu {
     position: relative;
     margin-top: -60px;
     background-color: #fafafa;
     border-radius: 65px 65px 0 0;
   }
+
   .menu h2 {
     padding: 30px 0 7px 25px;
     font-family: Shrikhand;
     font-size: 20px;
     font-weight: 100;
   }
+
   .line {
     border-bottom: 3px solid #99E2D0;
     width: 10%;
     margin: 0 0 25px 27px;
   }
+
   .menu-title {
     display: flex;
     flex-direction: row;
@@ -1035,76 +1188,89 @@ footer .fa-utensils {
     align-items: center;
     padding: 40px 40px 10px 25px;
   }
+
   .menu-title h1 {
     width: 70%;
     font-size: 30px;
     font-weight: 100;
     font-family: Shrikhand;
   }
+
   .heart {
     color: #808080;
     font-size: 25px;
     font-weight: 100;
   }
+
   .first {
     position: relative;
     animation: menu-animation 2s;
     animation-timing-function: ease-out;
   }
+
   .second {
     position: relative;
     animation: menu-animation 2s;
     animation-timing-function: ease-out;
     animation-delay: 0.1s;
   }
+
   .third {
     position: relative;
     animation: menu-animation 2s;
     animation-timing-function: ease-out;
     animation-delay: 0.18s;
   }
+
   .fourth {
     position: relative;
     animation: menu-animation 2s;
     animation-timing-function: ease-out;
     animation-delay: 0.26s;
   }
+
   .fifth {
     position: relative;
     animation: menu-animation 2s;
     animation-timing-function: ease-out;
     animation-delay: 0.34s;
   }
+
   .sixth {
     position: relative;
     animation: menu-animation 2s;
     animation-timing-function: ease-out;
     animation-delay: 0.42s;
   }
+
   .seventh {
     position: relative;
     animation: menu-animation 2s;
     animation-timing-function: ease-out;
     animation-delay: 0.5s;
   }
+
   .eighth {
     position: relative;
     animation: menu-animation 2s;
     animation-timing-function: ease-out;
     animation-delay: 0.58s;
   }
+
   .ninth {
     position: relative;
     animation: menu-animation 2s;
     animation-timing-function: ease-out;
     animation-delay: 0.66s;
   }
+
   .tenth {
     position: relative;
     animation: menu-animation 2s;
     animation-timing-function: ease-out;
     animation-delay: 0.74s;
   }
+
   .dish {
     position: relative;
     width: 75%;
@@ -1113,12 +1279,14 @@ footer .fa-utensils {
     justify-content: flex-start;
     margin: 0;
   }
+
   .dish .dish-price {
     margin: 55px 15px 0 0;
     font-family: Roboto;
     font-size: 20px;
     font-weight: 800;
   }
+
   .visible-dish-wrap {
     background-color: #fff;
     border-radius: 20px;
@@ -1126,37 +1294,45 @@ footer .fa-utensils {
     overflow: hidden;
     box-shadow: 0px 7px 10px 1px rgba(0, 0, 0, 0.15);
   }
+
   .visible-dish-wrap:hover {
     cursor: pointer;
     transform: rotate(360deg);
   }
+
   .visible-dish-wrap:hover .dish-wrap h3 {
     width: 70%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+
   .visible-dish-wrap:hover .dish-wrap p {
     width: 70%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+
   .dish-wrap {
     width: 134%;
     display: flex;
     align-items: flex-start;
     transition: width 1s ease-out 100ms;
   }
+
   .dish-wrap .fa-check-circle {
     transition: transform 1s ease-out 10ms;
   }
+
   .dish-wrap:hover {
     width: 100%;
   }
+
   .dish-wrap:hover .fa-check-circle {
     transform: rotate(360deg);
   }
+
   .dish-info {
     width: inherit;
     padding-left: 15px;
@@ -1165,6 +1341,7 @@ footer .fa-utensils {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+
   .dish-info span {
     width: 99%;
     white-space: break-spaces;
@@ -1173,17 +1350,20 @@ footer .fa-utensils {
     font-size: 23px;
     font-weight: 600;
   }
+
   .dish-info p {
     margin-top: 10px;
     color: #808080;
     font-family: Roboto;
     font-size: 18px;
   }
+
   .check {
     background-color: #99E2D0;
     border-radius: 0 20px 20px 0;
     margin-left: 10px;
   }
+
   .fa-check-circle {
     font-size: 27px;
     color: #fff;
@@ -1192,6 +1372,7 @@ footer .fa-utensils {
     position: relative;
     margin: 35px 39px;
   }
+
   .order {
     display: block;
     width: 250px;
@@ -1206,16 +1387,19 @@ footer .fa-utensils {
     align-items: center;
     margin: 50px auto;
   }
+
   .order:hover {
     cursor: pointer;
     box-shadow: -6px 20px 10px 1px rgba(0, 0, 0, 0.15);
     transition-duration: 1s;
     background-color: #fface8;
   }
+
   footer {
     background-color: #000;
     padding: 0 0 45px 0;
   }
+
   footer h5 {
     font-family: Shrikhand;
     font-size: 22px;
@@ -1224,6 +1408,7 @@ footer .fa-utensils {
     display: flex;
     padding: 30px 0 25px 15px;
   }
+
   footer .contacts {
     width: auto;
     display: flex;
@@ -1232,11 +1417,13 @@ footer .fa-utensils {
     flex-direction: column;
     align-items: flex-start;
   }
+
   footer .contacts p {
     position: relative;
     display: flex;
     font-size: 20px;
   }
+
   footer .contacts a {
     text-decoration: none;
     justify-content: flex-start;
@@ -1244,6 +1431,7 @@ footer .fa-utensils {
     padding: 0 15px;
     margin-bottom: 5px;
   }
+
   footer .contacts .fa-hands-helping {
     color: #fff;
     padding: 10px 0;
@@ -1251,10 +1439,12 @@ footer .fa-utensils {
     font-size: 14px;
     margin: 0 10px 0 0;
   }
+
   footer .contacts .fa-utensils {
     color: #fff;
     font-size: 17px;
   }
+
   footer h3 {
     color: #fff;
     display: flex;
